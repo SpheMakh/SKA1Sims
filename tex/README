@@ -1,0 +1,6 @@
+writeup.tex
+========
+The tables for the different metrics are in in {psf_mean,psf_sym,noise50,noise166,snr10,snravg,hours}.tex, including the captions.
+The figures are in {lay,hist,uvcov}.tex
+
+Happy Typing!

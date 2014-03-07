@@ -1,6 +1,7 @@
-writeup.tex
+writeup_mjj2.tex
 ========
 The tables for the different metrics are in in {psf_mean,psf_sym,noise50,noise166,snr10,snravg,hours}.tex, including the captions.
 The figures are in {lay,hist,uvcov}.tex
+PSF crossections (Appendix A) are at dec-30_{650,800,1100}.tex
 
 Happy Typing!

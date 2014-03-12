@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.10)  11 MAR 2014 12:51
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.9.13)  12 MAR 2014 11:09
 entering extended mode
  %&-line parsing enabled.
 **writeup_mjj.tex
@@ -457,8 +457,26 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 50.
 (/usr/share/texmf-texlive/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
+! Font U/rsfs/m/n/12=rsfs10 at 12.0pt not loadable: Metric (TFM) file not found
+.
+<to be read again> 
+                   relax 
+l.50 \section
+             {Introduction}
+? 
+! Font U/rsfs/m/n/8=rsfs10 at 8.0pt not loadable: Metric (TFM) file not found.
+<to be read again> 
+                   relax 
+l.50 \section
+             {Introduction}
+? 
+! Font U/rsfs/m/n/6=rsfs5 at 6.0pt not loadable: Metric (TFM) file not found.
+<to be read again> 
+                   relax 
+l.50 \section
+             {Introduction}
+? 
 LaTeX Font Info:    Try loading font information for U+msa on input line 50.
-
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
@@ -466,7 +484,29 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 50.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [1
+)
+! Font U/rsfs/m/n/5=rsfs5 at 5.0pt not loadable: Metric (TFM) file not found.
+<to be read again> 
+                   relax 
+l.50 \section
+             {Introduction}
+? 
+! Font U/rsfs/m/n/10=rsfs10 at 10.0pt not loadable: Metric (TFM) file not found
+.
+<to be read again> 
+                   relax 
+l.63 ...n the BD is a 254 dish array with about $3
+                                                  6\%$ of the dishes within ...
+
+? 
+! Font U/rsfs/m/n/7=rsfs7 at 7.0pt not loadable: Metric (TFM) file not found.
+<to be read again> 
+                   relax 
+l.63 ...n the BD is a 254 dish array with about $3
+                                                  6\%$ of the dishes within ...
+
+? 
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Missing character: There is no â in font cmr10!
@@ -1496,7 +1536,7 @@ Here is how much of TeX's memory you used:
  162816 string characters out of 1182621
  395571 words of memory out of 3000000
  12282 multiletter control sequences out of 15000+50000
- 18570 words of font info for 71 fonts, out of 3000000 for 9000
+ 17581 words of font info for 65 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  44i,13n,47p,1061b,388s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
@@ -1517,7 +1557,7 @@ re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-tex
 live/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/
 type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-texlive/fonts/type1/public
 /amsfonts/cm/cmtt10.pfb>
-Output written on writeup_mjj.pdf (12 pages, 5396618 bytes).
+Output written on writeup_mjj.pdf (12 pages, 5396648 bytes).
 PDF statistics:
  507 PDF objects out of 1000 (max. 8388607)
  105 named destinations out of 1000 (max. 500000)

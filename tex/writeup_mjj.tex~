@@ -35,6 +35,7 @@
 \newcommand{\mbs}[1]{\mbox{\small #1}}
 \newcommand{\la}{\langle}
 \newcommand{\ra}{\rangle}
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
 
  
 
@@ -62,17 +63,17 @@ discussions and concluding remarks are in sections \autoref{sec:results} and \au
 \subsection{SKA1-Mid Baseline Design}\label{sec:BL}
 The mid-frequency array described in the BD is a 254 dish array with about $36\%$ of the dishes within a radius of 400m (core),
 40\% of the dishes are between 400m and 4km (outer-core) with the remaining 24\% in 3 three spiral arm-like structures starting
-from abot 2km and stretching out to a radius around 70km. Figures \ref{fig:lay} and \ref{fig:hist} show the BL layout and baseline
-distribution histogram ($log_{10}$ space). With about 200 fifteen metre dishes (bar the 64 13.5~metre MeerKAT dishes) within a
-radius of 4km, this array promises high sensitivity, with noise values around 63$\mu$Jy beam$^{-1}$ hr$^{1/2}$ \cite{bd}. However,
-with three distinct dish-density regions, the resulting full sensitivity (natural weighting) PSF has two pedestals corresponding
-to the abrupt changes in dish densities from the core to the outer-core and from the outer-core to the spiral arms (see Appendix
-\ref{app:psf}). With such a configuration, a uv-weighting that tends towards uniform is required to obtain high resolution and
-uv-tapering might be also be required to get a well behaved PSF. Leading to lower sensitivity due to the down-weighting of
-baselines\footnote{uniform uv-weighting down-weights the uv-points corresponding to shorter baselines, and hence gives better
-resolution, while a uv-taper down-weights the edges of the uv-coverage (longer baselines) to decrease sidelobe levels}. It is
-therefore important to quantify the scale-dependent sensitivity of this configuration, i.e., what is the sensitivity at different
-angular scales and how this sensitivity is affected by different uv-weighting and tapering schemes. 
+from abot 2km and stretching out to a radius around 100km. Figures \ref{fig:lay} and \ref{fig:hist} show the BL layout and
+baseline distribution histogram ($log_{10}$ space). With about 200 fifteen metre dishes (bar the 64 13.5~metre MeerKAT dishes)
+within a radius of 4km, this array promises high sensitivity, with noise values around 63$\mu$Jy beam$^{-1}$ hr$^{1/2}$ \cite{bd}.
+However, with three distinct dish-density regions, the resulting full sensitivity (natural weighting) PSF has two pedestals
+corresponding to the abrupt changes in dish densities from the core to the outer-core and from the outer-core to the spiral arms
+(see Appendix \ref{app:psf}). With such a configuration, a uv-weighting that tends towards uniform is required to obtain high
+resolution and uv-tapering might be also be required to get a well behaved PSF. Leading to lower sensitivity due to the
+down-weighting of baselines\footnote{uniform uv-weighting down-weights the uv-points corresponding to shorter baselines, and hence
+gives better resolution, while a uv-taper down-weights the edges of the uv-coverage (longer baselines) to decrease sidelobe
+levels}. It is therefore important to quantify the scale-dependent sensitivity of this configuration, i.e., what is the
+sensitivity at different angular scales and how this sensitivity is affected by different uv-weighting and tapering schemes. 
 
 \subsection{SKA1-Mid science requirements}\label{sec:sci-req}
 The general scientific requirements for SKA1\cite{srd} (SRD) published by the SPO in March 2014 suggest that (at least for
@@ -101,26 +102,25 @@ is compared to the baseline layout in section \ref{sec:exp}.
 
 \subsection{Background on Layouts}\label{sec:layouts}
 The following SKA1-Mid layouts are under consideration here:
-\begin{itemize}
+\begin{description}
 % \item[{\bf REF1}] Original baseline design layout (254 dishes) released by the SPO (April 2013).
-\item[{\bf REF2}] ”Second-generation” layout (254 dishes) produced by Robert Braun (September 2013)\footnote{We assume this to
-be the baseline layout.}. This layout has a maximum baseline of 173km.
-\item[{\bf W$i$-$j$A$k$B$l$}] This is the REF2 layout with the core ``puffed up'' by 10\%, with $i$ additional dishes and $j$
-dishes from the outer core added to the spiral arms. The spacing in the arms is then optimized to get more sensitivity on the
-longer ($>50$km) baselines(See baseline distribution histograms in Figure \ref{fig:hist} ). Each spiral arm stretches out to ~$k$
-kilometres and the maximum baseline length is about $l$ kilometres.
-\end{itemize}
+\item[{\bf REF2A100B173 :}] This is the ”Second-generation” layout (254 dishes) produced by Robert Braun (September
+2013)\footnote{We assume this to be the baseline layout.}. The spiral arms of this layout stretch out to ~100km, and the maximum
+baseline is 173km. We also refere to this layout as REF2. 
+\item[{\bf W$i$-$j$A$k$B$l$ :}] This is the REF2 layout with the core ``puffed up'' by 10\%, with $i$ dishes moved from
+the outer core to the spiral arms and $j$ extra dishes added to the spiral arms. The spacing in the arms is then optimized to get
+more sensitivity on the longer ($>50$km) baselines (See baseline distribution histograms in Figure \ref{fig:hist} ). Each spiral
+arm stretches out to ~$k$ kilometres and the maximum baseline length is about $l$ kilometres.
+\end{description}
 The details of the layouts are tabulated in Table \ref{fig:lay}, and Figure \ref{fig:lay} shows the layouts and Figure
-\ref{fig:hist} shows the baseline distribution histogram for the different layouts. Figure \ref{fig:uvcov} shows the
-uv-coverage for the different layouts at 1.1GHz at declinations
--50,-30,-10 degrees for 8hr tracks. At this point no optimisation has
-been done on the antenna distributions and we emphasise that further
-improvements can be and should be made.
+\ref{fig:hist} shows the baseline distribution histogram for the different layouts. Figure \ref{fig:uvcov} shows the uv-coverage
+for the different layouts at 1.1GHz at declinations -50,-30,-10 degrees for 8hr tracks. At this point no optimisation has been
+done on the antenna distributions and we emphasise that further improvements can be and should be made.
 \begin{table}[H]
 \centering
  \tiny{
  \begin{tabular}{l|cccc}\hline
- {\bf REF2} [254 dishes] & SKA dishes&  MeerKAT dishes & Both & \% \\\hline\hline
+ {\bf REF2A100B173} [254 dishes] & SKA dishes&  MeerKAT dishes & Both & \% \\\hline\hline
   Core & 63 & 30 & 93 & 36 \\
  Outer-core & 67 & 34 & 101 & 40 \\
  Spiral-arms & 60 & 0 & 60 & 24 \\\hline\hline
@@ -132,10 +132,6 @@ improvements can be and should be made.
   Core & 70 & 30 & 93 & 36 \\
  Outer-core & 58 & 34 & 92 & 34 \\
  Spiral-arms & 81 & 0 & 81 & 30 \\\hline\hline
- {\bf W9-0A60B100} [254 dishes] &  & &  & \\\hline\hline
-  Core & 70 & 30 & 93 & 37 \\
- Outer-core & 58 & 34 & 92 & 36 \\
- Spiral-arms & 69 & 0 & 69 & 27 \\\hline\hline
   {\bf W9-12A72B120} [266 dishes] &  & &  & \\\hline\hline
   Core & 70 & 30 & 93 & 36 \\
  Outer-core & 58 & 34 & 92 & 34 \\

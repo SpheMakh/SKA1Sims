@@ -3,4 +3,5 @@ SKA1Sims
 
 SKA1 Continuum and Cosmology Simulations
 ---
-layouts.py and its readme file are now in Layouts/
+This branch has the peformance stats for the optimised layouts (X9-12)
+The writeup is writeup_xlays.tex

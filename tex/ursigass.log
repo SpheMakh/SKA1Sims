@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.16)  18 MAR 2014 15:41
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.16)  19 MAR 2014 15:04
 entering extended mode
  %&-line parsing enabled.
-**ursigass.tex pdflatex ursigass.tex
+**ursigass.tex
 (./ursigass.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
@@ -583,7 +583,7 @@ File: images/core_SKA1X9-12A72B120.png Graphic file (type png)
 File: images/core_SKA1X9-12A80B133.png Graphic file (type png)
 
 <use images/core_SKA1X9-12A80B133.png>)
-Overfull \hbox (10.34875pt too wide) in paragraph at lines 2--76
+Overfull \hbox (10.34875pt too wide) in paragraph at lines 2--80
  [][] 
  []
 
@@ -609,7 +609,7 @@ File: images/hist_SKA1X9-12A72B120.png Graphic file (type png)
 File: images/hist_SKA1X9-12A80B133.png Graphic file (type png)
 
 <use images/hist_SKA1X9-12A80B133.png>)
-Overfull \hbox (10.34875pt too wide) in paragraph at lines 2--82
+Overfull \hbox (10.34875pt too wide) in paragraph at lines 2--87
  [][] 
  []
 
@@ -636,16 +636,17 @@ File: images/uvcov_SKA1X9-12A72B120_-30_1100.png Graphic file (type png)
 File: images/uvcov_SKA1X9-12A80B133_-30_1100.png Graphic file (type png)
 
 <use images/uvcov_SKA1X9-12A80B133_-30_1100.png>)
-Overfull \hbox (10.34875pt too wide) in paragraph at lines 2--89
+Overfull \hbox (10.34875pt too wide) in paragraph at lines 2--94
  [][] 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 97.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 103.
+
 (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 97.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 103.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no œ in font cmr10!
@@ -674,13 +675,13 @@ t_SKA1X9-12A60B100.png> <./images/hist_SKA1X9-12A72B120.png> <./images/hist_SKA
 9-12A54B90_-30_1100.png> <./images/uvcov_SKA1X9-12A60B100_-30_1100.png> <./imag
 es/uvcov_SKA1X9-12A72B120_-30_1100.png> <./images/uvcov_SKA1X9-12A80B133_-30_11
 00.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 [][]$\OT1/cmtt/m/n/10 http : / / www . skatelescope . org / wp-[]content / uplo
 ads / 2013 / 05 / SKA-[]TEL-[]SKO-[]DD-[]001-[]1 _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--138
+Underfull \hbox (badness 10000) in paragraph at lines 146--148
 [][]$\OT1/cmtt/m/n/10 https : / / www . skatelescope . org / wp-[]content / upl
 oads / 2014 / 03 / SKA-[]TEL _ SCI-[]SKO-[]SRQ-[]001-[]1 _ Level _ 0 _
  []
@@ -691,11 +692,11 @@ oads / 2014 / 03 / SKA-[]TEL _ SCI-[]SKO-[]SRQ-[]001-[]1 _ Level _ 0 _
 Here is how much of TeX's memory you used:
  8432 strings out of 493848
  125236 string characters out of 1152823
- 352849 words of memory out of 3000000
+ 353250 words of memory out of 3000000
  11449 multiletter control sequences out of 15000+50000
  18876 words of font info for 72 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 41i,14n,47p,670b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,14n,47p,648b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf
 -texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fo
 nts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/p
@@ -713,7 +714,7 @@ onts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/pu
 blic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
 ts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti8
 .pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on ursigass.pdf (4 pages, 1233793 bytes).
+Output written on ursigass.pdf (4 pages, 1237489 bytes).
 PDF statistics:
  229 PDF objects out of 1000 (max. 8388607)
  36 named destinations out of 1000 (max. 500000)

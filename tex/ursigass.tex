@@ -1,5 +1,5 @@
 \documentclass[sfheadings,a4paper,times,9pt,floats,floatfix]{article}
-\usepackage[margin=0.7in]{geometry}
+\usepackage[margin=0.6in]{geometry}
 \usepackage{graphicx}
 \usepackage{verbatim}
 \usepackage{bookmark}
@@ -21,13 +21,15 @@
 
 % \voffset .5in
 \title{SKA1-Mid Scale-Dependent Sensitivity}
-\author{O. M. Smirnov$^{1,2}$, S. Makhathini$^{1,2}$, M. Jarvis$^{3,4}$, F. B. Abdalla$^5$ \\{\footnotesize \it $^1$Rhodes
-University, South Africa $^2$SKA South Africa, $^3$ University of the Western Cape, South Africa,}\\ {\footnotesize \it
-$^4$University of Oxford, $^5$Department of Physics and Astronomy, University College London}}
+\author{O. M. Smirnov$^{1,2}$, S. Makhathini$^{*1,2}$, M. Jarvis$^{3,4}$ and F. B. Abdalla$^5$ \\{\footnotesize \it $^1$Rhodes
+University, Artillery Road P O Box 94, Grahamstown 6140, South Africa} \\{ \footnotesize \it $^2$SKA South Africa, 3rd Floor,
+Park Road, Pinelands, 7405, South Africa} \\{\footnotesize \it $^3$ University of the Western Cape, ZA-7535 Cape Town, South
+Africa}\\ {\footnotesize \it $^4$University of Oxford, Oxford OX1 3RH, England} \\ {\footnotesize \it $^5$Department of Physics
+and Astronomy, University College London,Gower Place, London WC1E 6BT, United Kingdom}}
 \date{}
 \begin{document}
 \maketitle
-\vspace{-1.1cm}
+
 \begin{abstract}
  In this report we study the scale dependent sensitivity of the SKA1-Mid baseline design. We also propose changes to the baseline
 design that enhance the sensitivity at smaller angular scales (say 0.4-1 arcsec at 650MHz) without compromising the performance at
@@ -57,7 +59,7 @@ addition of 12 dishes. However, we note that improvements on the scales of inter
 dishes. In the next section we present 4 alternative layouts, these layouts have maximum baselines of 90,100,120 and 133 km. The
 scale dependent sensitivity of these layouts is compared to the baseline layout in section \ref{sec:exp}, and our conclusions are
 in section \ref{sec:conclusion}.
-
+% \vspace{-.2cm}
 \subsection{Background on Layouts}\label{sec:layouts}
 \vspace{-.1cm}
 The following SKA1-Mid layouts are under consideration here:
@@ -75,15 +77,13 @@ The  layouts are shown in Figure \ref{fig:lay}, and Figure \ref{fig:hist} shows 
 different layouts. Figure \ref{fig:uvcov} shows the uv-coverage for the different layouts at 1.1GHz at declination -30 degrees for
 8hr tracks. At this point some optimisations have been done on the antenna distributions but we emphasise that further
 improvements can be and should be made.
-\begin{figure}[!htb]
-\vspace{-.5cm}
+\begin{figure}[!htp]
  \tiny{\include{lay}}
  \caption{Antenna layouts, REF2 plotted as a reference (red crosses)}\label{fig:lay}
 \end{figure}
 % baseline distribution histograms
 
 \begin{figure}[!htb]
-\vspace{-.5cm}
  \tiny{\include{hist}}
  \caption{Baseline distribution with the uv-distance in $log_{10}$ km . Yellow and green dashed lines mark 10 and 120
 kilometres respectively, and the pink strip represents baselines from 30-80km.}\label{fig:hist}
@@ -94,10 +94,9 @@ kilometres respectively, and the pink strip represents baselines from 30-80km.}\
  \tiny{\include{uvcov-ursi}}
  \caption{UV-Coverage for 8-hr tracks at 1.1 GHz (50MHz bandwidth) at declinations -50,-30,-10 for the different layouts. Blue
 indicates uv-points, red indicates conjugate uv-points.}\label{fig:uvcov}
-\end{figure}
-\vspace{-.5cm}     
+\end{figure}    
 \section{The Experiment}\label{sec:exp}
-\vspace{-.1cm}
+\vspace{-.2cm}
 Our aim is to investigate the scale-dependent sensitivity of the layouts described in the previous section. We use the
 \texttt{makems} tool to make simulated measurement sets of 8hr tracks with a 60s integration time at declination -30 degrees
 at frequencies of \{650, 800, 1100\}MHz with a single channel. The expected rms noise per real and imaginary part for each
@@ -131,7 +130,7 @@ with a spectral index of -0.7 (Table \ref{tab:snravg}). {$\overline{SNR10}=\sqrt
 SNR10_{1100}^2}$}.
  \item Hours required to reach a mean SNR of 10 (Table \ref{tab:hours}).
 \end{itemize}
-
+\vspace{-.5cm}
 \section{Conclusions}\label{sec:conclusion}
 \vspace{-.1cm}
 The metrics we have used suggest that the science goals (at least those listed in the SKA1 Level-zero requirements) can be met by
@@ -141,16 +140,23 @@ larger scales. This obviously presents an opportunity to reduce trenching and da
 dishes further out translates to a greater sensitivity on the relevant (to the science goals of SKA1-Mid) smaller scales, as can
 be seen in Tables \ref{tab:noise166}-\ref{tab:hours}. Even more encouraging is the fact that this doesn't compromise the size or
 the symmetry of the PSF as seen in Tables \ref{tab:psf_mean} and \ref{tab:psf_sym}.
+\vspace{-.5cm}
 \begin{thebibliography}{99}
  \bibitem{bd} \url{http://www.skatelescope.org/wp-content/uploads/2013/05/SKA-TEL-SKO-DD-001-1_BaselineDesign1.pdf}
  \bibitem{srd} \url{https://www.skatelescope.org/wp-content/uploads/2014/03/SKA-TEL_SCI-SKO-SRQ-001-1_Level_0_Requirements-1.pdf}
 %  \bibitem{meqtrees} {Noordam, J. E., \& Smirnov, O. M. 2010, A\&A, 524, A61}
 \end{thebibliography}
+\vspace{-.2cm}
 \input{psf_mean-ursi}
+\vspace{-.3cm}
 \input{psf_sym-ursi}
+\vspace{-.3cm}
 \input{noise166-ursi}
+\vspace{-.3cm}
 \input{snr10-ursi}
+\vspace{-.3cm}
 \input{snravg-ursi}
+\vspace{-.3cm}
 \input{hours-ursi}
 \end{document}
 

@@ -1,12 +1,11 @@
-\documentclass[sfheadings,a4paper,10pt,floats,floatfix]{article}
-\usepackage[margin=0.7in]{geometry}
+\documentclass[sfheadings,a4paper,times,9pt,floats,floatfix]{article}
+\usepackage[margin=0.6in]{geometry}
 \usepackage{graphicx}
 \usepackage{verbatim}
 \usepackage{bookmark}
-\usepackage{float,url}% to fix the figure at the exact position
+\usepackage{url}% to fix the figure at the exact position
 % \restylefloat{figure}
 %\usepackage{hyperref}
-% \usepackage{latin1}%{inputenc}
 \usepackage{mathrsfs}
 \usepackage{amssymb}
 \usepackage{amsmath}
@@ -14,27 +13,11 @@
 \usepackage{color}
 \usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
 \usepackage{multirow}
-% \usepackage{caption}
-\usepackage{subfig}%
-% \usepackage{subcaption}
-\newcommand{\bra}[1]{\left(#1\right)}
-\newcommand{\loge}[1]{\text{#1}}
-\newcommand{\bras}[1]{\left[#1\right]}
-\newcommand{\brac}[1]{\left\{#1\right\}}
-\newcommand{\bral}[1]{\left|#1\right|}
-\newcommand{\ber}{\begin{eqnarray}}
-\newcommand{\eer}{\end{eqnarray}}
-\newcommand{\ETAL}{{\it et al.}}  
-\newcommand{\be}{\begin{equation}}
-\newcommand{\ee}{\end{equation}}
-\newcommand{\ba}{\begin{eqnarray}}
-\newcommand{\ea}{\end{eqnarray}}
-\newcommand{\hld}{\hspace{0.25cm}\cdots}
-\newcommand{\fns}{\footnotesize}
-\newcommand{\fnsc}{\scriptsize}
-\newcommand{\mbs}[1]{\mbox{\small #1}}
-\newcommand{\la}{\langle}
-\newcommand{\ra}{\rangle}
+\usepackage{caption}
+\usepackage{subfig}
+\usepackage{afterpage}
+\usepackage{floatrow}
+\floatsetup[table]{capposition=top}
 
  
 
@@ -187,8 +170,7 @@ layout in section \ref{sec:exp}.
 
 \subsection{Background on Layouts}\label{sec:layouts}
 The following SKA1-Mid layouts are under consideration here:
-\begin{itemize}
-% \item[{\bf REF1}] Original baseline design layout (254 dishes) released by the SPO (April 2013).
+\begin{description}
 \item[{\bf REF2A100B173}] The ”Second-generation” layout (254 dishes) produced by Robert Braun (September 2013)\footnote{We assume
 this to be the baseline layout.}. This layout has a maximum baseline of 173km. In this report, we also refer to this layout as
 REF2.
@@ -196,7 +178,7 @@ REF2.
 outer core to the spiral arms and $j$ extra dishes added to the spiral arms. The spacing in the arms is then optimised  to get
 more sensitivity on the longer ($>50$km) baselines (See baseline distribution histograms in Figure \ref{fig:hist} ). Each spiral
 arm stretches out to ~$k$ kilometres and the maximum baseline length is about $l$ kilometres.
-\end{itemize}
+\end{description}
 The details of the layouts are tabulated in Table \ref{fig:lay}, and Figure \ref{fig:lay} shows the layouts and Figure
 \ref{fig:hist} shows the baseline distribution histogram for the different layouts. Figure \ref{fig:uvcov} shows the uv-coverage
 for the different layouts at 1.1GHz at declinations -50,-30,-10 degrees for 8hr tracks. At this point no optimisation has been

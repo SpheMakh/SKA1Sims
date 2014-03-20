@@ -1,0 +1,340 @@
+\documentclass[sfheadings,a4paper,10pt,floats,floatfix]{article}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{bookmark}
+\usepackage{float,url}% to fix the figure at the exact position
+% \restylefloat{figure}
+%\usepackage{hyperref}
+% \usepackage{latin1}%{inputenc}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{color}
+\usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage{multirow}
+% \usepackage{caption}
+\usepackage{subfig}%
+% \usepackage{subcaption}
+\newcommand{\bra}[1]{\left(#1\right)}
+\newcommand{\loge}[1]{\text{#1}}
+\newcommand{\bras}[1]{\left[#1\right]}
+\newcommand{\brac}[1]{\left\{#1\right\}}
+\newcommand{\bral}[1]{\left|#1\right|}
+\newcommand{\ber}{\begin{eqnarray}}
+\newcommand{\eer}{\end{eqnarray}}
+\newcommand{\ETAL}{{\it et al.}}  
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\ba}{\begin{eqnarray}}
+\newcommand{\ea}{\end{eqnarray}}
+\newcommand{\hld}{\hspace{0.25cm}\cdots}
+\newcommand{\fns}{\footnotesize}
+\newcommand{\fnsc}{\scriptsize}
+\newcommand{\mbs}[1]{\mbox{\small #1}}
+\newcommand{\la}{\langle}
+\newcommand{\ra}{\rangle}
+
+ 
+
+\voffset .5in
+\title{SKA1-Mid Scale-Dependent Sensitivity}
+\author{O. M. Smirnov$^{1,2}$, S. Makhathini$^{1,2}$, M. Jarvis$^{3,4}$ and F. B. Abdalla$^5$ \\{\footnotesize \it $^1$Rhodes
+University, Artillery Road P O Box 94, Grahamstown 6140, South Africa} \\{ \footnotesize \it $^2$SKA South Africa, 3rd Floor,
+Park Road, Pinelands, 7405, South Africa} \\{\footnotesize \it $^3$ University of the Western Cape, ZA-7535 Cape Town, South
+Africa}\\ {\footnotesize \it $^4$University of Oxford, Oxford OX1 3RH, England} \\ {\footnotesize \it $^5$Department of Physics
+and Astronomy, University College London,Gower Place, London WC1E 6BT, United Kingdom}}
+% \date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+In this report we study the scale dependent sensitivity of the SKA1-Mid baseline design. We also propose changes to the baseline
+design that enhance the sensitivity at smaller angular scales (say 0.4-1 arcsec at 650MHz) without compromising the performance at
+larger scales. The changes we propose are guided by the SKA1-Mid level-zero science requirements \cite{srd}, which suggest that
+baselines larger than 100km are not necessary to achieve the SKA1-Mid science objectives. The layouts we propose could be
+transformational for other potential science cases which are possible with such an instrument, such as cosmology with weak
+lensing, at no significant cost to any of the key science cases. In particular, a layout which has a maximum baseline of 120km
+(SKA1W9-12A72B120) has more than twice the survey speed of the so-called ``second generation'' baseline layout at angular
+resolutions of around 0.4-1 arcsec (over 650-1100MHz). Furthermore, some of these layouts span significantly less space which
+could potentially reduce trenching and data transport costs.
+\end{abstract}
+\section{Introduction}
+The SKA at mid frequencies (SKA-Mid) will be built in two distinct phases, SKA-Mid phase one (SKA1-Mid) and phase two (SKA2-Mid)
+in South Africa, and SKA-SUR in phase 1 in Australia. The key science goals for SKA1-Mid include the study of the history and role
+of neutral hydrogen in the Universe from the dark ages to the present-day, the use of pulsars as probes of fundamental physics
+\cite{bd} and continuum and H{\sc i} surveys to pin down the cosmological model. Although there is a large emphasis on key science
+projects outlined in several SKA memos, as the baseline design has emerged. It should however be noted that changes which do not
+compromise the key science cases are possible and such changes could be transformational for other sciences which are possible
+with such an instrument. \\ In this document, we attempt to gauge the scale-dependent sensitivity of the mid-frequency array
+described in the {\it SKA1 System Baseline Design} (BD) document \cite{bd}. The performance of this configuration is then compared
+to four alternative configurations. We also explore different weighting and tapering schemes as a way of increasing performance.\\
+The rest of this document is laid out as follows: in \autoref{sec:sci-req} we discuss the science requirements for SKA1-Mid, then
+in \autoref{sec:layouts} we describe layouts that we will be considering. In \autoref{sec:exp} we describe our simulation
+techniques and the metrics we generated from the experiment. Finally, the results and concluding remarks are in
+\autoref{sec:conclusion}.
+
+\subsection{SKA1-Mid Baseline Design}\label{sec:BL}
+The mid-frequency array described in the BD is a 254 dish array with about $36\%$ of the dishes within a radius of 400m (core),
+40\% of the dishes are between 400m and 4km (outer-core) with the remaining 24\% in 3 three spiral arm-like structures starting
+from about 2km and stretching out to a radius around 100km. Figures \ref{fig:lay} and \ref{fig:hist} show the BD layout and
+baseline distribution histogram ($log_{10}$ space). With about 200 fifteen metre dishes (bar the 64 13.5~metre MeerKAT dishes)
+within a radius of 4km, this array promises high sensitivity, with noise values around 63$\mu$Jy beam$^{-1}$ hr$^{1/2}$ \cite{bd}.
+However, with three distinct dish-density regions, the resulting full sensitivity (natural weighting) point spread function (PSF)
+has two pedestals
+corresponding to the abrupt changes in dish densities from the core to the outer-core and from the outer-core to the spiral arms
+(see Appendix \ref{app:psf}). With such a configuration, a uv-weighting that tends towards uniform is required to obtain high
+resolution and uv-tapering might be also be required to get a well behaved PSF. Leading to lower sensitivity due to the
+down-weighting of baselines\footnote{uniform uv-weighting down-weights the uv-points corresponding to shorter baselines, and hence
+gives better resolution, while a uv-taper down-weights the edges of the uv-coverage (longer baselines) to decrease sidelobe
+levels}. It is therefore important to quantify the scale-dependent sensitivity of this configuration, i.e., what is the
+sensitivity at different angular scales and how this sensitivity is affected by different uv-weighting and tapering schemes. 
+
+\subsection{SKA1-Mid science requirements}\label{sec:sci-req}
+
+In this subsection we outline the scientific rationale for a proposal for baseline change
+which we believe is as cost neutral as possible given the information we received from the
+SKA office and which gives a direction which is different for the configuration of SKA-MID.
+We have based the propositions in this document upon the assessment workshop for the
+Cosmology working group where extensive discussion have taken place with the pulsar and
+transient senior scientists plus several informal discussions between the Cosmology
+members and the HI/continuum members.
+
+\subsubsection{Highlights of requirements of each science area}
+
+{\bf Pulsar science}: the pulsar search science is mainly dependent on the core of SKA-MID. The
+instantaneous sensitivity which depends on the number of antennas in the core.
+Furthermore if the antennas are moved out of the core, the synthesised beam would be
+reduced which increases the pulsar search time. During the discussions in the SWG, it was
+our understanding that an increase of the core area of around 10\% would be a minor
+perturbation in the overall pulsar search.
+Cosmology: in what concerns the baseline distribution in this document we have three
+aspects which we would like to highlight: Cosmology with galaxy surveys, with weak
+gravitational lensing and with intensity mapping.
+
+{\bf Cosmology with HI surveys}: Here the main aspect of the instrument is to have a large
+survey speed coupled with baselines which do not resolve out the flux of the galaxies being
+observed. Given the sizes of galaxies and the fact that we would like a significant amount of
+the flux not to be resolved out, the baselines of most interest are baselines below around
+5km. Hence an outer core is the most important aspect of a telescope for such science.
+However losing a small amount of sensitivity compared to the baseline design in this region
+of uv space is not critical and was discussed at the Cosmology science assessment workshop.
+
+{\bf Cosmology with weak lensing}: Here the main aspect is a high sensitivity at scales which can
+measure the structure and shape of the galaxies in continuum. Given the size of galaxies,
+this requires significant sensitivity at scales which correspond to 0.5 to 1 arcsec in the sky.
+For these reasons having a larger number of antennas in the spiral arms out to around 70-80
+km is beneficial for this science and the lack of those baselines would simply make such a
+survey unfeasible. Such studies have to be done with SKA-MID as SKA-SUR does not have
+enough antennas to produce reliable maps as the number of UV tracks is much lower than
+SKA-MID. This is intrinsically due to the fact that the sensitivity of SKA-SUR is coming from
+paths and not from extra collecting area.
+
+{\bf HI and continuum morphologies}: In the current baseline design there is a lack of sensitivity
+in the baselines which one would need to study morphologies of the detected continuum
+and HI galaxies. The current baseline design is not even an order of magnitude better than
+the VLA in terms of sensitivity. The baselines needed for morphological studies of galaxies
+are similar to the baselines needed for the weak lensing experiment with weak lensing.
+
+{\bf Cosmology with intensity mapping surveys}: Intensity mapping requires very short baselines
+and would benefit from having several clusters of antennas placed either in the core or in
+the outer core. This arrangement is not incompatible with the broad long baseline
+proposition presented here and is briefly discussed below.
+
+\subsubsection{General rationale}
+
+{\bf Cost Neutral proposal}: We propose here a baseline change which is outlined in this document below. The scientific rationale is that
+baselines larger than $\sim 80-90$km are expensive given that the signal needs significant boosting to
+reach the main correlator, and the extra trenching and no main science goals are directly
+affected by a modest reduction of the maximum baseline. This cost saving should allow for
+extra antennas to be placed in the spiral arms. We have estimated (after informally enquiring
+with individuals at the SKA office) this cost saving to allow for an extra 12 antennas.
+
+{\bf A proposal that should be encompassing of all science cases}: The rational that the array
+has significant UV coverage all the way up to ~70-80 km baselines to cover the above
+science cases would suggest a smooth transition form the core to the outer core to the
+spiral arms. This is obtained by a slight puffing up of the core as suggested it be possible by
+the pulsar/transient team. The number of antennas in the core is preserved in our
+proposal. This transitions to the outer core which is slightly reduced as the main science for
+the outer core is the HI detection for cosmological purposes. We propose this sacrifice as
+the science loss here is minimal for a loss of around 9 antennas. We further propose to
+reduce the spiral arms as no science directly needs those large baselines and instead voce
+the spiral arms with the extra 21 antennas which were sacrificed from the outer core (9)
+plus the antennas which could be purchased from a cost effective reduction of the
+maximum baseline.
+
+This arrangement is very beneficial for HI and continuum morphological studies,
+furthermore it produced a survey speed which allows weak lensing experiments to be
+possible with SKA-1. It does not sacrifice HI and pulsar science as a whole and allows for
+better imaging capabilities with SKA-MID. We believe that this is beneficial for the project
+compared to the baseline design. Furthermore we suggest that several clusters of around 6
+antennas, depending on the exact mask of roads, be placed in the core/outer
+core as to increase the sensitivity for intensity mapping. This was not proposed as masking is
+likely to change the position of the antennas.
+
+\subsubsection{Specific layout implementation:}
+The general scientific requirements for SKA1\cite{srd} (SRD) published by the SPO in March 2014 suggest that (at least for
+SKA1-Mid), an array with a maximum baseline of around ~100km is required. Therefore, we seek a layout with the shortest possible
+maximum baseline that does at least as well as the ``second generation'' baseline design in the resolution range 0.4-1 arcsec over
+650, 800 and 1100MHz while not significantly compromising the performance at the larger angular scales. Moreover, as stated
+previously, having a layout which performs just as well as (or better) than the baseline layout but which covers significantly
+less space translates to a reduction in trenching and data transport costs, which presents an opportunity to re-invest the funds
+somewhere else, therefore we consider the conservative addition of 12 dishes. However, we note that improvements on the scales of
+interest are still possible without these 12 additional dishes. In the next section we present 4 alternative layouts, these
+layouts
+have maximum baselines of 90,100,120 and 133 km. The scale dependent sensitivity of these layouts is compared to the baseline
+layout in section \ref{sec:exp}.
+
+\subsection{Background on Layouts}\label{sec:layouts}
+The following SKA1-Mid layouts are under consideration here:
+\begin{itemize}
+% \item[{\bf REF1}] Original baseline design layout (254 dishes) released by the SPO (April 2013).
+\item[{\bf REF2A100B173}] The ”Second-generation” layout (254 dishes) produced by Robert Braun (September 2013)\footnote{We assume
+this to be the baseline layout.}. This layout has a maximum baseline of 173km. In this report, we also refer to this layout as
+REF2.
+\item[{\bf W$i$-$j$A$k$B$l$}] This is the REF2 layout with the core ``puffed up'' by 10\%,  with $ i$ dis hes moved  from the
+outer core to the spiral arms and $j$ extra dishes added to the spiral arms. The spacing in the arms is then optimised  to get
+more sensitivity on the longer ($>50$km) baselines (See baseline distribution histograms in Figure \ref{fig:hist} ). Each spiral
+arm stretches out to ~$k$ kilometres and the maximum baseline length is about $l$ kilometres.
+\end{itemize}
+The details of the layouts are tabulated in Table \ref{fig:lay}, and Figure \ref{fig:lay} shows the layouts and Figure
+\ref{fig:hist} shows the baseline distribution histogram for the different layouts. Figure \ref{fig:uvcov} shows the uv-coverage
+for the different layouts at 1.1GHz at declinations -50,-30,-10 degrees for 8hr tracks. At this point no optimisation has been
+done on the antenna distributions and we emphasise that further improvements can be and should be made.
+\begin{table}[H]
+\centering
+ \tiny{
+ \begin{tabular}{l|cccc}\hline
+ {\bf REF2A100B173} [254 dishes] & SKA dishes&  MeerKAT dishes & Both & \% \\\hline\hline
+  Core & 63 & 30 & 93 & 36 \\
+ Outer-core & 67 & 34 & 101 & 40 \\
+ Spiral-arms & 60 & 0 & 60 & 24 \\\hline\hline
+  {\bf W9-12A54B90} [266 dishes] &  & &  & \\\hline\hline
+  Core & 70 & 30 & 93 & 36 \\
+ Outer-core & 58 & 34 & 92 & 34 \\
+ Spiral-arms & 81 & 0 & 81 & 30 \\\hline\hline
+  {\bf W9-12A60B100} [266 dishes] &  & &  & \\\hline\hline
+  Core & 70 & 30 & 93 & 36 \\
+ Outer-core & 58 & 34 & 92 & 34 \\
+ Spiral-arms & 81 & 0 & 81 & 30 \\\hline\hline
+%  {\bf W9-0A60B100} [254 dishes] &  & &  & \\\hline\hline
+%   Core & 70 & 30 & 93 & 37 \\
+%  Outer-core & 58 & 34 & 92 & 36 \\
+%  Spiral-arms & 69 & 0 & 69 & 27 \\\hline\hline
+  {\bf W9-12A72B120} [266 dishes] &  & &  & \\\hline\hline
+  Core & 70 & 30 & 93 & 36 \\
+ Outer-core & 58 & 34 & 92 & 34 \\
+ Spiral-arms & 81 & 0 & 81 & 30 \\\hline\hline
+   {\bf W9-12A80B133} [266 dishes] &  & &  & \\\hline\hline
+  Core & 70 & 30 & 93 & 36 \\
+ Outer-core & 58 & 34 & 92 & 34 \\
+ Spiral-arms & 81 & 0 & 81 & 30 \\\hline
+ \end{tabular}}
+ \caption{Breakdown of the layouts under consideration.}\label{tab:lay}
+\end{table}
+
+% layouts
+\begin{figure}[H]
+ \tiny{\input{lay}}
+ \caption{Antenna layouts, REF2 plotted as a reference (red crosses)}\label{fig:lay}
+\end{figure}
+% baseline distribution histograms
+\begin{figure}[H]
+ \tiny{\input{hist}}
+ \caption{Baseline distribution with the uv-distance in $log_{10}$ km . Yellow and green dashed lines mark 10 and 120
+kilometres respectively, and the pink strip represents baselines from 30-80km.}\label{fig:hist}
+\end{figure}
+
+% uv-coverage plots 
+\begin{figure}[H]
+ \tiny{\input{uvcov}}
+ \caption{UV-Coverage for 8-hr tracks at 1.1 GHz (50MHz bandwidth) at declinations -50,-30,-10 for the different layouts. Blue
+indicates uv-points, red indicates conjugate uv-points.}\label{fig:uvcov}
+\end{figure}
+
+\section{The Experiment}\label{sec:exp}
+Our aim is to investigate the scale-dependent sensitivity of the layouts described in the previous section.
+We use the \texttt{makems} tool to make simulated measurement sets of 8hr tracks with a 60s integration time on declinations
+\{-50, -30, -10\} degrees at frequencies of \{650, 800, 1100\}MHz with a single 50MHz channel. The expected rms noise per real
+and imaginary part for each visibility is calculated as 
+\begin{equation}
+\sigma_{\text{vis}} = \frac{\text{SEFD}}{\sqrt{2\Delta t\Delta \nu}}.
+\end{equation}
+We use the baseline designs SEFD value of 400 corresponding to the 15 m dishes. We then fill the MS with random Gaussian noise
+using the computed value of the noise for a given integration and bandwidth. We then use the (CASA-derived) \texttt{lwimager} tool
+to make maps of the PSF as well as dirty maps of the noise using various weighting schemes. Note that for uniform and robust
+weighting, a crucial parameter is the size of the uv-bin over which weights are “uniformized”. By default this is determined from
+the full image size, but \texttt{lwimager} allows one to uniformize the weights over bins corresponding to a user-defined FoV
+instead. For these simulations uv-bins corresponding to a FoV of 10 arcmin were used. The following metrics were generated:\\ {\bf
+Note:} These metrics are generated at different angular scales, this is done by applying an inner-taper\footnote{The weights for
+the taper are generated using a Butterworth function.} to taper out baselines that do not fall within a given resolution range,
+i.e., we only consider uv-points that correspond to a given resolution.
+\begin{itemize}
+ \item PSF full width at hafl maximum (FWHM) size (mean of the FWHM dimensions). This was measured by making high-resolution
+images of the PSF (0.05 arcsec
+resolution), and fitting a Gaussian to the PSF. Note that for the highly non-Gaussian PSFs corresponding to natural and (some)
+robust weighting schemes, the fit is very poor, so the size parameter becomes somewhat ill-defined (Table \ref{tab:psf_mean}).
+A catalog of PSF cross-sections is provided in Appendix \ref{app:psf}
+
+ \item PSF symmetry (PSF size parameters are obtained as explained above). As a measure of PSF symmetry, we define 
+$\text{PSF}_{sym}=1-\text{FWHM}_{min}/\text{FWHM}_{maj}$, then $\text{PSF}_{sym} = 0$ is perfect symmetry, and the symmetry
+degenerates as $\text{PSF}_{sym}\,\,\, \rightarrow\,\,1$ (Table \ref{tab:psf_sym}).
+
+ \item Rms pixel noise at different angular scales for 50 and 166MHz wide bands (Tables \ref{tab:noise50} and \ref{tab:noise166}).
+ 
+ \item SNR for a 10$\mu$Jy source at 1100MHz with a spectral index of -0.7 after 8hrs for a 166MHz band (Table \ref{tab:snr10}).
+ \item Average SNR over frequencies 650, 800 and 1100MHz (166MHz band)
+   after 8 hours, for a 10$\mu$Jy source at 1100MHz
+with a spectral index of -0.7 (Table \ref{tab:snravg}). {$\overline{SNR10}=\sqrt{SNR10_{650}^2 + SNR10_{800}^2 +
+SNR10_{1100}^2}$}.
+ \item Hours required to reach a mean SNR of 10 (Table \ref{tab:hours}).
+\end{itemize}
+% \section{Results}\label{sec:results}
+%===========================================================Performance Stats===============================================
+\input{psf_mean}
+\input{psf_sym}
+\input{noise50}
+\input{noise166}
+\input{snr10}
+\input{snravg}
+\input{hours}
+
+
+%===============================================================================================================
+\section{Conclusions}\label{sec:conclusion}
+The metrics we have used suggest that the science goals (at least those listed in the SRD) can be met by a layout which
+covers significantly less space compared to the baseline layout. Some of these ``smaller'' layouts perform better than the
+baseline layout at smaller scales, up to a 50\% improvement in terms of the noise properties, without compromising the larger
+scales. This obviously presents an opportunity to reduce trenching and data transport costs. Moreover, bringing in the dishes
+further out translates to a greater sensitivity on the relevant (to the science goals of SKA1-Mid) smaller scales, as can be seen
+in Tables \ref{tab:noise50}-\ref{tab:hours}. Even more encouraging is the fact that this doesn't compromise the size or the
+symmetry of the PSF as seen in Tables \ref{tab:psf_mean} and \ref{tab:psf_sym}.
+\begin{thebibliography}{99}
+ \bibitem{bd} \url{http://www.skatelescope.org/wp-content/uploads/2013/05/SKA-TEL-SKO-DD-001-1_BaselineDesign1.pdf}
+ \bibitem{srd} \url{https://www.skatelescope.org/wp-content/uploads/2014/03/SKA-TEL_SCI-SKO-SRQ-001-1_Level_0_Requirements-1.pdf}
+%  \bibitem{meqtrees} {Noordam, J. E., \& Smirnov, O. M. 2010, A\&A, 524, A61}
+\end{thebibliography}
+\pagebreak
+\appendix
+\section{PSF cross-sections}\label{app:psf}
+\begin{figure}[H]
+ \tiny{\input{dec-30_650}}
+ \caption{PSF cross-sections at Dec=-30 deg, Freq=650MHz. Row 1 and 2 are for natural and uniform weighting respectively, and row
+3 is for uniform weighting with a 1 arcsec Gaussian taper. The blue and green curves are cross-sections along $l$ and $m$
+respectively, and the horizontal line marks the FWHM. FWHM parameters are included in the plot.}
+\end{figure}
+\begin{figure}[H]
+ \tiny{\input{dec-30_800}}
+ \caption{PSF cross-sections at Dec=-30 deg, Freq=800MHz. Row 1 and 2 are for natural and uniform weighting respectively, and  row
+3 is for uniform weighting with a 1 arcsec Gaussian taper. The blue and green curves are cross-sections along $l$ and $m$
+respectively, and the horizontal line marks the FWHM. FWHM parameters are included in the plot.}
+\end{figure}
+\begin{figure}[H]
+ \tiny{\input{dec-30_1100}}
+ \caption{PSF cross-sections at Dec=-30 deg, Freq=1100MHz. Row 1 and 2 are for natural and uniform weighting respectively, and row
+3 is for uniform weighting with a 1 arcsec Gaussian taper. The blue and green curves are cross-sections along $l$ and $m$
+respectively, and the horizontal line marks the FWHM. FWHM parameters are included in the plot.}
+\end{figure}
+
+\end{document}
+

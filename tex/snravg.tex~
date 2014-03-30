@@ -1,0 +1,38 @@
+% Auto generated table
+ \nopagebreak 
+ \begin{table}[htp]
+ \tiny{\subfloat[DEC=-10, natural weighting]{\begin{tabular}{|lccccc|} \hline resbin  &1 & 2 & 3 & 4 & 5  \\ \hline 
+SKA1REF2 & 14.68 \cellcolor{blue!18.00} & 13.21 \cellcolor{red!18.00} & 9.97 \cellcolor{green!18.00} & 8.34 \cellcolor{orange!31.26} & 3.49 \cellcolor{purple!60.00}\\ \hline 
+SKA1W9-12A54B90 & 15.97 \cellcolor{blue!25.70} & 20.07 \cellcolor{red!60.00} & 10.99 \cellcolor{green!60.00} & 8.99 \cellcolor{orange!60.00} & 3.30 \cellcolor{purple!18.00}\\ \hline 
+SKA1W9-12A60B100 & 18.21 \cellcolor{blue!39.06} & 18.90 \cellcolor{red!52.84} & 10.68 \cellcolor{green!47.24} & 8.75 \cellcolor{orange!49.39} & 3.31 \cellcolor{purple!20.21}\\ \hline 
+SKA1W9-12A72B120 & 20.84 \cellcolor{blue!54.75} & 16.77 \cellcolor{red!39.80} & 10.38 \cellcolor{green!34.88} & 8.35 \cellcolor{orange!31.71} & 3.34 \cellcolor{purple!26.84}\\ \hline 
+SKA1W9-12A80B133 & 21.72 \cellcolor{blue!60.00} & 15.60 \cellcolor{red!32.63} & 10.16 \cellcolor{green!25.82} & 8.04 \cellcolor{orange!18.00} & 3.33 \cellcolor{purple!24.63}\\ \hline 
+\end{tabular}}
+\vspace{0.000000cm}
+\hfill
+\subfloat[DEC=-30, natural weighting]{\begin{tabular}{|lccccc|} \hline resbin  &1 & 2 & 3 & 4 & 5  \\ \hline 
+SKA1REF2 & 14.82 \cellcolor{blue!18.00} & 13.29 \cellcolor{red!18.00} & 9.82 \cellcolor{green!18.00} & 8.26 \cellcolor{orange!31.24} & 3.32 \cellcolor{purple!60.00}\\ \hline 
+SKA1W9-12A54B90 & 16.55 \cellcolor{blue!27.82} & 19.82 \cellcolor{red!60.00} & 10.81 \cellcolor{green!60.00} & 8.89 \cellcolor{orange!60.00} & 3.10 \cellcolor{purple!19.83}\\ \hline 
+SKA1W9-12A60B100 & 18.94 \cellcolor{blue!41.38} & 18.57 \cellcolor{red!51.96} & 10.60 \cellcolor{green!51.09} & 8.70 \cellcolor{orange!51.33} & 3.09 \cellcolor{purple!18.00}\\ \hline 
+SKA1W9-12A72B120 & 21.61 \cellcolor{blue!56.54} & 16.18 \cellcolor{red!36.59} & 10.35 \cellcolor{green!40.48} & 8.27 \cellcolor{orange!31.70} & 3.14 \cellcolor{purple!27.13}\\ \hline 
+SKA1W9-12A80B133 & 22.22 \cellcolor{blue!60.00} & 15.00 \cellcolor{red!29.00} & 10.23 \cellcolor{green!35.39} & 7.97 \cellcolor{orange!18.00} & 3.11 \cellcolor{purple!21.65}\\ \hline 
+\end{tabular}}
+\vspace{0.000000cm}
+\hfill
+\subfloat[DEC=-50, natural weighting]{\begin{tabular}{|lccccc|} \hline resbin  &1 & 2 & 3 & 4 & 5  \\ \hline 
+SKA1REF2 & 14.68 \cellcolor{blue!18.00} & 13.22 \cellcolor{red!18.00} & 9.92 \cellcolor{green!18.00} & 8.25 \cellcolor{orange!30.41} & 3.32 \cellcolor{purple!60.00}\\ \hline 
+SKA1W9-12A54B90 & 16.36 \cellcolor{blue!27.31} & 19.74 \cellcolor{red!60.00} & 10.83 \cellcolor{green!60.00} & 8.87 \cellcolor{orange!60.00} & 3.14 \cellcolor{purple!18.00}\\ \hline 
+SKA1W9-12A60B100 & 18.52 \cellcolor{blue!39.28} & 18.54 \cellcolor{red!52.27} & 10.67 \cellcolor{green!52.62} & 8.70 \cellcolor{orange!51.89} & 3.14 \cellcolor{purple!18.00}\\ \hline 
+SKA1W9-12A72B120 & 21.52 \cellcolor{blue!55.90} & 16.35 \cellcolor{red!38.16} & 10.44 \cellcolor{green!42.00} & 8.25 \cellcolor{orange!30.41} & 3.17 \cellcolor{purple!25.00}\\ \hline 
+SKA1W9-12A80B133 & 22.26 \cellcolor{blue!60.00} & 15.00 \cellcolor{red!29.47} & 10.21 \cellcolor{green!31.38} & 7.99 \cellcolor{orange!18.00} & 3.15 \cellcolor{purple!20.33}\\ \hline 
+\end{tabular}}
+\vspace{0.000000cm}
+\hfill 
+
+\vspace{0cm}
+\caption{SNR after 8 hours relative to a 10$\mu$Jy source at 1100Hz (166 MHz band) with a spectral index of -0.7 averaged over
+650,800 and 1100MHz, for the different layouts at different angular scales. These values are generated for angular scales \{0.4-1,
+1-2, 2-3, 3-4, 600-3600\} arcsec and are labeled {\it resbin} \{1, 2, 3, 4, 5\} respectively. This is done for natural weighting
+at declinations -10, -30 and -50 degrees. For each column, the intensity of the color increases with the
+value.}\label{tab:snravg}}
+ \end{table}

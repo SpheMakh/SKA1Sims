@@ -3,22 +3,23 @@
 import numpy
 import math
 import re
+import sys
 
+stats_file = sys.argv[1]
 format = "%(lo0)s %(lores)s %(lofreq)d %(freq)d %(dec)d %(resbin)s %(ridx)d %(weight)s %(widx)d " + \
-  "%(noise166).2g %(flux10).2f %(snr10).2f %(hours).2f %(snravg).2f %(relnoise).2f %(noise50).2g %(noise50_ref2).2g  %(psf_area).2g %(psf_sym).2f %(psf_mean).4f\n";
+  "%(noise166).2g %(flux10).2f %(snr10).2f %(hours).2f %(snravg).2f %(relnoise).2f %(noise50).2g %(noise50_ref2).2g  %(psf_area).2g %(psf_sym).2f %(psf_mean).4f %(noise50k).2g\n";
 
 # determine field names from format string
 fields = [ x.split(")")[0] for x in format.split("(")[1:] ];
 
-ff = file("genstats.txt","w");
+ff = file("%s.txt"%(stats_file[:-3]),"w");
 ff.write("# "+" ".join(fields)+"\n");
-ff1 = file("genstats.csv","w");
+ff1 = file("%s.csv"%(stats_file[:-3]),"w");
 ff1.write(",".join(fields)+"\n");
 
-
-execfile('genstats.py')
-import genstats
-genstats = genstats.noisestats
+execfile(stats_file)
+#import genstats
+genstats = noisestats
 mss = mss = genstats['pixnoise0'].keys()
 
 resbins = set()
@@ -80,6 +81,7 @@ for kk,(noise50,origkey) in PIXNOISE.items():
   noise50 *= 1e+6;
   noise50_ref2 = PIXNOISE[tuple(["SKA1REF2",0,0]+list(kk)[3:])][0]*1e+6;
   noise166 = noise = noise50/math.sqrt(166./50.);
+  noise50k = noise50/math.sqrt(50e-3/50.)
   relnoise = noise50/noise50_ref2;
   # look up resolution and weight bin
   ridx = resbins.index((r0,r1))

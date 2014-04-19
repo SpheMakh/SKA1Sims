@@ -34,14 +34,13 @@ and Astronomy, University College London,Gower Place, London WC1E 6BT, UK}}
 In this report we study the scale dependent sensitivity of the SKA1-Mid baseline design. We also propose changes to the baseline
 design that enhance the sensitivity at smaller angular scales (e.g. 0.4-1 arcsec at 650MHz) without compromising the performance
 at larger scales. The changes we propose are guided by the SKA1-Mid level-zero science requirements \cite{srd}, which suggest that
-very long baselines ($>150$km) are not necessary to achieve the SKA1-Mid science objectives. In particular, we show that a
-254 dish layout with a maximum baseline of 120km improves the SKA1-Mid survey speed by more than 60\% and is 4 times faster than
-SKA-SUR (see Table \ref{tab:speed-band1}) on angular scales 0.4-1 arcsec (over 650-1000MHz), without
-compromising the performance at larger scales. Such an improvement on these scales could be transformational for other sciences,
-such as cosmology with weak lensing. Furthermore, this layout spans significantly less space which could potentially reduce
-trenching and data transport costs. We also show that with a conservative addition of 12 dishes the SKA1-Mid survey speed can be
-improved by up 75\% on the smaller angular scales.
-
+very long baselines ($>150$km) are not necessary to achieve the SKA1-Mid science objectives. In particular, we show that a 254
+dish layout with a maximum baseline of 120km improves the SKA1-Mid survey speed by more than 55\% and is 3.5 times faster than
+SKA-SUR (see Table \ref{tab:speed-band1}) on angular scales 0.4-1 arcsec (over 650-1000MHz), without compromising the performance
+at larger scales. Such an improvement on these scales could be transformational for other sciences, such as cosmology with weak
+lensing. Furthermore, this layout spans significantly less space which could potentially reduce trenching and data transport
+costs. We also show that with a conservative addition of 12 dishes the SKA1-Mid survey speed can be improved by up 67\% on the
+smaller angular scales.
 \end{abstract}
 \section{Introduction}
 The SKA at mid frequencies (SKA-Mid) will be built in two phases, SKA-Mid phase one (SKA1-Mid) and phase two (SKA2-Mid)
@@ -296,10 +295,15 @@ degenerates as $\text{PSF}_{sym}\,\,\, \rightarrow\,\,1$ (Table \ref{tab:psf_sym
 \ref{tab:snr10-band1}).
  
  \item Average SNR over frequencies 650, 800 and 1000MHz (166MHz band) after 8 hours, for a 10$\mu$Jy source at 1000MHz with a
-spectral index of -0.7 (Table \ref{tab:snravg-band1}). {$\overline{SNR10}=\sqrt{SNR10_{650}^2 + SNR10_{800}^2 +
-SNR10_{1000}^2}$}.
+spectral index of -0.7. {$\overline{\text{SNR10}}=\sqrt{\text{SNR10}_{650}^2 + \text{SNR10}_{800}^2
++\text{SNR10}_{1000}^2}$} (Table \ref{tab:snravg-band1}).
 
  \item Hours required to reach a mean SNR of 10 (Table \ref{tab:hours-band1}).
+ \item Average survey speed (SS). These values are calculated using the FOV values in the SRD (PAF FOVs for SKASUR) and the values
+in Table \ref{tab:snr10-band1}. Note that unlike the SKASUR FOV, the SKA1-Mid FOV changes across the band (FOV$_{\text{Mid}}\sim
+\nu^{-2}$). {$\overline{\text{SS}} =\sqrt{\text{SS}_{650} + \text{SS}_{800} +\text{SS}_{1000}}$}, where $\text{SS}_\text{Freq} =
+\text{FOV}_\text{Freq}\times \text{SNR}^2$. We consider band 1 for SKA-Mid and band 2 for SKASUR.
+(Table \ref{tab:speed_avg-band1}).
 \end{itemize}
 In appendix \ref{sec:band5} the above mentioned metrics are presented for a 2.5GHz band at 8, 12 and 13.8GHz, at a
 declination of -30 degrees.
@@ -313,7 +317,8 @@ declination of -30 degrees.
 \input{snr10-band1}
 \input{snravg-band1}
 \input{hours-band1}
-\input{speed-band1}
+% \input{speed-band1}
+\input{speed_avg-band1}
 %===============================================================================================================
 \newpage
 \section{Conclusions}\label{sec:conclusion}

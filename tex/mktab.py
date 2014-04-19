@@ -7,7 +7,7 @@ import sys
 
 stats_file = sys.argv[1]
 format = "%(lo0)s %(lores)s %(lofreq)d %(freq)d %(dec)d %(resbin)s %(ridx)d %(weight)s %(widx)d " + \
-  "%(noise166).2g %(flux10).2f %(snr10).2f %(hours).2f %(snravg).2f %(relnoise).2f %(noise50).2g %(noise50_ref2).2g  %(psf_area).2g %(psf_sym).2f %(psf_mean).4f %(noise50k).2g %(speed).2g\n";
+  "%(noise166).2g %(flux10).2f %(snr10).2f %(hours).2f %(snravg).2f %(relnoise).2f %(noise50).2g %(noise50_ref2).2g  %(psf_area).2g %(psf_sym).2f %(psf_mean).4f %(noise50k).2g %(speed).2g %(speed_avg).2g\n";
 
 # determine field names from format string
 fields = [ x.split(")")[0] for x in format.split("(")[1:] ];
@@ -92,15 +92,20 @@ for kk,(noise50,origkey) in PIXNOISE.items():
   # compute the normalized SNR as follows:
   # assume flux=10uJy at 1000, rescale with spectral index
   snr1 = numpy.zeros(3,float)
+  speed_freq = numpy.zeros(3,float)
   for i,freq1 in enumerate((650,800,1000)):
     noise1 = PIXNOISE[lo0,lores,lofreq,freq1,r0,r1,dec,weight][0]*1e+6/math.sqrt(166./50.);
     if noise1:
       # flux of 10uJy scaled to frequency, noise scaled to 166 MHz band
-      snr1[i] = 10*(freq1/1000.)**-0.7 / noise1;  
+      snr1[i] = 10*(freq1/1000.)**-0.7 / noise1;
   # compute average SNR
-  snravg = math.sqrt((snr1**2).sum());
+      snravg = math.sqrt((snr1**2).sum());
+  # compute average survey speed
+      fov_freq = 1.4 * (700./freq1)**2 if lo0.startswith('SKA1') else 18.
+      speed_freq[i] = fov_freq  *  ( (10*(freq1/1000.)**-0.7) / noise1) **2
   # this is the SNR after 8 hours -- how many hours needed for SNR=10?
   hours = 8*(10/snravg)**2 if snravg else 1e+99;
+  speed_avg = math.sqrt((speed_freq**2).sum())
   # write result
   # ----------------------------------------
   # PSF metrics
@@ -111,11 +116,7 @@ for kk,(noise50,origkey) in PIXNOISE.items():
   # ----------------------------------------
   # Survey Speed
   fov = 1.4 if lo0.startswith('SKA1') else 18.
-  # ska-sur survey speed values. ! Hardcode
-  if dec==-10: ss = {'0':1.00e-1,'1':2.90e-1,'2':1.90e-1,'3':1.40e-1,'4':4.60e-3}
-  elif dec==-30: ss = {'0':1.00e-1,'1':3.00e-1,'2':1.80e-1,'3':1.40e-1,'4':4.40e-3}
-  elif dec==-50: ss = {'0':8.10e-2,'1':3.00e-1,'2':1.80e-1,'3':1.40e-1,'4':4.20e-3}
-  speed = fov/hours / ss[str(ridx)]
-  resbin="%.1f-%.1farcsec"%(r0,r1) if r0<60 else "%.1f-%.1farcmin"%(r0/60,r1/60);
+  speed = fov/hours
+  resbin = "%.1f-%.1farcsec"%(r0,r1) if r0<60 else "%.1f-%.1farcmin"%(r0/60,r1/60);
   ff.write(format%locals());
   ff1.write(format.replace(" ",",")%locals());

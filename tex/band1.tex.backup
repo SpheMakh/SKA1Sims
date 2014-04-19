@@ -34,14 +34,13 @@ and Astronomy, University College London,Gower Place, London WC1E 6BT, UK}}
 In this report we study the scale dependent sensitivity of the SKA1-Mid baseline design. We also propose changes to the baseline
 design that enhance the sensitivity at smaller angular scales (e.g. 0.4-1 arcsec at 650MHz) without compromising the performance
 at larger scales. The changes we propose are guided by the SKA1-Mid level-zero science requirements \cite{srd}, which suggest that
-very long baselines ($>150$km) are not necessary to achieve the SKA1-Mid science objectives. In particular, we show that a
-254 dish layout with a maximum baseline of 120km improves the SKA1-Mid survey speed by more than 60\% and is 4 times faster than
-SKA-SUR (see Table \ref{tab:speed-band1}) on angular scales 0.4-1 arcsec (over 650-1000MHz), without
-compromising the performance at larger scales. Such an improvement on these scales could be transformational for other sciences,
-such as cosmology with weak lensing. Furthermore, this layout spans significantly less space which could potentially reduce
-trenching and data transport costs. We also show that with a conservative addition of 12 dishes the SKA1-Mid survey speed can be
-improved by up 75\% on the smaller angular scales.
-
+very long baselines ($>150$km) are not necessary to achieve the SKA1-Mid science objectives. In particular, we show that a 254
+dish layout with a maximum baseline of 120km improves the SKA1-Mid survey speed by more than 55\% and is 3.5 times faster than
+SKA-SUR (see Table \ref{tab:speed-band1}) on angular scales 0.4-1 arcsec (over 650-1000MHz), without compromising the performance
+at larger scales. Such an improvement on these scales could be transformational for other sciences, such as cosmology with weak
+lensing. Furthermore, this layout spans significantly less space which could potentially reduce trenching and data transport
+costs. We also show that with a conservative addition of 12 dishes the SKA1-Mid survey speed can be improved by up 67\% on the
+smaller angular scales.
 \end{abstract}
 \section{Introduction}
 The SKA at mid frequencies (SKA-Mid) will be built in two phases, SKA-Mid phase one (SKA1-Mid) and phase two (SKA2-Mid)
@@ -273,15 +272,15 @@ and imaginary part for each visibility is calculated as
 \sigma_{\text{vis}} = \frac{\text{SEFD}}{\sqrt{2\Delta t\Delta \nu}}.
 \end{equation}
 We use the baseline design's SEFD values for the SKA and legacy dishes. The noise for visibilities corresponding to baselines
-between SKA and legacy dishes is calculated using $\text{SEFD}_{\text{MIX}}=\sqrt{\text{SEFD}_{\text{SKA}}^2 +
-\text{SEFD}_{\text{LEGACY}}^2}$. The MS is then filled with random Gaussian noise using the computed value of the noise for a
+between SKA and legacy dishes is calculated using $\text{SEFD}_{\text{MIX}}=\sqrt{\text{SEFD}_{\text{SKA}} \times
+\text{SEFD}_{\text{LEGACY}}}$. The MS is then filled with random Gaussian noise using the computed value of the noise for a
 given integration and bandwidth. We then use the (CASA-derived) \texttt{lwimager} tool to make naturally weighted maps of the PSF
 as well as dirty maps of the noise. The following metrics were generated:\\ {\bf Note:} These metrics are generated at different
 angular scales, this is done by applying an inner-taper\footnote{The weights for the taper are generated using a Butterworth
 function.} to taper out baselines that do not fall within a given resolution range, i.e., we only consider uv-points that
 correspond to a given resolution.
 \begin{itemize}
- \item PSF full width at halfW maximum (FWHM) size (mean of the FWHM dimensions). This was measured by making high-resolution
+ \item PSF full width at half maximum (FWHM) size (mean of the FWHM dimensions). This was measured by making high-resolution
 images of the PSF (0.05 arcsec resolution), and fitting a Gaussian to the PSF. (Table \ref{tab:psf_mean-band1}). A catalog of PSF
 cross-sections (full uv-coverage) is provided in Appendix \ref{app:psf}.
 
@@ -296,10 +295,13 @@ degenerates as $\text{PSF}_{sym}\,\,\, \rightarrow\,\,1$ (Table \ref{tab:psf_sym
 \ref{tab:snr10-band1}).
  
  \item Average SNR over frequencies 650, 800 and 1000MHz (166MHz band) after 8 hours, for a 10$\mu$Jy source at 1000MHz with a
-spectral index of -0.7 (Table \ref{tab:snravg-band1}). {$\overline{SNR10}=\sqrt{SNR10_{650}^2 + SNR10_{800}^2 +
-SNR10_{1000}^2}$}.
+spectral index of -0.7 (Table \ref{tab:snravg-band1}). {$\overline{\text{SNR10}}=\sqrt{\text{SNR10}_{650}^2 + \text{SNR10}_{800}^2
++\text{SNR10}_{1000}^2}$}.
 
  \item Hours required to reach a mean SNR of 10 (Table \ref{tab:hours-band1}).
+ \item Average survey speed. These values are calculated using the FOV values in the SRD (PAF FOVs for SKASUR). Note that for
+SKA1-Mid the FOV changes with frequency (FOV$_{\text{Mid}}\sim \nu^{-2}$).  (Table \ref{tab:speed_avg-band1}).
+{$\overline{\text{SS}}_\text{Mid}=\sqrt{\text{SS}_{650} + \text{SS}_{800} +\text{SS}_{1000}}$}
 \end{itemize}
 In appendix \ref{sec:band5} the above mentioned metrics are presented for a 2.5GHz band at 8, 12 and 13.8GHz, at a
 declination of -30 degrees.
@@ -313,7 +315,8 @@ declination of -30 degrees.
 \input{snr10-band1}
 \input{snravg-band1}
 \input{hours-band1}
-\input{speed-band1}
+% \input{speed-band1}
+\input{speed_avg-band1}
 %===============================================================================================================
 \newpage
 \section{Conclusions}\label{sec:conclusion}
@@ -342,7 +345,8 @@ SRD. Although we note that such a configuration also needs to be analysed by oth
 \section{PSF cross-sections}\label{app:psf}
 \begin{figure}[H]
  \tiny{\input{dec-30_650}}
- \caption{PSF cross-sections at Dec=-30 deg, Freq=650MHz. Row 1 and 2 are for natural and robust-2 weighting respectively, and row
+ \caption{PSF cross-sections at Dec=-30 deg, Freq=650MHz for the different layouts. Row 1 and 2 are for natural and robust-2
+weighting respectively, and row
 3 is for robust-2 weighting with a 1 arcsec Gaussian taper. The blue and green curves are cross-sections along $l$ and $m$
 respectively, and the horizontal line marks the FWHM. FWHM parameters are included in the plot.}
 \end{figure}

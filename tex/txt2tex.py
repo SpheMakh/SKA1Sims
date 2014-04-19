@@ -14,7 +14,9 @@ CPT["snravg"] = "SNR after 8 hours relative to a 10$\\mu$Jy source at 1000Hz (16
 
 CPT["hours"] = "The hours required to reach a mean SNR of 10 (average over 650,800 and 1000MHz), relative to a 10$\\mu$Jy source at 1000MHz with a spectral index of -0.7 for the different layouts at different angular scales. These values are generated for angular scales \\{0.4-1, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4, 5\\} respectively. This is done for natural weighting at declinations -10, -30 and -50 degrees. %s."%CLR
 
-CPT["speed"] = "Relative (w.r.t SKASUR) survey speeds for the different layouts, calculated using the FOV (using PAF FOV for SKASUR) values given in the SRD \\cite{srd} and the values in table \\ref{tab:hours-%s}. These values are generated for angular scales \\{0.4-1, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4, 5\\} respectively. This is done for natural weighting at declination -30 degrees. %s."%(sys.argv[-1],CLR)
+CPT["speed"] = "Relative (w.r.t SKASUR) survey speeds for the different layouts, calculated using the FOV (using PAF FOV for SKASUR) values given in the SRD \\cite{srd} and the values in table \\ref{tab:hours-%s}. These values are generated for angular scales \\{0.4-1, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4, 5\\} respectively at declenations -10, -30 and -50 degrees. %s."%(sys.argv[-1],CLR)
+
+CPT["speed_avg"] = "Relative (w.r.t SKASUR) average survey speeds for the different layouts, calculated using the FOV (PAF FOV for SKASUR) values given in the SRD \\cite{srd} and the values in table \\ref{tab:snr10-%s}. These values are generated for angular scales \\{0.4-1, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4, 5\\} respectively. This is done for natural weighting at declenations -10, -30 and -50 degrees. %s."%(sys.argv[-1],CLR)
 
 CPT["psf_sym"] = "PSF symmetry (see \\autoref{sec:exp})  for the different layouts at different angular scales. These values are generated at 650, 800 and 1000MHz, for angular scales \\{0.4-1, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4, 5\\} respectively. This is done for natural weighting at declinations -10, -30 and -50 degrees. %s."%CLR
 
@@ -114,7 +116,7 @@ if __name__=="__main__":
     cols = ["c%d"%d for d in range(ncols)]
     keys = final.keys()
     keys.sort()
-    if metric not in ["hours","snravg","speed"]:
+    if metric not in ["hours","snravg","speed","speed_avg"]:
      for key in keys:
       x = final[key][1]
       typ = ["S30"]*ncols
@@ -147,6 +149,9 @@ if __name__=="__main__":
         counter = range(0,ndecs*len(weights),ndecs)
         if i%nwi == 0:
           x = final[key][1]
+          if metric.startswith('speed'):
+           for j in range(resbins):
+             x[:,j] = x[:,j]/x[-1,j]
           s[:,1:(resbins+1)] = color(x[:,:resbins])
           top = "\\subfloat[%s]{\\begin{tabular}{|lccccc|} \\hline \n resbin & 1 & 2 & 3 & 4 & 5 \\tabularnewline \\hline\n"%(decsWeights[key])
           texfile.write(top)

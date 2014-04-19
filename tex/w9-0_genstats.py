@@ -1000,3 +1000,441 @@ noisestats.setdefault('psf_fwhm',{})['SKA1W9-12A72B120_8h60s_dec-50_650MHz_1ch',
 noisestats.setdefault('pixnoise',{})['SKA1W9-12A72B120_8h60s_dec-50_650MHz_1ch',600.0,3600.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = 1.0242853512156741e-05
 noisestats.setdefault('psf_fwhm',{})['SKA1W9-12A72B120_8h60s_dec-50_650MHz_1ch',600.0,3600.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = (733.72301226116269, 749.18663430342644, 741.45482328229457)
 noisestats.setdefault('pixnoise',{})['SKA1W9-12A72B120_8h60s_dec-50_650MHz_1ch',600.0,3600.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = 1.0242853173437944e-05
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 800000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 0.375
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 650000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 0.46153846153846156
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 3.6481108314964886e-06
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 1100000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 0.27272727272727271
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 3.6628019388027394e-06
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 800000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 0.375
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 3.6784999381457672e-06
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 3.6688783495566335e-06
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 800000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 0.375
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 650000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 0.46153846153846156
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 4.9681863426347529e-06
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 4.5620670671674923e-06
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 1100000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 0.27272727272727271
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 800000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 0.375
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 4.204917195790352e-06
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 4.0844635642104657e-06
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 800000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 0.375
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 4.9681863426347529e-06
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 650000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 0.46153846153846156
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 4.5620670671674923e-06
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 1100000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 0.27272727272727271
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 4.204917195790352e-06
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 800000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 0.375
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 4.9681863426347529e-06
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 650000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 0.46153846153846156
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 4.5620670671674923e-06
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 1100000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 0.27272727272727271
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 4.204917195790352e-06
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 800000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 0.375
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 4.0844635642104657e-06
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 800000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 0.375
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 650000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 0.46153846153846156
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-10_800MHz_1ch'] = 4.1871836234453995e-06
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 1100000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 0.27272727272727271
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-30_650MHz_1ch'] = 3.9512883407780347e-06
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-30_1100MHz_1ch'] = 4.8068435327212657e-06
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 800000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 0.375
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-50_800MHz_1ch'] = 4.0170293014054562e-06
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_800MHz_1ch',0.4,1.0,'natural','taper=0'] = (1.4553345058835969, 0.55297046652893977, 1.0041524862062683)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_800MHz_1ch',0.4,1.0,'natural','taper=0'] = 1.2389963271573785e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_650MHz_1ch',0.4,1.0,'natural','taper=0'] = (1.8116494229353701, 0.58423909035236576, 1.1979442566438681)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_800MHz_1ch',0.4,1.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = (1.9763445679538598, 0.65641839463415308, 1.3163814812940065)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_650MHz_1ch',0.4,1.0,'natural','taper=0'] = 1.6353424449301767e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_800MHz_1ch',0.4,1.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = 1.003485341424453e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_650MHz_1ch',0.4,1.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = (2.2735738373657632, 0.80634102538812247, 1.5399574313769429)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_800MHz_1ch',0.4,1.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = (2.3754247750613278, 0.85243988662453207, 1.6139323308429299)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',0.4,1.0,'natural','taper=0'] = (1.2585191443951111, 0.47731975155207146, 0.86791944797359133)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_650MHz_1ch',0.4,1.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = 9.776821230487594e-06
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_800MHz_1ch',0.4,1.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = 8.8336935450817975e-06
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',0.4,1.0,'natural','taper=0'] = 9.7027150717173941e-06
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',0.4,1.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = (1.4005210918113824, 0.50850738613729496, 0.95451423897433862)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_650MHz_1ch',0.4,1.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = (2.5136280017726342, 0.97061712388200427, 1.7421225628273191)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_800MHz_1ch',0.4,1.0,'natural','taper=0'] = (1.5467291370137504, 0.57065659811135316, 1.0586928675625518)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',0.4,1.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = 9.3365500115825653e-06
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_800MHz_1ch',0.4,1.0,'natural','taper=0'] = 1.4051172299653631e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_650MHz_1ch',0.4,1.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = 8.7801923330997765e-06
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',0.4,1.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = (1.8196424959807131, 0.81325680122758415, 1.3164496486041486)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_800MHz_1ch',0.4,1.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = (1.804935491413644, 0.75897585193716732, 1.2819556716754057)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',0.4,1.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = 8.4085025863284234e-06
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_800MHz_1ch',0.4,1.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = 9.4803544045354757e-06
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_800MHz_1ch',0.4,1.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = (1.9958178643839022, 0.96484796751668711, 1.4803329159502947)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_800MHz_1ch',0.4,1.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = 8.5568989666220144e-06
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_800MHz_1ch',1.0,2.0,'natural','taper=0'] = (2.4390244823354168, 0.93425930378395594, 1.6866418930596865)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_800MHz_1ch',1.0,2.0,'natural','taper=0'] = 1.144267653560819e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_800MHz_1ch',1.0,2.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = (2.3081597325079541, 0.92611348167985974, 1.6171366070939071)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_800MHz_1ch',1.0,2.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = 1.0862254703410691e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_650MHz_1ch',1.0,2.0,'natural','taper=0'] = (2.3640951997660262, 1.0012110870762956, 1.6826531434211609)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_650MHz_1ch',1.0,2.0,'natural','taper=0'] = 1.0561946312776572e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_800MHz_1ch',1.0,2.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = (2.5232820635915214, 1.0169178256351037, 1.7700999446133125)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_800MHz_1ch',1.0,2.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = 1.0388376614555532e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_650MHz_1ch',1.0,2.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = (2.3537609504465378, 0.94720517817868777, 1.6504830643126127)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_650MHz_1ch',1.0,2.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = 1.0283247034141777e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_650MHz_1ch',1.0,2.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = (2.4925512912732732, 1.0462873607397798, 1.7694193260065265)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_650MHz_1ch',1.0,2.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = 9.9513103159974823e-06
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',1.0,2.0,'natural','taper=0'] = (2.4634715064249613, 1.0282322294158321, 1.7458518679203967)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',1.0,2.0,'natural','taper=0'] = 1.2143729861966541e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',1.0,2.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = (1.932263744679469, 0.95806393641947252, 1.4451638405494709)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',1.0,2.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = 1.108047693680087e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_800MHz_1ch',1.0,2.0,'natural','taper=0'] = (2.0461828774624626, 1.0094118326622865, 1.5277973550623747)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',1.0,2.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = (2.0904309910713104, 1.0824404702553865, 1.5864357306633483)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_800MHz_1ch',1.0,2.0,'natural','taper=0'] = 1.0642457090354974e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',1.0,2.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = 1.0559189959183462e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_800MHz_1ch',1.0,2.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = (1.888738500408407, 1.0106852495415752, 1.4497118749749911)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_800MHz_1ch',1.0,2.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = 1.0249232310512993e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_800MHz_1ch',1.0,2.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = (2.0071231391630988, 1.113502742154453, 1.5603129406587759)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_800MHz_1ch',1.0,2.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = 9.8759311250235652e-06
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_800MHz_1ch',2.0,3.0,'natural','taper=0'] = (3.7146401396896493, 1.8965877032569616, 2.8056139214733053)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_800MHz_1ch',2.0,3.0,'natural','taper=0'] = 1.5899581763043302e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_800MHz_1ch',2.0,3.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = (3.5255455575171069, 1.9002438842788072, 2.7128947208979568)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_800MHz_1ch',2.0,3.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = 1.5905787315876628e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_650MHz_1ch',2.0,3.0,'natural','taper=0'] = (4.4415806657015402, 1.8035141376960109, 3.1225474016987755)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_800MHz_1ch',2.0,3.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = (3.5319346441616992, 1.9267820742084867, 2.7293583591850927)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_650MHz_1ch',2.0,3.0,'natural','taper=0'] = 1.640707847446287e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_800MHz_1ch',2.0,3.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = 1.575027890977054e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_650MHz_1ch',2.0,3.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = (3.5787372864437881, 1.83450413442209, 2.7066207104329392)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_650MHz_1ch',2.0,3.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = 1.6355347301520864e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_650MHz_1ch',2.0,3.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = (3.5986238740837391, 1.8591308278279453, 2.7288773509558419)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_650MHz_1ch',2.0,3.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = 1.6161624019075097e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',2.0,3.0,'natural','taper=0'] = (3.5576565200698478, 1.94442222896129, 2.7510393745155688)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',2.0,3.0,'natural','taper=0'] = 1.2668610333582241e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',2.0,3.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = (2.6577848111306683, 2.0703872784309909, 2.3640860447808296)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_800MHz_1ch',2.0,3.0,'natural','taper=0'] = (3.6221873356452314, 1.8619602440384584, 2.7420737898418448)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',2.0,3.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = 1.4837978099768737e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_800MHz_1ch',2.0,3.0,'natural','taper=0'] = 1.5047544586859342e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',2.0,3.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = (2.6747720736560288, 2.0980789634256252, 2.3864255185408272)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_800MHz_1ch',2.0,3.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = (2.8118848294421186, 2.0065984996629065, 2.4092416645525123)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',2.0,3.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = 1.4641156765024099e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_800MHz_1ch',2.0,3.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = 1.550866762703828e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_800MHz_1ch',2.0,3.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = (2.8322159374834359, 2.032185234681767, 2.4322005860826015)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_800MHz_1ch',2.0,3.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = 1.5347322550820421e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_800MHz_1ch',3.0,4.0,'natural','taper=0'] = (4.8132110577112188, 2.7512361591760617, 3.7822236084436405)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_800MHz_1ch',3.0,4.0,'natural','taper=0'] = 1.5200291920789691e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_800MHz_1ch',3.0,4.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = (3.9105511488061149, 2.9405421732541406, 3.4255466610301277)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_650MHz_1ch',3.0,4.0,'natural','taper=0'] = (5.2123417323052008, 2.6177057537544384, 3.9150237430298196)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_650MHz_1ch',3.0,4.0,'natural','taper=0'] = 1.7034017697857756e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_800MHz_1ch',3.0,4.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = 1.7689990408079811e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_650MHz_1ch',3.0,4.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = (4.0799563032383253, 2.8534247588842803, 3.4666905310613028)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_800MHz_1ch',3.0,4.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = (3.9152350252601718, 2.9507203586255435, 3.4329776919428578)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_650MHz_1ch',3.0,4.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = 1.7854471914062768e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_800MHz_1ch',3.0,4.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = 1.7622680170988751e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',3.0,4.0,'natural','taper=0'] = (4.852276206167776, 2.6881759000755618, 3.7702260531216689)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_650MHz_1ch',3.0,4.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = (4.0855676819006854, 2.8634180928144826, 3.474492887357584)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_800MHz_1ch',3.0,4.0,'natural','taper=0'] = (4.5662439886062707, 2.8088345516279527, 3.6875392701171119)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',3.0,4.0,'natural','taper=0'] = 1.1501506056778377e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_800MHz_1ch',3.0,4.0,'natural','taper=0'] = 1.6245690727515181e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_650MHz_1ch',3.0,4.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = 1.78289599305579e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',3.0,4.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = (3.3486917165592671, 3.185552746963908, 3.2671222317615873)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_800MHz_1ch',3.0,4.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = (3.5690599420957989, 3.1154060789447864, 3.3422330105202924)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',3.0,4.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = 1.497435428713189e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_800MHz_1ch',3.0,4.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = 1.7794913572765319e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',3.0,4.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = (3.3564056807630451, 3.1941116651942814, 3.275258672978663)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_800MHz_1ch',3.0,4.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = (3.575612121531194, 3.1259118527911691, 3.3507619871611816)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',3.0,4.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = 1.4929455385301729e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_800MHz_1ch',3.0,4.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = 1.7693662268942867e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_800MHz_1ch',600.0,3600.0,'natural','taper=0'] = (1162.844603431241, 698.11895803227299, 930.481780731757)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_800MHz_1ch',600.0,3600.0,'natural','taper=0'] = 0.00012019895113925274
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_800MHz_1ch',600.0,3600.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = (1187.1546991080543, 696.99414092046766, 942.07442001426102)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_800MHz_1ch',600.0,3600.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = 0.00012074833410979936
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_800MHz_1ch',600.0,3600.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = (1187.1547452720647, 696.99424257985004, 942.07449392595731)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_800MHz_1ch',600.0,3600.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = 0.00012074834514322337
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-10_1100MHz_1ch'] = 1100000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-10_1100MHz_1ch'] = 0.27272727272727271
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-10_1100MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-10_1100MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-10_1100MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-10_1100MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_650MHz_1ch',600.0,3600.0,'natural','taper=0'] = (1316.6977513738718, 636.59536053575243, 976.64655595481213)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_650MHz_1ch',600.0,3600.0,'natural','taper=0'] = 0.00010768979606009004
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_650MHz_1ch',600.0,3600.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = (1430.9400322283752, 546.30413491889055, 988.62208357363284)
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-10_1100MHz_1ch'] = 3.6652472953954892e-06
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_650MHz_1ch',600.0,3600.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = 0.00011438053293220351
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_650MHz_1ch',600.0,3600.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = (1430.9398319708785, 546.3043853543312, 988.62210866260489)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',600.0,3600.0,'natural','taper=0'] = (847.58621414850268, 686.05360798311483, 766.81991106580881)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',600.0,3600.0,'natural','taper=0'] = 0.00017607401735114561
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_650MHz_1ch',600.0,3600.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = 0.00011438049798916385
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-30_800MHz_1ch'] = 800000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-30_800MHz_1ch'] = 0.375
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-30_800MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-30_800MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-30_800MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-30_800MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_800MHz_1ch',600.0,3600.0,'natural','taper=0'] = (1186.233149896846, 706.05836064720143, 946.14575527202373)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',600.0,3600.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = (828.3367941437084, 688.07155008675727, 758.20417211523284)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_800MHz_1ch',600.0,3600.0,'natural','taper=0'] = 0.00013429222106854018
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',600.0,3600.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = 0.00017576699284579548
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-30_800MHz_1ch'] = 3.6484323828712052e-06
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_800MHz_1ch',600.0,3600.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = (1176.2171261002736, 705.21091875163802, 940.71402242595582)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',600.0,3600.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = (828.33685606675579, 688.07155008675727, 758.20420307675658)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_800MHz_1ch',600.0,3600.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = 0.00013477685713335653
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_1100MHz_1ch',600.0,3600.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = 0.00017576701305842707
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-50_650MHz_1ch'] = 650000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-50_650MHz_1ch'] = 0.46153846153846156
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-50_650MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-50_650MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-50_650MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-50_650MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_800MHz_1ch',600.0,3600.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = (1176.2171601861708, 705.21102537189256, 940.71409277903172)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_800MHz_1ch',600.0,3600.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = 0.00013477684395337176
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-50_1100MHz_1ch'] = 1100000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-50_1100MHz_1ch'] = 0.27272727272727271
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-50_1100MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-50_1100MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-50_1100MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-50_1100MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-50_650MHz_1ch'] = 3.6817076719161799e-06
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-50_1100MHz_1ch'] = 3.6201598635815634e-06
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',0.4,1.0,'natural','taper=0'] = (1.2362281210127382, 0.47623214647968681, 0.85623013374621249)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',0.4,1.0,'natural','taper=0'] = 9.5274337619273219e-06
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',0.4,1.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = (1.4908911481064917, 0.50107845989706246, 0.99598480400177714)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',0.4,1.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = 9.6676461905895735e-06
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_800MHz_1ch',0.4,1.0,'natural','taper=0'] = (1.5248592995753905, 0.54557779564996212, 1.0352185476126763)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_800MHz_1ch',0.4,1.0,'natural','taper=0'] = 1.2253512159856474e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',0.4,1.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = (2.0386425428760138, 0.78778115579918251, 1.413211849337598)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',0.4,1.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = 8.4425545645660706e-06
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_650MHz_1ch',0.4,1.0,'natural','taper=0'] = (1.9492398418887886, 0.61722199046809934, 1.2832309161784439)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_800MHz_1ch',0.4,1.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = (1.8716789801740887, 0.66823413459896175, 1.2699565573865252)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',0.4,1.0,'natural','taper=0'] = (1.2272321268044772, 0.50742931338870323, 0.86733072009659029)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_650MHz_1ch',0.4,1.0,'natural','taper=0'] = 1.8246381373364005e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',0.4,1.0,'natural','taper=0'] = 1.0334468946234181e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_800MHz_1ch',0.4,1.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = 9.6166184579784797e-06
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',0.4,1.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = (1.3392683218785706, 0.5726295340579618, 0.95594892796826625)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_650MHz_1ch',0.4,1.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = (2.1914482714031802, 0.910165401383916, 1.5508068363935481)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_800MHz_1ch',0.4,1.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = (2.175633670825551, 0.8810649135486226, 1.5283492921870869)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',0.4,1.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = 9.2592493172370662e-06
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_650MHz_1ch',0.4,1.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = 9.6663322711273946e-06
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_800MHz_1ch',0.4,1.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = 8.5839718273412644e-06
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',0.4,1.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = (1.6121076663085994, 0.87019900129558703, 1.2411533338020933)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',0.4,1.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = 8.4403828384906289e-06
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_650MHz_1ch',0.4,1.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = (2.3401209196592418, 1.0667114355743765, 1.7034161776168091)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_650MHz_1ch',0.4,1.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = 8.7655882821485857e-06
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',1.0,2.0,'natural','taper=0'] = (2.5951001727388228, 1.0037652978440716, 1.7994327352914472)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',1.0,2.0,'natural','taper=0'] = 1.2371908378933245e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',1.0,2.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = (2.2697776848047826, 0.93687998239007786, 1.6033288335974303)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',1.0,2.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = 1.1003895260425431e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',1.0,2.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = (2.4247348220894778, 1.0613214193178229, 1.7430281207036504)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',1.0,2.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = 1.04935913022289e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_800MHz_1ch',1.0,2.0,'natural','taper=0'] = (2.2793146370580364, 0.95091677870785518, 1.6151157078829459)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_800MHz_1ch',1.0,2.0,'natural','taper=0'] = 1.1081386181108975e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_800MHz_1ch',1.0,2.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = (2.1046363419927232, 0.94624326763919187, 1.5254398048159574)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',1.0,2.0,'natural','taper=0'] = (2.0643526522814999, 1.0216530687154701, 1.5430028604984849)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',1.0,2.0,'natural','taper=0'] = 1.1092893697286351e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_800MHz_1ch',1.0,2.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = 1.0462743252496283e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_650MHz_1ch',1.0,2.0,'natural','taper=0'] = (2.1959852245628362, 1.0672072058661026, 1.6315962152144694)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',1.0,2.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = (1.6420806685993441, 1.006676763854973, 1.3243787162271585)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_800MHz_1ch',1.0,2.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = (2.2658942069232904, 1.042876257672082, 1.6543852322976862)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_650MHz_1ch',1.0,2.0,'natural','taper=0'] = 1.0628575082764674e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',1.0,2.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = 1.0696162530629409e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_800MHz_1ch',1.0,2.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = 1.0037417783491642e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_650MHz_1ch',1.0,2.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = (2.1919328162047393, 0.98992387868708465, 1.5909283474459119)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',1.0,2.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = (1.7743140804351614, 1.1259611690490674, 1.4501376247421143)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_650MHz_1ch',1.0,2.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = 1.0093660486540485e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',2.0,3.0,'natural','taper=0'] = (3.474662576491466, 1.9487510504917682, 2.7117068134916171)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',1.0,2.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = 1.023497086378926e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',2.0,3.0,'natural','taper=0'] = 1.2378606585148055e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_650MHz_1ch',1.0,2.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = (2.2753210346727966, 1.0987333090328864, 1.6870271718528413)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',2.0,3.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = (2.8065632399310529, 2.0100829736509622, 2.4083231067910074)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_650MHz_1ch',1.0,2.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = 9.7375144274138733e-06
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',2.0,3.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = 1.4825465212819086e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',2.0,3.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = (2.8228957223779827, 2.0366449462136496, 2.4297703342958163)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',2.0,3.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = 1.4642578962027905e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_800MHz_1ch',2.0,3.0,'natural','taper=0'] = (3.8997156963754365, 1.8452352838867148, 2.8724754901310758)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_800MHz_1ch',2.0,3.0,'natural','taper=0'] = 1.4892657655059819e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_800MHz_1ch',2.0,3.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = (3.2022564922371766, 1.9462491143378953, 2.574252803287536)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',2.0,3.0,'natural','taper=0'] = (3.3276229707586431, 1.9835286443519928, 2.655575807555318)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',2.0,3.0,'natural','taper=0'] = 1.3640217959029951e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_800MHz_1ch',2.0,3.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = 1.5642735719317273e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_650MHz_1ch',2.0,3.0,'natural','taper=0'] = (3.8143280951439325, 1.8655383759463269, 2.8399332355451294)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',2.0,3.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = (2.5308022620239625, 2.1208108131325281, 2.3258065375782451)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_800MHz_1ch',2.0,3.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = (3.2145450254875456, 1.9735397820037066, 2.5940424037456262)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_650MHz_1ch',2.0,3.0,'natural','taper=0'] = 1.5297657745224855e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',2.0,3.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = 1.4988274858338737e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_800MHz_1ch',2.0,3.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = 1.5477913671834396e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_650MHz_1ch',2.0,3.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = (2.9221948706782053, 1.9210859803336269, 2.4216404255059159)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',2.0,3.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = (2.5502119565822028, 2.1488152924918014, 2.3495136245370021)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_650MHz_1ch',2.0,3.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = 1.4932388780712807e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',2.0,3.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = 1.4738550237291494e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_650MHz_1ch',2.0,3.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = (2.9474295431719386, 1.9454220280967076, 2.446425785634323)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_650MHz_1ch',2.0,3.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = 1.484094032987732e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',3.0,4.0,'natural','taper=0'] = (4.812258314471201, 2.6960271197260504, 3.7541427170986257)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',3.0,4.0,'natural','taper=0'] = 1.1745719796759333e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',3.0,4.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = (3.4292899487931474, 3.1422858045444619, 3.2857878766688047)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',3.0,4.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = 1.5955585781097767e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',3.0,4.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = (3.4368504358152823, 3.1511130035535033, 3.2939817196843926)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',3.0,4.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = 1.5917415225846484e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_800MHz_1ch',3.0,4.0,'natural','taper=0'] = (4.8328644482202838, 2.7782334588613895, 3.8055489535408364)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_800MHz_1ch',3.0,4.0,'natural','taper=0'] = 1.5367336788385161e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_800MHz_1ch',3.0,4.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = (3.7230987295144105, 3.0290521363072602, 3.3760754329108353)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',3.0,4.0,'natural','taper=0'] = (4.5936647540068476, 2.7710486828816419, 3.6823567184442449)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_800MHz_1ch',3.0,4.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = 1.752797739180136e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',3.0,4.0,'natural','taper=0'] = 1.2018694118340492e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_800MHz_1ch',3.0,4.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = (3.7280469308050397, 3.0399332315264411, 3.3839900811657406)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',3.0,4.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = (3.3121938227858245, 3.2197608517173992, 3.2659773372516119)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_650MHz_1ch',3.0,4.0,'natural','taper=0'] = (4.8789379180202683, 2.683758419951408, 3.7813481689858381)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_800MHz_1ch',3.0,4.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = 1.7445090179607203e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_650MHz_1ch',3.0,4.0,'natural','taper=0'] = 1.7912689527926615e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',3.0,4.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = 1.3907539512515571e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_650MHz_1ch',3.0,4.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = (3.8026618228582874, 2.9590489064560122, 3.3808553646571498)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',3.0,4.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = (3.3200883490781776, 3.2283210770272435, 3.2742047130527103)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_650MHz_1ch',3.0,4.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = 1.8111713976048602e-05
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',3.0,4.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = 1.3843654427199978e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_650MHz_1ch',3.0,4.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = (3.8092660696944343, 2.9692248973067836, 3.3892454835006092)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_650MHz_1ch',3.0,4.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = 1.8082450895404138e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',600.0,3600.0,'natural','taper=0'] = (839.21436239652132, 712.87796491380584, 776.04616365516358)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',600.0,3600.0,'natural','taper=0'] = 0.00016263368987762066
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',600.0,3600.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = (839.18707519100815, 712.88214861189999, 776.03461190145413)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',600.0,3600.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = 0.0001626350824828522
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',600.0,3600.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = (839.18721744450283, 712.88218213002608, 776.03469978726446)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_1100MHz_1ch',600.0,3600.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = 0.00016263506609933055
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_800MHz_1ch',600.0,3600.0,'natural','taper=0'] = (1222.4230731799073, 699.6149685573364, 961.01902086862185)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_800MHz_1ch',600.0,3600.0,'natural','taper=0'] = 0.00013968436568157367
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_800MHz_1ch',600.0,3600.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = (1222.0387068837119, 699.27341331479317, 960.6560600992525)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_800MHz_1ch',600.0,3600.0,'robust=-2.0','fov=12.500000arcmin','taper=0'] = 0.0001396500766193329
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-30_800MHz_1ch',600.0,3600.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = (1222.0387817823112, 699.27355959105489, 960.65617068668303)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-30_800MHz_1ch',600.0,3600.0,'robust=-2.0','fov=12.500000arcmin','taper=1.0'] = 0.00013965008297936091
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',600.0,3600.0,'natural','taper=0'] = (845.51771142714392, 706.98135678673236, 776.2495341069382)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',600.0,3600.0,'natural','taper=0'] = 0.00017541543666679373
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',600.0,3600.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = (828.93752290654061, 702.69264710216271, 765.81508500435166)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_650MHz_1ch',600.0,3600.0,'natural','taper=0'] = (1265.5446836444401, 725.90844895146017, 995.72656629795006)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',600.0,3600.0,'robust=-2.0','fov=9.090909arcmin','taper=0'] = 0.00017698025278165059
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_650MHz_1ch',600.0,3600.0,'natural','taper=0'] = 0.00011752088511888171
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',600.0,3600.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = (828.93761091046588, 702.69270037066531, 765.81515564056554)
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_650MHz_1ch',600.0,3600.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = (1163.9107277899482, 734.82648032675593, 949.36860405835205)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_1100MHz_1ch',600.0,3600.0,'robust=-2.0','fov=9.090909arcmin','taper=1.0'] = 0.00017698023270758118
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_650MHz_1ch',600.0,3600.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = 0.00011440006053890874
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-50_650MHz_1ch',600.0,3600.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = (1163.9112915854669, 734.82660083696032, 949.3689462112136)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-50_650MHz_1ch',600.0,3600.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = 0.00011440006053890874
+noisestats.setdefault('freq0',{})['SKASUR_8h60s_dec-10_650MHz_1ch'] = 650000000.0
+noisestats.setdefault('wavelength',{})['SKASUR_8h60s_dec-10_650MHz_1ch'] = 0.46153846153846156
+noisestats.setdefault('bw',{})['SKASUR_8h60s_dec-10_650MHz_1ch'] = 50000000.0
+noisestats.setdefault('synthesis_time',{})['SKASUR_8h60s_dec-10_650MHz_1ch'] = 28740.0
+noisestats.setdefault('integration',{})['SKASUR_8h60s_dec-10_650MHz_1ch'] = 60.0
+noisestats.setdefault('vis_noise',{})['SKASUR_8h60s_dec-10_650MHz_1ch'] = 0.007565227469591822
+noisestats.setdefault('pixnoise0',{})['SKASUR_8h60s_dec-10_650MHz_1ch'] = 3.6320552358612625e-06
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_650MHz_1ch',0.4,1.0,'natural','taper=0'] = (1.7425198002405338, 0.58991039237720222, 1.166215096308868)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_650MHz_1ch',0.4,1.0,'natural','taper=0'] = 1.5705828316353587e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_650MHz_1ch',0.4,1.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = (2.3950425023486481, 0.79280221454208866, 1.5939223584453683)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_650MHz_1ch',0.4,1.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = 1.0087280302552706e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_650MHz_1ch',0.4,1.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = (2.7094305450801679, 0.94394323471539154, 1.8266868898977797)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_650MHz_1ch',0.4,1.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = 9.117822091700154e-06
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_650MHz_1ch',1.0,2.0,'natural','taper=0'] = (2.3902308873136304, 0.99311643553626694, 1.6916736614249488)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_650MHz_1ch',1.0,2.0,'natural','taper=0'] = 1.0390762584275885e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_650MHz_1ch',1.0,2.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = (2.5857235700996806, 0.9118218482563738, 1.7487727091780272)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_650MHz_1ch',1.0,2.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = 1.0569885781297603e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_650MHz_1ch',1.0,2.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = (2.7565914200230544, 1.0040396639636084, 1.8803155419933315)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_650MHz_1ch',1.0,2.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = 1.0172452069161966e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_650MHz_1ch',2.0,3.0,'natural','taper=0'] = (4.3798359996894298, 1.8028024230512809, 3.0913192113703554)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_650MHz_1ch',2.0,3.0,'natural','taper=0'] = 1.7434817884021776e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_650MHz_1ch',2.0,3.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = (4.1953670694617893, 1.7792691607250146, 2.9873181150934021)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_650MHz_1ch',2.0,3.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = 1.6239065566735951e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_650MHz_1ch',2.0,3.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = (4.2005699710584006, 1.804482146713793, 3.0025260588860969)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_650MHz_1ch',2.0,3.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = 1.6094796734017267e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_650MHz_1ch',3.0,4.0,'natural','taper=0'] = (5.1230788476659042, 2.6390327853476259, 3.8810558165067652)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_650MHz_1ch',3.0,4.0,'natural','taper=0'] = 1.7086997383120801e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_650MHz_1ch',3.0,4.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = (4.3589786379665592, 2.7730517260662451, 3.5660151820164021)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_650MHz_1ch',3.0,4.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = 1.7930175536699813e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_650MHz_1ch',3.0,4.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = (4.3645149546293025, 2.78260656048184, 3.5735607575555712)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_650MHz_1ch',3.0,4.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = 1.7891900321012074e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_650MHz_1ch',600.0,3600.0,'natural','taper=0'] = (1189.1402241468311, 687.35989917226891, 938.25006165955006)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_650MHz_1ch',600.0,3600.0,'natural','taper=0'] = 0.00010134299775794939
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_650MHz_1ch',600.0,3600.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = (1121.8202696989465, 698.6540225012061, 910.2371461000763)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_650MHz_1ch',600.0,3600.0,'robust=-2.0','fov=15.384615arcmin','taper=0'] = 9.9506415419583463e-05
+noisestats.setdefault('psf_fwhm',{})['SKASUR_8h60s_dec-10_650MHz_1ch',600.0,3600.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = (1121.8208712582004, 698.65413910247901, 910.23750518033967)
+noisestats.setdefault('pixnoise',{})['SKASUR_8h60s_dec-10_650MHz_1ch',600.0,3600.0,'robust=-2.0','fov=15.384615arcmin','taper=1.0'] = 9.9506424345423836e-05

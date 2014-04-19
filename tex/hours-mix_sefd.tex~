@@ -1,0 +1,29 @@
+% Auto generated table
+ \begin{table}[!htp]
+ \tiny{
+\subfloat[DEC=-10, natural weighting]{\begin{tabular}{|lccccc|} \hline 
+ resbin & 1 & 2 & 3 & 4 & 5 \tabularnewline \hline
+SKA1REF2 & 1.45 \cellcolor{blue!55.66} & 3.15 \cellcolor{red!54.75}\\ \hline 
+SKA1W9-12A72B120 & 1.54 \cellcolor{blue!60.00} & 3.42 \cellcolor{red!60.00}\\ \hline 
+SKA1W9-0A72B120 & 1.52 \cellcolor{blue!59.03} & 3.37 \cellcolor{red!59.03}\\ \hline 
+SKASUR & 0.67 \cellcolor{blue!18.00} & 1.26 \cellcolor{red!18.00}\tabularnewline \hline 
+\subfloat[DEC=-30, natural weighting]{\begin{tabular}{|lccccc|} \hline 
+ resbin & 1 & 2 & 3 & 4 & 5 \tabularnewline \hline
+SKA1REF2 & 1.45 \cellcolor{blue!55.66} & 3.15 \cellcolor{red!54.75}\\ \hline 
+SKA1W9-12A72B120 & 1.54 \cellcolor{blue!60.00} & 3.42 \cellcolor{red!60.00}\\ \hline 
+SKA1W9-0A72B120 & 1.52 \cellcolor{blue!59.03} & 3.37 \cellcolor{red!59.03}\\ \hline 
+SKASUR & 0.67 \cellcolor{blue!18.00} & 1.26 \cellcolor{red!18.00}\tabularnewline \hline 
+\subfloat[DEC=-50, natural weighting]{\begin{tabular}{|lccccc|} \hline 
+ resbin & 1 & 2 & 3 & 4 & 5 \tabularnewline \hline
+SKA1REF2 & 1.45 \cellcolor{blue!55.66} & 3.15 \cellcolor{red!54.75}\\ \hline 
+SKA1W9-12A72B120 & 1.54 \cellcolor{blue!60.00} & 3.42 \cellcolor{red!60.00}\\ \hline 
+SKA1W9-0A72B120 & 1.52 \cellcolor{blue!59.03} & 3.37 \cellcolor{red!59.03}\\ \hline 
+SKASUR & 0.67 \cellcolor{blue!18.00} & 1.26 \cellcolor{red!18.00}\tabularnewline \hline 
+\end{tabular}}\hfil 
+
+\caption{The hours required to reach a mean SNR of 10 (average over 650,800 and 1100MHz), assuming a 10$\mu$Jy source at 1100MHz
+with a spectral index of -0.7 for the different layouts at different angular scales. These values are generated for angular scales
+\{0.4-1, 1-2, 2-3, 3-4, 600-3600\} arcsec and are labeled {\it resbin} \{1, 2, 3, 4, 5\} respectively. This is done for natural,
+robust-2 weighting and robust-2 weighting with a 1 arcsec Gaussian taper, at declinations -10, -30 and -50 degrees. For each
+column, the intensity of the color increases with the value.}\label{tab:hours}}
+ \end{table}

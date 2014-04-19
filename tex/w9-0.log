@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.16)  30 MAR 2014 21:20
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.16)  9 APR 2014 11:53
 entering extended mode
  %&-line parsing enabled.
 **w9-0.tex
@@ -547,463 +547,534 @@ File: images/lay_SKA1W9-12A72B120.png Graphic file (type png)
 File: images/lay_SKA1W9-0A72B120.png Graphic file (type png)
 
 <use images/lay_SKA1W9-0A72B120.png>
-<images/outer_core_SKA1REF2.png, id=76, 578.16pt x 433.62pt>
+<images/lay_SKASUR.png, id=76, 578.16pt x 433.62pt>
+File: images/lay_SKASUR.png Graphic file (type png)
+
+<use images/lay_SKASUR.png>
+<images/outer_core_SKA1REF2.png, id=77, 578.16pt x 433.62pt>
 File: images/outer_core_SKA1REF2.png Graphic file (type png)
 
 <use images/outer_core_SKA1REF2.png>
-<images/outer_core_SKA1W9-12A72B120.png, id=77, 578.16pt x 433.62pt>
+<images/outer_core_SKA1W9-12A72B120.png, id=78, 578.16pt x 433.62pt>
 File: images/outer_core_SKA1W9-12A72B120.png Graphic file (type png)
 
 <use images/outer_core_SKA1W9-12A72B120.png>
-<images/outer_core_SKA1W9-0A72B120.png, id=78, 578.16pt x 433.62pt>
+<images/outer_core_SKA1W9-0A72B120.png, id=79, 578.16pt x 433.62pt>
 File: images/outer_core_SKA1W9-0A72B120.png Graphic file (type png)
 
 <use images/outer_core_SKA1W9-0A72B120.png>
-<images/core_SKA1REF2.png, id=79, 578.16pt x 433.62pt>
+<images/outer_core_SKASUR.png, id=80, 578.16pt x 433.62pt>
+File: images/outer_core_SKASUR.png Graphic file (type png)
+
+<use images/outer_core_SKASUR.png>
+<images/core_SKA1REF2.png, id=81, 578.16pt x 433.62pt>
 File: images/core_SKA1REF2.png Graphic file (type png)
 
 <use images/core_SKA1REF2.png>
-<images/core_SKA1W9-12A72B120.png, id=80, 578.16pt x 433.62pt>
+<images/core_SKA1W9-12A72B120.png, id=82, 578.16pt x 433.62pt>
 File: images/core_SKA1W9-12A72B120.png Graphic file (type png)
 
 <use images/core_SKA1W9-12A72B120.png>
-<images/core_SKA1W9-0A72B120.png, id=81, 578.16pt x 433.62pt>
+<images/core_SKA1W9-0A72B120.png, id=83, 578.16pt x 433.62pt>
 File: images/core_SKA1W9-0A72B120.png Graphic file (type png)
 
-<use images/core_SKA1W9-0A72B120.png>) (./hist-w9-0.tex
-<images/hist_SKA1REF2.png, id=82, 578.16pt x 433.62pt>
+<use images/core_SKA1W9-0A72B120.png>
+<images/core_SKASUR.png, id=84, 578.16pt x 433.62pt>
+File: images/core_SKASUR.png Graphic file (type png)
+
+<use images/core_SKASUR.png>) (./hist-w9-0.tex
+<images/hist_SKA1REF2.png, id=85, 578.16pt x 433.62pt>
 File: images/hist_SKA1REF2.png Graphic file (type png)
 
 <use images/hist_SKA1REF2.png>
-<images/hist_SKA1W9-12A72B120.png, id=83, 578.16pt x 433.62pt>
+<images/hist_SKA1W9-12A72B120.png, id=86, 578.16pt x 433.62pt>
 File: images/hist_SKA1W9-12A72B120.png Graphic file (type png)
 
 <use images/hist_SKA1W9-12A72B120.png>
-<images/hist_SKA1W9-0A72B120.png, id=84, 578.16pt x 433.62pt>
+<images/hist_SKA1W9-0A72B120.png, id=87, 578.16pt x 433.62pt>
 File: images/hist_SKA1W9-0A72B120.png Graphic file (type png)
 
-<use images/hist_SKA1W9-0A72B120.png>) (./core_hist.tex
-<images/dish_hist-REF2.png, id=85, 578.16pt x 433.62pt>
+<use images/hist_SKA1W9-0A72B120.png>
+<images/hist_SKASUR.png, id=88, 578.16pt x 433.62pt>
+File: images/hist_SKASUR.png Graphic file (type png)
+
+<use images/hist_SKASUR.png>) (./core_hist.tex
+<images/dish_hist-REF2.png, id=89, 578.16pt x 433.62pt>
 File: images/dish_hist-REF2.png Graphic file (type png)
 
 <use images/dish_hist-REF2.png>
-<images/dish_hist-W9-12A72B120.png, id=86, 578.16pt x 433.62pt>
+<images/dish_hist-W9-12A72B120.png, id=90, 578.16pt x 433.62pt>
 File: images/dish_hist-W9-12A72B120.png Graphic file (type png)
 
 <use images/dish_hist-W9-12A72B120.png>) (./core_cumhist.tex
-<images/dish_cumhist-REF2.png, id=87, 578.16pt x 433.62pt>
+<images/dish_cumhist-REF2.png, id=91, 578.16pt x 433.62pt>
 File: images/dish_cumhist-REF2.png Graphic file (type png)
 
 <use images/dish_cumhist-REF2.png>
-<images/dish_cumhist-W9-12A72B120.png, id=88, 578.16pt x 433.62pt>
+<images/dish_cumhist-W9-12A72B120.png, id=92, 578.16pt x 433.62pt>
 File: images/dish_cumhist-W9-12A72B120.png Graphic file (type png)
 
-<use images/dish_cumhist-W9-12A72B120.png>) [4 <./images/lay_SKA1REF2.png> <./i
-mages/lay_SKA1W9-12A72B120.png> <./images/lay_SKA1W9-0A72B120.png> <./images/ou
-ter_core_SKA1REF2.png> <./images/outer_core_SKA1W9-12A72B120.png> <./images/out
-er_core_SKA1W9-0A72B120.png> <./images/core_SKA1REF2.png> <./images/core_SKA1W9
--12A72B120.png> <./images/core_SKA1W9-0A72B120.png> <./images/hist_SKA1REF2.png
-> <./images/hist_SKA1W9-12A72B120.png> <./images/hist_SKA1W9-0A72B120.png>]
-(./uvcov-w9-0.tex
-<images/uvcov_SKA1REF2_-10_1100.png, id=108, 578.16pt x 433.62pt>
+<use images/dish_cumhist-W9-12A72B120.png>) (./uvcov-w9-0.tex
+<images/uvcov_SKA1REF2_-10_1100.png, id=93, 578.16pt x 433.62pt>
 File: images/uvcov_SKA1REF2_-10_1100.png Graphic file (type png)
 
 <use images/uvcov_SKA1REF2_-10_1100.png>
-<images/uvcov_SKA1W9-12A72B120_-10_1100.png, id=109, 578.16pt x 433.62pt>
+<images/uvcov_SKA1W9-12A72B120_-10_1100.png, id=94, 578.16pt x 433.62pt>
 File: images/uvcov_SKA1W9-12A72B120_-10_1100.png Graphic file (type png)
 
 <use images/uvcov_SKA1W9-12A72B120_-10_1100.png>
-<images/uvcov_SKA1W9-0A72B120_-10_1100.png, id=110, 578.16pt x 433.62pt>
+<images/uvcov_SKA1W9-0A72B120_-10_1100.png, id=95, 578.16pt x 433.62pt>
 File: images/uvcov_SKA1W9-0A72B120_-10_1100.png Graphic file (type png)
 
 <use images/uvcov_SKA1W9-0A72B120_-10_1100.png>
-<images/uvcov_SKA1REF2_-30_1100.png, id=111, 578.16pt x 433.62pt>
+<images/uvcov_SKASUR_-10_1100.png, id=96, 578.16pt x 433.62pt>
+File: images/uvcov_SKASUR_-10_1100.png Graphic file (type png)
+
+<use images/uvcov_SKASUR_-10_1100.png>
+<images/uvcov_SKA1REF2_-30_1100.png, id=97, 578.16pt x 433.62pt>
 File: images/uvcov_SKA1REF2_-30_1100.png Graphic file (type png)
 
 <use images/uvcov_SKA1REF2_-30_1100.png>
-<images/uvcov_SKA1W9-12A72B120_-30_1100.png, id=112, 578.16pt x 433.62pt>
+<images/uvcov_SKA1W9-12A72B120_-30_1100.png, id=98, 578.16pt x 433.62pt>
 File: images/uvcov_SKA1W9-12A72B120_-30_1100.png Graphic file (type png)
 
 <use images/uvcov_SKA1W9-12A72B120_-30_1100.png>
-<images/uvcov_SKA1W9-0A72B120_-30_1100.png, id=113, 578.16pt x 433.62pt>
+<images/uvcov_SKA1W9-0A72B120_-30_1100.png, id=99, 578.16pt x 433.62pt>
 File: images/uvcov_SKA1W9-0A72B120_-30_1100.png Graphic file (type png)
 
 <use images/uvcov_SKA1W9-0A72B120_-30_1100.png>
-<images/uvcov_SKA1REF2_-50_1100.png, id=114, 578.16pt x 433.62pt>
+<images/uvcov_SKASUR_-30_1100.png, id=100, 578.16pt x 433.62pt>
+File: images/uvcov_SKASUR_-30_1100.png Graphic file (type png)
+
+<use images/uvcov_SKASUR_-30_1100.png>
+<images/uvcov_SKA1REF2_-50_1100.png, id=101, 578.16pt x 433.62pt>
 File: images/uvcov_SKA1REF2_-50_1100.png Graphic file (type png)
 
 <use images/uvcov_SKA1REF2_-50_1100.png>
-<images/uvcov_SKA1W9-12A72B120_-50_1100.png, id=115, 578.16pt x 433.62pt>
+<images/uvcov_SKA1W9-12A72B120_-50_1100.png, id=102, 578.16pt x 433.62pt>
 File: images/uvcov_SKA1W9-12A72B120_-50_1100.png Graphic file (type png)
 
 <use images/uvcov_SKA1W9-12A72B120_-50_1100.png>
-<images/uvcov_SKA1W9-0A72B120_-50_1100.png, id=116, 578.16pt x 433.62pt>
+<images/uvcov_SKA1W9-0A72B120_-50_1100.png, id=103, 578.16pt x 433.62pt>
 File: images/uvcov_SKA1W9-0A72B120_-50_1100.png Graphic file (type png)
 
-<use images/uvcov_SKA1W9-0A72B120_-50_1100.png>) [5 <./images/dish_hist-REF2.pn
-g> <./images/dish_hist-W9-12A72B120.png> <./images/dish_cumhist-REF2.png> <./im
-ages/dish_cumhist-W9-12A72B120.png> <./images/uvcov_SKA1REF2_-10_1100.png> <./i
-mages/uvcov_SKA1W9-12A72B120_-10_1100.png> <./images/uvcov_SKA1W9-0A72B120_-10_
-1100.png> <./images/uvcov_SKA1REF2_-30_1100.png> <./images/uvcov_SKA1W9-12A72B1
-20_-30_1100.png> <./images/uvcov_SKA1W9-0A72B120_-30_1100.png> <./images/uvcov_
-SKA1REF2_-50_1100.png> <./images/uvcov_SKA1W9-12A72B120_-50_1100.png> <./images
-/uvcov_SKA1W9-0A72B120_-50_1100.png>]
+<use images/uvcov_SKA1W9-0A72B120_-50_1100.png>
+<images/uvcov_SKASUR_-50_1100.png, id=104, 578.16pt x 433.62pt>
+File: images/uvcov_SKASUR_-50_1100.png Graphic file (type png)
+
+<use images/uvcov_SKASUR_-50_1100.png>) [4 <./images/lay_SKA1REF2.png> <./image
+s/lay_SKA1W9-12A72B120.png> <./images/lay_SKA1W9-0A72B120.png> <./images/lay_SK
+ASUR.png> <./images/outer_core_SKA1REF2.png> <./images/outer_core_SKA1W9-12A72B
+120.png> <./images/outer_core_SKA1W9-0A72B120.png> <./images/outer_core_SKASUR.
+png> <./images/core_SKA1REF2.png> <./images/core_SKA1W9-12A72B120.png> <./image
+s/core_SKA1W9-0A72B120.png> <./images/core_SKASUR.png> <./images/hist_SKA1REF2.
+png> <./images/hist_SKA1W9-12A72B120.png> <./images/hist_SKA1W9-0A72B120.png> <
+./images/hist_SKASUR.png> <./images/dish_hist-REF2.png> <./images/dish_hist-W9-
+12A72B120.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- (./psf_mean-w9-0.tex
-Overfull \hbox (9.03787pt too wide) in paragraph at lines 10--76
+ [5 <./images/dish_cumhist-REF2.png> <./images/dish_cumhist-W9-12A72B120.png> <
+./images/uvcov_SKA1REF2_-10_1100.png> <./images/uvcov_SKA1W9-12A72B120_-10_1100
+.png> <./images/uvcov_SKA1W9-0A72B120_-10_1100.png> <./images/uvcov_SKASUR_-10_
+1100.png> <./images/uvcov_SKA1REF2_-30_1100.png> <./images/uvcov_SKA1W9-12A72B1
+20_-30_1100.png> <./images/uvcov_SKA1W9-0A72B120_-30_1100.png> <./images/uvcov_
+SKASUR_-30_1100.png> <./images/uvcov_SKA1REF2_-50_1100.png> <./images/uvcov_SKA
+1W9-12A72B120_-50_1100.png> <./images/uvcov_SKA1W9-0A72B120_-50_1100.png> <./im
+ages/uvcov_SKASUR_-50_1100.png>] (./psf_mean-w9-0.tex)
+(./psf_sym-w9-0.tex) (./noise50k-w9-0.tex
+Overfull \hbox (1.12112pt too wide) in paragraph at lines 11--76
  [][] 
  []
 
 
-Overfull \hbox (9.03787pt too wide) in paragraph at lines 10--76
+Overfull \hbox (1.12112pt too wide) in paragraph at lines 11--76
  [][] 
  []
 
 
-Overfull \hbox (9.03787pt too wide) in paragraph at lines 10--76
+Overfull \hbox (1.12112pt too wide) in paragraph at lines 11--76
  [][] 
  []
 
 
-Overfull \hbox (9.03787pt too wide) in paragraph at lines 10--76
+Overfull \hbox (1.12112pt too wide) in paragraph at lines 11--76
+ [][] 
+ []
+
+) (./noise50-w9-0.tex
+Overfull \hbox (36.26053pt too wide) in paragraph at lines 11--76
  [][] 
  []
 
 
-Overfull \hbox (9.03787pt too wide) in paragraph at lines 10--76
+Overfull \hbox (32.8577pt too wide) in paragraph at lines 11--76
  [][] 
  []
 
 
-Overfull \hbox (9.03787pt too wide) in paragraph at lines 10--76
+Overfull \hbox (26.05203pt too wide) in paragraph at lines 11--76
  [][] 
  []
 
 
-Overfull \hbox (9.03787pt too wide) in paragraph at lines 10--76
+Overfull \hbox (36.26053pt too wide) in paragraph at lines 11--76
  [][] 
  []
 
 
-Overfull \hbox (9.03787pt too wide) in paragraph at lines 10--76
+Overfull \hbox (29.45486pt too wide) in paragraph at lines 11--76
  [][] 
  []
 
 
-Overfull \hbox (9.03787pt too wide) in paragraph at lines 10--76
- [][] 
- []
-
-) (./psf_sym-w9-0.tex) (./noise50k-w9-0.tex
-Overfull \hbox (73.69168pt too wide) in paragraph at lines 10--76
+Overfull \hbox (29.45486pt too wide) in paragraph at lines 11--76
  [][] 
  []
 
 
-Overfull \hbox (90.70584pt too wide) in paragraph at lines 10--76
+Overfull \hbox (39.66336pt too wide) in paragraph at lines 11--76
  [][] 
  []
 
 
-Overfull \hbox (80.49734pt too wide) in paragraph at lines 10--76
+Overfull \hbox (29.45486pt too wide) in paragraph at lines 11--76
  [][] 
  []
 
 
-Overfull \hbox (73.69168pt too wide) in paragraph at lines 10--76
+Overfull \hbox (22.6492pt too wide) in paragraph at lines 11--76
+ [][] 
+ []
+
+) (./noise166-w9-0.tex
+Overfull \hbox (2.23221pt too wide) in paragraph at lines 11--76
+ [][] 
+ []
+
+) (./snr10-w9-0.tex
+Overfull \hbox (2.23221pt too wide) in paragraph at lines 11--76
  [][] 
  []
 
 
-Overfull \hbox (80.49734pt too wide) in paragraph at lines 10--76
+Overfull \hbox (2.23221pt too wide) in paragraph at lines 11--76
  [][] 
  []
 
 
-Overfull \hbox (80.49734pt too wide) in paragraph at lines 10--76
+Overfull \hbox (2.23221pt too wide) in paragraph at lines 11--76
  [][] 
  []
 
-
-Overfull \hbox (73.69168pt too wide) in paragraph at lines 10--76
- [][] 
- []
-
-
-Overfull \hbox (80.49734pt too wide) in paragraph at lines 10--76
- [][] 
- []
-
-
-Overfull \hbox (80.49734pt too wide) in paragraph at lines 10--76
- [][] 
- []
-
-) (./noise50-w9-0.tex) (./noise166-w9-0.tex) (./snr10-w9-0.tex
-Overfull \hbox (2.23221pt too wide) in paragraph at lines 10--76
- [][] 
- []
-
-
-Overfull \hbox (2.23221pt too wide) in paragraph at lines 10--76
- [][] 
- []
-
-
-Overfull \hbox (2.23221pt too wide) in paragraph at lines 10--76
- [][] 
- []
-
-) (./snravg-w9-0.tex
-Overfull \hbox (12.4407pt too wide) in paragraph at lines 10--12
- [][] 
- []
-
-) (./hours-w9-0.tex
-Overfull \hbox (15.84354pt too wide) in paragraph at lines 10--12
- [][] 
- []
-
-) [6] [7] [8] [9] [10] [11] [12]
+) (./snravg-w9-0.tex) (./hours-w9-0.tex) [6] [7] [8] [9] [10] [11] [12]
+[13]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 336.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 335.
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--337
+Underfull \hbox (badness 10000) in paragraph at lines 335--336
 [][]$\OT1/cmtt/m/n/10 http : / / www . skatelescope . org / wp-[]content / uplo
 ads / 2013 / 05 / SKA-[]TEL-[]SKO-[]DD-[]001-[]1 _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--339
+Underfull \hbox (badness 10000) in paragraph at lines 336--338
 [][]$\OT1/cmtt/m/n/10 https : / / www . skatelescope . org / wp-[]content / upl
 oads / 2014 / 03 / SKA-[]TEL _ SCI-[]SKO-[]SRQ-[]001-[]1 _ Level _
  []
 
-[13] (./dec-30_650.tex
-<images/SKA1REF2_8h60s_dec-30_650MHz_1ch-natural-psf.fits.png, id=258, 722.7pt 
+[14] (./dec-30_650.tex
+<images/SKA1REF2_8h60s_dec-30_650MHz_1ch-natural-psf.fits.png, id=280, 722.7pt 
 x 722.7pt>
 File: images/SKA1REF2_8h60s_dec-30_650MHz_1ch-natural-psf.fits.png Graphic file
  (type png)
  <use images/SKA1REF2_8h60s_dec-30_650MHz_1ch-natural-psf.fits.png>
-<images/SKA1W9-12A72B120_8h60s_dec-30_650MHz_1ch-natural-psf.fits.png, id=259, 
+<images/SKA1W9-12A72B120_8h60s_dec-30_650MHz_1ch-natural-psf.fits.png, id=281, 
 722.7pt x 722.7pt>
 File: images/SKA1W9-12A72B120_8h60s_dec-30_650MHz_1ch-natural-psf.fits.png Grap
 hic file (type png)
 
 <use images/SKA1W9-12A72B120_8h60s_dec-30_650MHz_1ch-natural-psf.fits.png>
-<images/SKA1W9-0A72B120_8h60s_dec-30_650MHz_1ch-natural-psf.fits.png, id=260, 7
+<images/SKA1W9-0A72B120_8h60s_dec-30_650MHz_1ch-natural-psf.fits.png, id=282, 7
 22.7pt x 722.7pt>
 File: images/SKA1W9-0A72B120_8h60s_dec-30_650MHz_1ch-natural-psf.fits.png Graph
 ic file (type png)
 
 <use images/SKA1W9-0A72B120_8h60s_dec-30_650MHz_1ch-natural-psf.fits.png>
+<images/SKASUR_8h60s_dec-30_650MHz_1ch-natural-psf.fits.png, id=283, 722.7pt x 
+722.7pt>
+File: images/SKASUR_8h60s_dec-30_650MHz_1ch-natural-psf.fits.png Graphic file (
+type png)
+ <use images/SKASUR_8h60s_dec-30_650MHz_1ch-natural-psf.fits.png>
 <images/SKA1REF2_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10-psf.fits.png, 
-id=261, 722.7pt x 722.7pt>
+id=284, 722.7pt x 722.7pt>
 File: images/SKA1REF2_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10-psf.fits.
 png Graphic file (type png)
 
 <use images/SKA1REF2_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10-psf.fits.p
 ng>
 <images/SKA1W9-12A72B120_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10-psf.fi
-ts.png, id=262, 722.7pt x 722.7pt>
+ts.png, id=285, 722.7pt x 722.7pt>
 File: images/SKA1W9-12A72B120_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10-p
 sf.fits.png Graphic file (type png)
 
 <use images/SKA1W9-12A72B120_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10-ps
 f.fits.png>
 <images/SKA1W9-0A72B120_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10-psf.fit
-s.png, id=263, 722.7pt x 722.7pt>
+s.png, id=286, 722.7pt x 722.7pt>
 File: images/SKA1W9-0A72B120_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10-ps
 f.fits.png Graphic file (type png)
 
 <use images/SKA1W9-0A72B120_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10-psf
 .fits.png>
+<images/SKASUR_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10-psf.fits.png, id
+=287, 722.7pt x 722.7pt>
+File: images/SKASUR_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10-psf.fits.pn
+g Graphic file (type png)
+
+<use images/SKASUR_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10-psf.fits.png
+>
 <images/SKA1REF2_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10,taper=1-psf.fi
-ts.png, id=264, 722.7pt x 722.7pt>
+ts.png, id=288, 722.7pt x 722.7pt>
 File: images/SKA1REF2_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10,taper=1-p
 sf.fits.png Graphic file (type png)
 
 <use images/SKA1REF2_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10,taper=1-ps
 f.fits.png>
 <images/SKA1W9-12A72B120_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10,taper=
-1-psf.fits.png, id=265, 722.7pt x 722.7pt>
+1-psf.fits.png, id=289, 722.7pt x 722.7pt>
 File: images/SKA1W9-12A72B120_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10,t
 aper=1-psf.fits.png Graphic file (type png)
 
 <use images/SKA1W9-12A72B120_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10,ta
 per=1-psf.fits.png>
 <images/SKA1W9-0A72B120_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10,taper=1
--psf.fits.png, id=266, 722.7pt x 722.7pt>
+-psf.fits.png, id=290, 722.7pt x 722.7pt>
 File: images/SKA1W9-0A72B120_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10,ta
 per=1-psf.fits.png Graphic file (type png)
 
 <use images/SKA1W9-0A72B120_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10,tap
-er=1-psf.fits.png>) (./dec-30_800.tex
-<images/SKA1REF2_8h60s_dec-30_800MHz_1ch-natural-psf.fits.png, id=267, 722.7pt 
+er=1-psf.fits.png>
+<images/SKASUR_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10,taper=1-psf.fits
+.png, id=291, 722.7pt x 722.7pt>
+File: images/SKASUR_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10,taper=1-psf
+.fits.png Graphic file (type png)
+
+<use images/SKASUR_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10,taper=1-psf.
+fits.png>) (./dec-30_800.tex
+<images/SKA1REF2_8h60s_dec-30_800MHz_1ch-natural-psf.fits.png, id=292, 722.7pt 
 x 722.7pt>
 File: images/SKA1REF2_8h60s_dec-30_800MHz_1ch-natural-psf.fits.png Graphic file
  (type png)
  <use images/SKA1REF2_8h60s_dec-30_800MHz_1ch-natural-psf.fits.png>
-<images/SKA1W9-12A72B120_8h60s_dec-30_800MHz_1ch-natural-psf.fits.png, id=268, 
+<images/SKA1W9-12A72B120_8h60s_dec-30_800MHz_1ch-natural-psf.fits.png, id=293, 
 722.7pt x 722.7pt>
 File: images/SKA1W9-12A72B120_8h60s_dec-30_800MHz_1ch-natural-psf.fits.png Grap
 hic file (type png)
 
 <use images/SKA1W9-12A72B120_8h60s_dec-30_800MHz_1ch-natural-psf.fits.png>
-<images/SKA1W9-0A72B120_8h60s_dec-30_800MHz_1ch-natural-psf.fits.png, id=269, 7
+<images/SKA1W9-0A72B120_8h60s_dec-30_800MHz_1ch-natural-psf.fits.png, id=294, 7
 22.7pt x 722.7pt>
 File: images/SKA1W9-0A72B120_8h60s_dec-30_800MHz_1ch-natural-psf.fits.png Graph
 ic file (type png)
 
 <use images/SKA1W9-0A72B120_8h60s_dec-30_800MHz_1ch-natural-psf.fits.png>
+<images/SKASUR_8h60s_dec-30_800MHz_1ch-natural-psf.fits.png, id=295, 722.7pt x 
+722.7pt>
+File: images/SKASUR_8h60s_dec-30_800MHz_1ch-natural-psf.fits.png Graphic file (
+type png)
+ <use images/SKASUR_8h60s_dec-30_800MHz_1ch-natural-psf.fits.png>
 <images/SKA1REF2_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10-psf.fits.png, 
-id=270, 722.7pt x 722.7pt>
+id=296, 722.7pt x 722.7pt>
 File: images/SKA1REF2_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10-psf.fits.
 png Graphic file (type png)
 
 <use images/SKA1REF2_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10-psf.fits.p
 ng>
 <images/SKA1W9-12A72B120_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10-psf.fi
-ts.png, id=271, 722.7pt x 722.7pt>
+ts.png, id=297, 722.7pt x 722.7pt>
 File: images/SKA1W9-12A72B120_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10-p
 sf.fits.png Graphic file (type png)
 
 <use images/SKA1W9-12A72B120_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10-ps
 f.fits.png>
 <images/SKA1W9-0A72B120_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10-psf.fit
-s.png, id=272, 722.7pt x 722.7pt>
+s.png, id=298, 722.7pt x 722.7pt>
 File: images/SKA1W9-0A72B120_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10-ps
 f.fits.png Graphic file (type png)
 
 <use images/SKA1W9-0A72B120_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10-psf
 .fits.png>
+<images/SKASUR_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10-psf.fits.png, id
+=299, 722.7pt x 722.7pt>
+File: images/SKASUR_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10-psf.fits.pn
+g Graphic file (type png)
+
+<use images/SKASUR_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10-psf.fits.png
+>
 <images/SKA1REF2_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10,taper=1-psf.fi
-ts.png, id=273, 722.7pt x 722.7pt>
+ts.png, id=300, 722.7pt x 722.7pt>
 File: images/SKA1REF2_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10,taper=1-p
 sf.fits.png Graphic file (type png)
 
 <use images/SKA1REF2_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10,taper=1-ps
 f.fits.png>
 <images/SKA1W9-12A72B120_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10,taper=
-1-psf.fits.png, id=274, 722.7pt x 722.7pt>
+1-psf.fits.png, id=301, 722.7pt x 722.7pt>
 File: images/SKA1W9-12A72B120_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10,t
 aper=1-psf.fits.png Graphic file (type png)
 
 <use images/SKA1W9-12A72B120_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10,ta
 per=1-psf.fits.png>
 <images/SKA1W9-0A72B120_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10,taper=1
--psf.fits.png, id=275, 722.7pt x 722.7pt>
+-psf.fits.png, id=302, 722.7pt x 722.7pt>
 File: images/SKA1W9-0A72B120_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10,ta
 per=1-psf.fits.png Graphic file (type png)
 
 <use images/SKA1W9-0A72B120_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10,tap
-er=1-psf.fits.png>) (./dec-30_1100.tex
-<images/SKA1REF2_8h60s_dec-30_1100MHz_1ch-natural-psf.fits.png, id=276, 722.7pt
+er=1-psf.fits.png>
+<images/SKASUR_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10,taper=1-psf.fits
+.png, id=303, 722.7pt x 722.7pt>
+File: images/SKASUR_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10,taper=1-psf
+.fits.png Graphic file (type png)
+
+<use images/SKASUR_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10,taper=1-psf.
+fits.png>) (./dec-30_1100.tex
+<images/SKA1REF2_8h60s_dec-30_1100MHz_1ch-natural-psf.fits.png, id=304, 722.7pt
  x 722.7pt>
 File: images/SKA1REF2_8h60s_dec-30_1100MHz_1ch-natural-psf.fits.png Graphic fil
 e (type png)
 
 <use images/SKA1REF2_8h60s_dec-30_1100MHz_1ch-natural-psf.fits.png>
-<images/SKA1W9-12A72B120_8h60s_dec-30_1100MHz_1ch-natural-psf.fits.png, id=277,
+<images/SKA1W9-12A72B120_8h60s_dec-30_1100MHz_1ch-natural-psf.fits.png, id=305,
  722.7pt x 722.7pt>
 File: images/SKA1W9-12A72B120_8h60s_dec-30_1100MHz_1ch-natural-psf.fits.png Gra
 phic file (type png)
 
 <use images/SKA1W9-12A72B120_8h60s_dec-30_1100MHz_1ch-natural-psf.fits.png>
-<images/SKA1W9-0A72B120_8h60s_dec-30_1100MHz_1ch-natural-psf.fits.png, id=278, 
+<images/SKA1W9-0A72B120_8h60s_dec-30_1100MHz_1ch-natural-psf.fits.png, id=306, 
 722.7pt x 722.7pt>
 File: images/SKA1W9-0A72B120_8h60s_dec-30_1100MHz_1ch-natural-psf.fits.png Grap
 hic file (type png)
 
 <use images/SKA1W9-0A72B120_8h60s_dec-30_1100MHz_1ch-natural-psf.fits.png>
+<images/SKASUR_8h60s_dec-30_1100MHz_1ch-natural-psf.fits.png, id=307, 722.7pt x
+ 722.7pt>
+File: images/SKASUR_8h60s_dec-30_1100MHz_1ch-natural-psf.fits.png Graphic file 
+(type png)
+ <use images/SKASUR_8h60s_dec-30_1100MHz_1ch-natural-psf.fits.png>
 <images/SKA1REF2_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10-psf.fits.png,
- id=279, 722.7pt x 722.7pt>
+ id=308, 722.7pt x 722.7pt>
 File: images/SKA1REF2_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10-psf.fits
 .png Graphic file (type png)
 
 <use images/SKA1REF2_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10-psf.fits.
 png>
 <images/SKA1W9-12A72B120_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10-psf.f
-its.png, id=280, 722.7pt x 722.7pt>
+its.png, id=309, 722.7pt x 722.7pt>
 File: images/SKA1W9-12A72B120_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10-
 psf.fits.png Graphic file (type png)
 
 <use images/SKA1W9-12A72B120_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10-p
 sf.fits.png>
 <images/SKA1W9-0A72B120_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10-psf.fi
-ts.png, id=281, 722.7pt x 722.7pt>
+ts.png, id=310, 722.7pt x 722.7pt>
 File: images/SKA1W9-0A72B120_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10-p
 sf.fits.png Graphic file (type png)
 
 <use images/SKA1W9-0A72B120_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10-ps
 f.fits.png>
+<images/SKASUR_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10-psf.fits.png, i
+d=311, 722.7pt x 722.7pt>
+File: images/SKASUR_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10-psf.fits.p
+ng Graphic file (type png)
+
+<use images/SKASUR_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10-psf.fits.pn
+g>
 <images/SKA1REF2_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10,taper=1-psf.f
-its.png, id=282, 722.7pt x 722.7pt>
+its.png, id=312, 722.7pt x 722.7pt>
 File: images/SKA1REF2_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10,taper=1-
 psf.fits.png Graphic file (type png)
 
 <use images/SKA1REF2_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10,taper=1-p
 sf.fits.png>
 <images/SKA1W9-12A72B120_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10,taper
-=1-psf.fits.png, id=283, 722.7pt x 722.7pt>
+=1-psf.fits.png, id=313, 722.7pt x 722.7pt>
 File: images/SKA1W9-12A72B120_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10,
 taper=1-psf.fits.png Graphic file (type png)
 
 <use images/SKA1W9-12A72B120_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10,t
 aper=1-psf.fits.png>
 <images/SKA1W9-0A72B120_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10,taper=
-1-psf.fits.png, id=284, 722.7pt x 722.7pt>
+1-psf.fits.png, id=314, 722.7pt x 722.7pt>
 File: images/SKA1W9-0A72B120_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10,t
 aper=1-psf.fits.png Graphic file (type png)
 
 <use images/SKA1W9-0A72B120_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10,ta
-per=1-psf.fits.png>) [14 <./images/SKA1REF2_8h60s_dec-30_650MHz_1ch-natural-psf
-.fits.png> <./images/SKA1W9-12A72B120_8h60s_dec-30_650MHz_1ch-natural-psf.fits.
-png> <./images/SKA1W9-0A72B120_8h60s_dec-30_650MHz_1ch-natural-psf.fits.png> <.
-/images/SKA1REF2_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10-psf.fits.png> 
-<./images/SKA1W9-12A72B120_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10-psf.
-fits.png> <./images/SKA1W9-0A72B120_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fo
-v=10-psf.fits.png> <./images/SKA1REF2_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,
-fov=10,taper=1-psf.fits.png> <./images/SKA1W9-12A72B120_8h60s_dec-30_650MHz_1ch
--briggs,robust=-2,fov=10,taper=1-psf.fits.png> <./images/SKA1W9-0A72B120_8h60s_
-dec-30_650MHz_1ch-briggs,robust=-2,fov=10,taper=1-psf.fits.png>] [15 <./images/
-SKA1REF2_8h60s_dec-30_800MHz_1ch-natural-psf.fits.png> <./images/SKA1W9-12A72B1
-20_8h60s_dec-30_800MHz_1ch-natural-psf.fits.png> <./images/SKA1W9-0A72B120_8h60
-s_dec-30_800MHz_1ch-natural-psf.fits.png> <./images/SKA1REF2_8h60s_dec-30_800MH
-z_1ch-briggs,robust=-2,fov=10-psf.fits.png> <./images/SKA1W9-12A72B120_8h60s_de
-c-30_800MHz_1ch-briggs,robust=-2,fov=10-psf.fits.png> <./images/SKA1W9-0A72B120
-_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10-psf.fits.png> <./images/SKA1RE
-F2_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10,taper=1-psf.fits.png> <./ima
-ges/SKA1W9-12A72B120_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10,taper=1-ps
-f.fits.png> <./images/SKA1W9-0A72B120_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,
-fov=10,taper=1-psf.fits.png>] [16 <./images/SKA1REF2_8h60s_dec-30_1100MHz_1ch-n
-atural-psf.fits.png> <./images/SKA1W9-12A72B120_8h60s_dec-30_1100MHz_1ch-natura
-l-psf.fits.png> <./images/SKA1W9-0A72B120_8h60s_dec-30_1100MHz_1ch-natural-psf.
-fits.png> <./images/SKA1REF2_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10-p
-sf.fits.png> <./images/SKA1W9-12A72B120_8h60s_dec-30_1100MHz_1ch-briggs,robust=
--2,fov=10-psf.fits.png> <./images/SKA1W9-0A72B120_8h60s_dec-30_1100MHz_1ch-brig
-gs,robust=-2,fov=10-psf.fits.png> <./images/SKA1REF2_8h60s_dec-30_1100MHz_1ch-b
-riggs,robust=-2,fov=10,taper=1-psf.fits.png> <./images/SKA1W9-12A72B120_8h60s_d
-ec-30_1100MHz_1ch-briggs,robust=-2,fov=10,taper=1-psf.fits.png> <./images/SKA1W
-9-0A72B120_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10,taper=1-psf.fits.pn
-g>] (./w9-0.aux) )
+per=1-psf.fits.png>
+<images/SKASUR_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10,taper=1-psf.fit
+s.png, id=315, 722.7pt x 722.7pt>
+File: images/SKASUR_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10,taper=1-ps
+f.fits.png Graphic file (type png)
+
+<use images/SKASUR_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10,taper=1-psf
+.fits.png>) [15 <./images/SKA1REF2_8h60s_dec-30_650MHz_1ch-natural-psf.fits.png
+> <./images/SKA1W9-12A72B120_8h60s_dec-30_650MHz_1ch-natural-psf.fits.png> <./i
+mages/SKA1W9-0A72B120_8h60s_dec-30_650MHz_1ch-natural-psf.fits.png> <./images/S
+KASUR_8h60s_dec-30_650MHz_1ch-natural-psf.fits.png> <./images/SKA1REF2_8h60s_de
+c-30_650MHz_1ch-briggs,robust=-2,fov=10-psf.fits.png> <./images/SKA1W9-12A72B12
+0_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10-psf.fits.png> <./images/SKA1W
+9-0A72B120_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10-psf.fits.png> <./ima
+ges/SKASUR_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10-psf.fits.png> <./ima
+ges/SKA1REF2_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10,taper=1-psf.fits.p
+ng> <./images/SKA1W9-12A72B120_8h60s_dec-30_650MHz_1ch-briggs,robust=-2,fov=10,
+taper=1-psf.fits.png> <./images/SKA1W9-0A72B120_8h60s_dec-30_650MHz_1ch-briggs,
+robust=-2,fov=10,taper=1-psf.fits.png> <./images/SKASUR_8h60s_dec-30_650MHz_1ch
+-briggs,robust=-2,fov=10,taper=1-psf.fits.png>] [16 <./images/SKA1REF2_8h60s_de
+c-30_800MHz_1ch-natural-psf.fits.png> <./images/SKA1W9-12A72B120_8h60s_dec-30_8
+00MHz_1ch-natural-psf.fits.png> <./images/SKA1W9-0A72B120_8h60s_dec-30_800MHz_1
+ch-natural-psf.fits.png> <./images/SKASUR_8h60s_dec-30_800MHz_1ch-natural-psf.f
+its.png> <./images/SKA1REF2_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10-psf
+.fits.png> <./images/SKA1W9-12A72B120_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,
+fov=10-psf.fits.png> <./images/SKA1W9-0A72B120_8h60s_dec-30_800MHz_1ch-briggs,r
+obust=-2,fov=10-psf.fits.png> <./images/SKASUR_8h60s_dec-30_800MHz_1ch-briggs,r
+obust=-2,fov=10-psf.fits.png> <./images/SKA1REF2_8h60s_dec-30_800MHz_1ch-briggs
+,robust=-2,fov=10,taper=1-psf.fits.png> <./images/SKA1W9-12A72B120_8h60s_dec-30
+_800MHz_1ch-briggs,robust=-2,fov=10,taper=1-psf.fits.png> <./images/SKA1W9-0A72
+B120_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10,taper=1-psf.fits.png> <./i
+mages/SKASUR_8h60s_dec-30_800MHz_1ch-briggs,robust=-2,fov=10,taper=1-psf.fits.p
+ng>] [17 <./images/SKA1REF2_8h60s_dec-30_1100MHz_1ch-natural-psf.fits.png> <./i
+mages/SKA1W9-12A72B120_8h60s_dec-30_1100MHz_1ch-natural-psf.fits.png> <./images
+/SKA1W9-0A72B120_8h60s_dec-30_1100MHz_1ch-natural-psf.fits.png> <./images/SKASU
+R_8h60s_dec-30_1100MHz_1ch-natural-psf.fits.png> <./images/SKA1REF2_8h60s_dec-3
+0_1100MHz_1ch-briggs,robust=-2,fov=10-psf.fits.png> <./images/SKA1W9-12A72B120_
+8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10-psf.fits.png> <./images/SKA1W9
+-0A72B120_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10-psf.fits.png> <./ima
+ges/SKASUR_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10-psf.fits.png> <./im
+ages/SKA1REF2_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=10,taper=1-psf.fits
+.png> <./images/SKA1W9-12A72B120_8h60s_dec-30_1100MHz_1ch-briggs,robust=-2,fov=
+10,taper=1-psf.fits.png> <./images/SKA1W9-0A72B120_8h60s_dec-30_1100MHz_1ch-bri
+ggs,robust=-2,fov=10,taper=1-psf.fits.png> <./images/SKASUR_8h60s_dec-30_1100MH
+z_1ch-briggs,robust=-2,fov=10,taper=1-psf.fits.png>] (./w9-0.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 331 ({)
+### simple group (level 1) entered at line 330 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 8781 strings out of 493848
- 139340 string characters out of 1152823
- 751533 words of memory out of 3000000
- 11685 multiletter control sequences out of 15000+50000
+ 9465 strings out of 493848
+ 154306 string characters out of 1152823
+ 888598 words of memory out of 3000000
+ 12348 multiletter control sequences out of 15000+50000
  21201 words of font info for 81 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 41i,13n,47p,636b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,13n,47p,778b,463s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10
 .pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/
 share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/share/texmf-
@@ -1024,9 +1095,9 @@ lic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
 s/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.
 pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/sh
 are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on w9-0.pdf (16 pages, 3304388 bytes).
+Output written on w9-0.pdf (17 pages, 4031881 bytes).
 PDF statistics:
- 452 PDF objects out of 1000 (max. 8388607)
- 107 named destinations out of 1000 (max. 500000)
- 341 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 494 PDF objects out of 1000 (max. 8388607)
+ 112 named destinations out of 1000 (max. 500000)
+ 421 words of extra memory for PDF output out of 10000 (max. 10000000)
 

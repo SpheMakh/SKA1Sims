@@ -7,7 +7,7 @@ import sys
 
 stats_file = sys.argv[1]
 format = "%(lo0)s %(lores)s %(lofreq)d %(freq)d %(dec)d %(resbin)s %(ridx)d %(weight)s %(widx)d " + \
-  "%(noise166).2g %(flux10).2f %(snr10).2f %(hours).2f %(snravg).2f %(relnoise).2f %(noise50).2g %(noise50_ref2).2g  %(psf_area).2g %(psf_sym).2f %(psf_mean).4f %(noise50k).2g\n";
+  "%(noise166).2g %(flux10).2f %(snr10).2f %(hours).2f %(snravg).2f %(relnoise).2f %(noise50).2g %(noise50_ref2).2g  %(psf_area).2g %(psf_sym).2f %(psf_mean).4f %(noise50k).2g %(speed).2g\n";
 
 # determine field names from format string
 fields = [ x.split(")")[0] for x in format.split("(")[1:] ];
@@ -41,7 +41,7 @@ def reprocess_dict (dict1):
     lo = lo0;
     if lo[-2] in "abc":
       lores = "0."+lo[-1];
-      lofreq = dict(a=650,b=800,c=1100)[lo[-2]];
+      lofreq = dict(a=650,b=800,c=1000)[lo[-2]];
       lo = lo[:-2];
     else:
       lores = 0;
@@ -86,17 +86,17 @@ for kk,(noise50,origkey) in PIXNOISE.items():
   # look up resolution and weight bin
   ridx = resbins.index((r0,r1))
   widx = wbins.index(weight);
-  # compute adjusted SNR ratio (relative to 10 uJy at 1100 MHz): scale up by source flux
-  flux10 = 10*(freq/1100.)**-0.7; 
+  # compute adjusted SNR ratio (relative to 10 uJy at 1000 MHz): scale up by source flux
+  flux10 = 10*(freq/1000.)**-0.7; 
   snr10 = (flux10/noise166) if noise166 else 0;
   # compute the normalized SNR as follows:
-  # assume flux=10uJy at 1100, rescale with spectral index
+  # assume flux=10uJy at 1000, rescale with spectral index
   snr1 = numpy.zeros(3,float)
-  for i,freq1 in enumerate((650,800,1100)):
+  for i,freq1 in enumerate((650,800,1000)):
     noise1 = PIXNOISE[lo0,lores,lofreq,freq1,r0,r1,dec,weight][0]*1e+6/math.sqrt(166./50.);
     if noise1:
       # flux of 10uJy scaled to frequency, noise scaled to 166 MHz band
-      snr1[i] = 10*(freq1/1100.)**-0.7 / noise1;  
+      snr1[i] = 10*(freq1/1000.)**-0.7 / noise1;  
   # compute average SNR
   snravg = math.sqrt((snr1**2).sum());
   # this is the SNR after 8 hours -- how many hours needed for SNR=10?
@@ -109,6 +109,13 @@ for kk,(noise50,origkey) in PIXNOISE.items():
   psf_sym = 1.0 - exey[0]/exey[1]
   psf_mean = mean
   # ----------------------------------------
+  # Survey Speed
+  fov = 1.4 if lo0.startswith('SKA1') else 18.
+  # ska-sur survey speed values. ! Hardcode
+  if dec==-10: ss = {'0':1.00e-1,'1':2.90e-1,'2':1.90e-1,'3':1.40e-1,'4':4.60e-3}
+  elif dec==-30: ss = {'0':1.00e-1,'1':3.00e-1,'2':1.80e-1,'3':1.40e-1,'4':4.40e-3}
+  elif dec==-50: ss = {'0':8.10e-2,'1':3.00e-1,'2':1.80e-1,'3':1.40e-1,'4':4.20e-3}
+  speed = fov/hours / ss[str(ridx)]
   resbin="%.1f-%.1farcsec"%(r0,r1) if r0<60 else "%.1f-%.1farcmin"%(r0/60,r1/60);
   ff.write(format%locals());
   ff1.write(format.replace(" ",",")%locals());

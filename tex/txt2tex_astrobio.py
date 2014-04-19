@@ -113,22 +113,23 @@ if __name__=="__main__":
     keys.sort()
     if metric not in ["hours","snravg"]:
      for key in keys:
-      x = final[key][1]
-      typ = ["S30"]*ncols
-      dtype = [item for item in zip(cols,typ)]
-      s = np.ndarray([x.shape[0],x.shape[1]+1],dtype="S100")
-      s[:,0] = lays
-      s[:,1:(resbins+1)] = color(x[:,:resbins])
-      s[:,(resbins+1):(2*resbins+1)] = color(x[:,resbins:(2*resbins)])
-      s[:,(2*resbins+1):(3*resbins+1)] = color(x[:,(2*resbins):(3*resbins)])
-      top = "\\subfloat[%s]{\\begin{tabular}{|lcccc||cccc||cccc|} \n \\tabularnewline \\cline{2-13} \\multicolumn{1}{c}{ } & \\multicolumn{4}{|c}{8GHz}  & \\multicolumn{4}{c}{12GHz}  & \\multicolumn{4}{c|}{13.8GHz} \\tabularnewline \\cline{1-13} \n resbin  &1 & 2 & 3 & 4  & 1 & 2 & 3 & 4  & 1 & 2 & 3 & 4 \\tabularnewline \\hline\n"%(decsWeights[key]) 
-      texfile.write(top)
-      for row in range(nrows):
-       for i,col in enumerate(cols): 
-         locals()[col] = s[row,i]
-       texfile.write(fmt%locals()+"%s \\hline \n"%('\\tabularnewline' if (nrows-row) == 1 else '\\\\'))
-       #print "-------------------------------------------\n",fmt%locals()
-      texfile.write("\\end{tabular}}\\hfil \n")
+      if key.endswith('0'):
+       x = final[key][1]
+       typ = ["S30"]*ncols
+       dtype = [item for item in zip(cols,typ)]
+       s = np.ndarray([x.shape[0],x.shape[1]+1],dtype="S100")
+       s[:,0] = lays
+       s[:,1:(resbins+1)] = color(x[:,:resbins])
+       s[:,(resbins+1):(2*resbins+1)] = color(x[:,resbins:(2*resbins)])
+       s[:,(2*resbins+1):(3*resbins+1)] = color(x[:,(2*resbins):(3*resbins)])
+       top = "\\subfloat[%s]{\\begin{tabular}{|lcccc||cccc||cccc|} \n \\tabularnewline \\cline{2-13} \\multicolumn{1}{c}{ } & \\multicolumn{4}{|c}{8GHz}  & \\multicolumn{4}{c}{12GHz}  & \\multicolumn{4}{c|}{13.8GHz} \\tabularnewline \\cline{1-13} \n resbin  &1 & 2 & 3 & 4  & 1 & 2 & 3 & 4  & 1 & 2 & 3 & 4 \\tabularnewline \\hline\n"%(decsWeights[key]) 
+       texfile.write(top)
+       for row in range(nrows):
+        for i,col in enumerate(cols): 
+          locals()[col] = s[row,i]
+        texfile.write(fmt%locals()+"%s \\hline \n"%('\\tabularnewline' if (nrows-row) == 1 else '\\\\'))
+        #print "-------------------------------------------\n",fmt%locals()
+       texfile.write("\\end{tabular}}\\hfil \n")
     else :
       print metric
       ncols = resbins + 1
@@ -139,9 +140,10 @@ if __name__=="__main__":
       fmt1 =  repr(["$(c%d)s"%d for d in range(ncols)]).strip("[]").replace("'","").replace(","," &").replace("$","%")
       s[:,0] = lays
       for i,key in enumerate(keys,start=0):
+       if key.endswith('0'):
         s = np.ndarray([nlays,resbins+1],dtype="S100")
         s[:,0] = lays
-        if i%ndecs == 0 and i!=1:
+        if i%nwi == 0 and i!=1:
           x = final[key][1]
           s[:,1:(resbins+1)] = color(x[:,:resbins])
           top = "\\subfloat[%s]{\\begin{tabular}{|lcccc|} \\hline \n resbin & 1 & 2 & 3 & 4 \\tabularnewline \\hline\n"%(decsWeights[key])

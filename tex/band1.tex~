@@ -36,7 +36,8 @@ design that enhance the sensitivity at smaller angular scales (e.g. 0.4-1 arcsec
 at larger scales. The changes we propose are guided by the SKA1-Mid level-zero science requirements \cite{srd}, which suggest that
 very long baselines ($>150$km) are not necessary to achieve the SKA1-Mid science objectives. In particular, we show that a 254
 dish layout with a maximum baseline of 120km improves the SKA1-Mid survey speed by more than 55\% and is 3.5 times faster than
-SKA-SUR (see Table \ref{tab:speed-band1}) on angular scales 0.4-1 arcsec (over 650-1000MHz), without compromising the performance
+SKA-SUR (see Table \ref{tab:speed_avg-band1}) on angular scales 0.4-1 arcsec (over 650-1000MHz), without compromising the
+performance
 at larger scales. Such an improvement on these scales could be transformational for other sciences, such as cosmology with weak
 lensing. Furthermore, this layout spans significantly less space which could potentially reduce trenching and data transport
 costs. We also show that with a conservative addition of 12 dishes the SKA1-Mid survey speed can be improved by up 67\% on the

@@ -2,7 +2,7 @@
 import numpy as np
 import sys,os
 
-CLR = "For each column, the intensity of the color increases with the value"
+CLR = "For each column the intensity of the color increases with the value"
 SUF = "These values are generated at 650, 800 and 1000 MHz, at angular scales \\{0.4-1, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4, 5\\} respectively. This is done for natural weighting at declinations -10, -30 and -50 degrees. %s."%CLR
 CPT = {}
 CPT["noise50k"] = "Noise (in $\\mu$Jy) for a 50kHz band after an 8hr synthesis with a 60s integration for the differenr layouts at different angular scales. %s"%SUF
@@ -14,13 +14,13 @@ CPT["snravg"] = "SNR after 8 hours relative to a 10$\\mu$Jy source at 1000Hz (16
 
 CPT["hours"] = "The hours required to reach a mean SNR of 10 (average over 650,800 and 1000MHz), relative to a 10$\\mu$Jy source at 1000MHz with a spectral index of -0.7 for the different layouts at different angular scales. These values are generated for angular scales \\{0.4-1, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4, 5\\} respectively. This is done for natural weighting at declinations -10, -30 and -50 degrees. %s."%CLR
 
-CPT["speed"] = "Relative (w.r.t SKASUR) survey speeds for the different layouts, calculated using the FOV (using PAF FOV for SKASUR) values given in the SRD \\cite{srd} and the values in table \\ref{tab:hours-%s}. These values are generated for angular scales \\{0.4-1, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4, 5\\} respectively at declenations -10, -30 and -50 degrees. %s."%(sys.argv[-1],CLR)
+CPT["speed"] = "Relative (w.r.t SKASUR at 800MHz) survey speeds for the different layouts, calculated using the FOV (using PAF FOV for SKASUR) values given in the SRD \\cite{srd} and the values in table \\ref{tab:snr10-%s}. These values are generated at 650, 800 and 1000MHz for angular scales \\{0.4-1, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4, 5\\} respectively at declenations -10, -30 and -50 degrees. %s."%(sys.argv[-1],CLR)
 
 CPT["speed_avg"] = "Relative (w.r.t SKASUR) average survey speeds for the different layouts, calculated using the FOV (PAF FOV for SKASUR) values given in the SRD \\cite{srd} and the values in table \\ref{tab:snr10-%s}. These values are generated for angular scales \\{0.4-1, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4, 5\\} respectively. This is done for natural weighting at declenations -10, -30 and -50 degrees. %s."%(sys.argv[-1],CLR)
 
-CPT["psf_sym"] = "PSF symmetry (see \\autoref{sec:exp})  for the different layouts at different angular scales. These values are generated at 650, 800 and 1000MHz, for angular scales \\{0.4-1, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4, 5\\} respectively. This is done for natural weighting at declinations -10, -30 and -50 degrees. %s."%CLR
+CPT["psf_sym"] = "PSF symmetry (see \\autoref{sec:exp})  for the different layouts at different angular scales. These values are generated at 650, 800 and 1000MHz for angular scales \\{0.4-1, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4, 5\\} respectively. This is done for natural weighting at declinations -10, -30 and -50 degrees. %s."%CLR
 
-CPT["psf_mean"] = "FWHM PSF sizes (in arcseconds) for the different layouts at different angular scales. These values are generated at 650, 800 and 1000MHz, for angular scales \\{0.4-1, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4, 5\\} respectively. This is done for natural weighting at declinations -10, -30 and -50 degrees. %s."%CLR
+CPT["psf_mean"] = "FWHM PSF sizes (in arcseconds) for the different layouts at different angular scales. These values are generated at 650, 800 and 1000MHz for angular scales \\{0.4-1, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4, 5\\} respectively. This is done for natural weighting at declinations -10, -30 and -50 degrees. %s."%CLR
 
 def select_color(c,v,color):
    fct = .6
@@ -116,9 +116,17 @@ if __name__=="__main__":
     cols = ["c%d"%d for d in range(ncols)]
     keys = final.keys()
     keys.sort()
-    if metric not in ["hours","snravg","speed","speed_avg"]:
+    if metric not in ["hours","snravg","speed_avg"]:
      for key in keys:
-      x = final[key][1]
+      x = final[key][1] 
+      if metric.startswith('speed'):
+         nm = x[-1,resbins:(2*resbins)].copy()
+         for j in range(resbins*nfreqs):
+           if (j>=resbins)&(j<2*resbins): jj = j - resbins
+           elif j> (resbins-1)*2 +1: jj = j - 2*resbins 
+           else: jj = j
+           x[:,j] = x[:,j]/nm[jj]
+       #    print '%d >> %d'%(j,jj)
       typ = ["S30"]*ncols
       dtype = [item for item in zip(cols,typ)]
       s = np.ndarray([x.shape[0],x.shape[1]+1],dtype="S100")

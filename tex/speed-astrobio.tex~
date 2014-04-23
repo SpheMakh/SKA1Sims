@@ -1,0 +1,13 @@
+% Auto generated table
+ \begin{table}[!htp]
+ \tiny{
+\subfloat[DEC=-30, natural weighting]{\begin{tabular}{|lcccc||cccc||cccc|} 
+ \tabularnewline \cline{2-13} \multicolumn{1}{c}{ } & \multicolumn{4}{|c}{8GHz}  & \multicolumn{4}{c}{12GHz}  & \multicolumn{4}{c|}{13.8GHz} \tabularnewline \cline{1-13} 
+ resbin  &1 & 2 & 3 & 4  & 1 & 2 & 3 & 4  & 1 & 2 & 3 & 4 \tabularnewline \hline
+SKA1REF2 & 2.64 \cellcolor{blue!60.00} & 0.44 \cellcolor{red!18.00} & 1.15 \cellcolor{green!44.25} & 1.12 \cellcolor{orange!60.00} & 0.35 \cellcolor{blue!18.00} & 0.53 \cellcolor{red!18.00} & 1.21 \cellcolor{green!60.00} & 1.27 \cellcolor{orange!60.00} & 0.31 \cellcolor{blue!18.00} & 0.84 \cellcolor{red!18.00} & 1.22 \cellcolor{green!60.00} & 1.30 \cellcolor{orange!60.00}\\ \hline 
+SKA1W9-12A72B120 & 1.27 \cellcolor{blue!25.00} & 1.18 \cellcolor{red!60.00} & 1.24 \cellcolor{green!60.00} & 0.96 \cellcolor{orange!18.00} & 1.16 \cellcolor{blue!60.00} & 1.17 \cellcolor{red!60.00} & 1.21 \cellcolor{green!60.00} & 0.98 \cellcolor{orange!18.00} & 1.12 \cellcolor{blue!60.00} & 1.26 \cellcolor{red!60.00} & 1.18 \cellcolor{green!52.36} & 1.00 \cellcolor{orange!18.00}\\ \hline 
+SKA1W9-0A72B120 & 1.00 \cellcolor{blue!18.00} & 1.00 \cellcolor{red!49.69} & 1.00 \cellcolor{green!18.00} & 1.00 \cellcolor{orange!28.50} & 1.00 \cellcolor{blue!51.68} & 1.00 \cellcolor{red!48.65} & 1.00 \cellcolor{green!18.00} & 1.00 \cellcolor{orange!20.62} & 1.00 \cellcolor{blue!53.54} & 1.00 \cellcolor{red!33.75} & 1.00 \cellcolor{green!18.00} & 1.00 \cellcolor{orange!18.00}\tabularnewline \hline 
+\end{tabular}}\hfil 
+
+\caption{Relative (w.r.t SKASUR) survey speeds for the different layouts, calculated using the FOV (using PAF FOV for SKASUR) values given in the SRD \cite{srd} and the values in table \ref{tab:hours-astrobio}. These values are generated at 8, 12 and 13.8GHz for angular scales \{0.04-0.05, 0.05-0.1, 0.1-1, 1-12}\} arcsec and are labeled {\it resbin} \{1, 2, 3, 4\} respectively at declenations -10, -30 and -50 degrees. For each column, the intensity of the color increases with the value.}\label{tab:speed}}
+ \end{table}

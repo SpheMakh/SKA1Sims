@@ -7,7 +7,7 @@ import sys
 
 stats_file = sys.argv[1]
 format = "%(lo0)s %(lores)s %(lofreq)d %(freq)d %(dec)d %(resbin)s %(ridx)d %(weight)s %(widx)d " + \
-  "%(flux10).2f %(snr10).2f %(hours).2f %(snravg).2f %(relnoise).2f %(noise2500).2g %(noise50_ref2).2g  %(psf_area).2g %(psf_sym).2f %(psf_mean).4f\n";
+  "%(flux10).2f %(snr10).2f %(hours).2f %(snravg).2f %(relnoise).2f %(noise2500).2g %(noise50_ref2).2g  %(psf_area).2g %(psf_sym).2f %(psf_mean).4f %(speed).2g %(speed_avg).2g\n";
 
 # determine field names from format string
 fields = [ x.split(")")[0] for x in format.split("(")[1:] ];
@@ -92,15 +92,21 @@ for kk,(noise2500,origkey) in PIXNOISE.items():
   # compute the normalized SNR as follows:
   # assume flux=10uJy at 1100, rescale with spectral index
   snr1 = numpy.zeros(3,float)
+  speed_freq = numpy.zeros(3,float)
   for i,freq1 in enumerate((8000,11300,13800)):
     noise1 = PIXNOISE[lo0,lores,lofreq,freq1,r0,r1,dec,weight][0]*1e+6;
     if noise1:
       # flux of 10uJy scaled to frequency, noise scaled to 166 MHz band
-      snr1[i] = 10*(freq1/13800.)**-0.7 / noise1;  
+      snr1[i] = 10*(freq1/13800.)**-0.7 / noise1; 
+      fov_freq = 1.4 * (700./freq1)**2 if lo0.startswith('SKA1') else 18.
+      speed_freq[i] = fov_freq  *  ( (10*(freq1/13800.)**-0.7) / noise1) **2 
   # compute average SNR
   snravg = math.sqrt((snr1**2).sum());
   # this is the SNR after 8 hours -- how many hours needed for SNR=10?
   hours = 8*(10/snravg)**2 if snravg else 1e+99;
+  speed_avg = math.sqrt((speed_freq**2.).sum()/len(speed_freq))
+  fov = 0.0082 * (9.2e3/freq)**2 if lo0.startswith('SKA1') else 18.
+  speed  = fov  *  snr10**2
   # write result
   # ----------------------------------------
   # PSF metrics

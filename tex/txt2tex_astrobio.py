@@ -8,9 +8,13 @@ CPT = {}
 CPT["noise2500"] = "Noise (in $\\mu$Jy) for a 2.5GHz band after an 8hr synthesis with a 60s integration for the differenr layouts at different angular scales. %s"%SUF
 CPT["snr10"] = "SNR after 8 hours relative to a 10$\\mu$Jy source at 13.8GHz (2.5GHz band) with a spectral index of -0.7 for the different layouts. %s"%SUF
 
-CPT["snravg"] = "SNR after 8 hours relative to a 10$\\mu$Jy source at 13.8GHz (2.5GHz band) with a spectral index of -0.7 averaged over 8,12 and 13.8GHz, for the different layouts at different angular scales. These values are generated for angular scales \\{0.04-0.05, 0.05-0.1, 0.1-1, 1-12\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4\\} respectively. This is done for natural weighting at a declination of -30 degrees. %s."%CLR
+CPT["snravg"] = "SNR after 8 hours relative to a 10$\\mu$Jy source at 13.8GHz (2.5GHz band) with a spectral index of -0.7 averaged over 8, 12 and 13.8GHz, for the different layouts at different angular scales. These values are generated for angular scales \\{0.04-0.05, 0.05-0.1, 0.1-1, 1-12\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4\\} respectively. This is done for natural weighting at a declination of -30 degrees. %s."%CLR
 
 CPT["hours"] = "The hours required to reach a mean SNR of 10 (average over 8, 12 and 13.8GHz), relative to a 10$\\mu$Jy source at 13.8GHz with a spectral index of -0.7 for the different layouts at different angular scales. These values are generated for angular scales \\{0.04-0.05, 0.05-0.1, 0.1-1, 1-12\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4\\} respectively. This is done for natural weighting at a declination of -30 and degrees. %s."%CLR
+
+CPT["speed"] = "Relative (w.r.t REF2) survey speeds for the different layouts, calculated using the FOV (using PAF FOV for SKASUR) values given in the SRD \\cite{srd} and the values in table \\ref{tab:snr10-%s}. These values are generated at 8, 12 and 13.8GHz for angular scales \\{0.04-0.05, 0.05-0.1, 0.1-1, 1-12\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4\\} respectively at declenations -10, -30 and -50 degrees. %s."%(sys.argv[-1],CLR)
+
+CPT["speed_avg"] = "Relative (w.r.t REF2) average survey speeds for the different layouts, calculated using the FOV (PAF FOV for SKASUR) values given in the SRD \\cite{srd} and the values in table \\ref{tab:snr10-%s}. These values are generated for angular scales \\{0.04-0.05, 0.05-0.1, 0.1-1, 1-12\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4\\} respectively. This is done for natural weighting at a declenation of -30 degrees. %s."%(sys.argv[-1],CLR)
 
 CPT["psf_sym"] = "PSF symmetry (see \\autoref{sec:exp})  for the different layouts at different angular scales. These values are generated at 8, 12 and 13.8GHz, for angular scales \\{0.04-0.05, 0.05-0.1, 0.1-1, 1-12\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4\\} respectively. This is done for natural weigthing at a declination of -30 degrees. %s."%CLR
 
@@ -111,10 +115,13 @@ if __name__=="__main__":
     cols = ["c%d"%d for d in range(ncols)]
     keys = final.keys()
     keys.sort()
-    if metric not in ["hours","snravg"]:
+    if metric not in ["hours","snravg","speed_avg"]:
      for key in keys:
       if key.endswith('0'):
        x = final[key][1]
+       if metric.startswith('speed'):
+         for j in range(resbins*nfreqs):
+           x[:,j] = x[:,j]/x[0,j]
        typ = ["S30"]*ncols
        dtype = [item for item in zip(cols,typ)]
        s = np.ndarray([x.shape[0],x.shape[1]+1],dtype="S100")
@@ -145,6 +152,9 @@ if __name__=="__main__":
         s[:,0] = lays
         if i%nwi == 0 and i!=1:
           x = final[key][1]
+          if metric.startswith('speed'):
+           for j in range(resbins):
+             x[:,j] = x[:,j]/x[0,j]
           s[:,1:(resbins+1)] = color(x[:,:resbins])
           top = "\\subfloat[%s]{\\begin{tabular}{|lcccc|} \\hline \n resbin & 1 & 2 & 3 & 4 \\tabularnewline \\hline\n"%(decsWeights[key])
           texfile.write(top)
@@ -155,6 +165,6 @@ if __name__=="__main__":
             texfile.write(fmt1%locals()+"%s \\hline \n"%('\\tabularnewline' if (nrows-row) == 1 else '\\\\'))
             #print "-------------------------------------------\n",fmt1%locals()
           texfile.write("\\end{tabular}}\\hfil \n")
-    texfile.write("\n"+caption(metric)+"\\label{tab:%s}"%metric)
+    texfile.write("\n"+caption(metric)+"\\label{tab:%s-%s}"%(metric,sys.argv[-1]))
     texfile.write("}\n \\end{table}")
     texfile.close()

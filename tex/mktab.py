@@ -1,5 +1,4 @@
 #!/usr/bin/python
-
 import numpy
 import math
 import re
@@ -98,14 +97,16 @@ for kk,(noise50,origkey) in PIXNOISE.items():
     if noise1:
       # flux of 10uJy scaled to frequency, noise scaled to 166 MHz band
       snr1[i] = 10*(freq1/1000.)**-0.7 / noise1;
-  # compute average SNR
-      snravg = math.sqrt((snr1**2).sum());
   # compute average survey speed
       fov_freq = 1.4 * (700./freq1)**2 if lo0.startswith('SKA1') else 18.
       speed_freq[i] = fov_freq  *  ( (10*(freq1/1000.)**-0.7) / noise1) **2
+  # compute average SNR
+  snravg = math.sqrt((snr1**2.).sum()/len(snr1));
   # this is the SNR after 8 hours -- how many hours needed for SNR=10?
   hours = 8*(10/snravg)**2 if snravg else 1e+99;
-  speed_avg = math.sqrt((speed_freq**2).sum())
+  speed_avg = math.sqrt((speed_freq**2).sum()/len(speed_freq))
+  fov = 1.4 * (700./freq)**2 if lo0.startswith('SKA1') else 18.
+  speed  = fov  *  snr10**2
   # write result
   # ----------------------------------------
   # PSF metrics
@@ -114,9 +115,6 @@ for kk,(noise50,origkey) in PIXNOISE.items():
   psf_sym = 1.0 - exey[0]/exey[1]
   psf_mean = mean
   # ----------------------------------------
-  # Survey Speed
-  fov = 1.4 if lo0.startswith('SKA1') else 18.
-  speed = fov/hours
   resbin = "%.1f-%.1farcsec"%(r0,r1) if r0<60 else "%.1f-%.1farcmin"%(r0/60,r1/60);
   ff.write(format%locals());
   ff1.write(format.replace(" ",",")%locals());

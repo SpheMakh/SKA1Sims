@@ -2,30 +2,59 @@
 import numpy as np
 import sys,os
 
-CLR = "For each column the intensity of the color increases with the value"
-SUF = "These values are generated at 650, 800 and 1000 MHz, at angular scales \\{0.4-1, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4, 5\\} respectively. This is done for natural weighting at declinations -10, -30 and -50 degrees. %s."%CLR
+CLR = "For each column the intensity of the colour increases with the value"
+SUF = "These values are generated at 650, 800 and 1000 MHz, at angular scales \\{0.4-1, 0.4-2, 1-2, 2-3, 3-4, \
+600-3600\\} arcsec and are labelled {\\it resbin} \\{1, 2, 3, 4, 5, 6\\} respectively. This is done for natural \
+weighting at declinations -10, -30 and -50 degrees. %s."%CLR
 CPT = {}
-CPT["noise50k"] = "Noise (in $\\mu$Jy) for a 50kHz band after an 8hr synthesis with a 60s integration for the differenr layouts at different angular scales. %s"%SUF
-CPT["noise50"] = "Noise (in $\\mu$Jy) for a 50MHz band after an 8hr synthesis with a 60s integration for the differenr layouts at different angular scales. %s"%SUF
-CPT["noise166"] = "Noise (in $\\mu$Jy) for a 166MHz band after an 8hr synthesis with a 60s integration for the different layouts at different angular scales. %s"%SUF
-CPT["snr10"] = "SNR after 8 hours relative to a 10$\\mu$Jy source at 1000Hz (166 MHz band) with a spectral index of -0.7 for the different layouts. %s"%SUF
+CPT["noise50k"] = "Noise (in $\\mu$Jy) for a 50kHz band after an 8hr synthesis with a 60s integration for the different layouts at different angular scales. %s"%SUF
+CPT["noise50"] = "Noise (in $\\mu$Jy) for a 50MHz band after an 8hr synthesis with a 60s integration for the different \
+layouts at different angular scales. %s"%SUF
+CPT["noise166"] = "Noise (in $\\mu$Jy) for a 166MHz band after an 8hr synthesis with a 60s integration for \
+the different layouts at different angular scales. %s"%SUF
+CPT["snr10"] = "SNR after 8 hours relative to a 10$\\mu$Jy source at 1000Hz (166 MHz band) with a spectral \
+ index of -0.7 for the different layouts. %s"%SUF
 
-CPT["snravg"] = "SNR after 8 hours relative to a 10$\\mu$Jy source at 1000Hz (166 MHz band) with a spectral index of -0.7 averaged over 650,800 and 1000MHz, for the different layouts at different angular scales. These values are generated for angular scales \\{0.4-1, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4, 5\\} respectively. This is done for natural weighting at declinations -10, -30 and -50 degrees. %s."%CLR
+CPT["snravg"] = "SNR after 8 hours relative to a 10$\\mu$Jy source at 1000Hz (166 MHz band) with a spectral index of \
+-0.7 averaged over 650,800 and 1000MHz, for the different layouts at different angular scales. These values are \
+generated for angular scales \\{0.4-1, 0.4-2, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labelled {\\it resbin} \\{1, 2, \
+3, 4, 5, 6\\} respectively. This is done for natural weighting at declinations -10, -30 and -50 degrees. %s."%CLR
 
-CPT["hours"] = "The hours required to reach a mean SNR of 10 (average over 650,800 and 1000MHz), relative to a 10$\\mu$Jy source at 1000MHz with a spectral index of -0.7 for the different layouts at different angular scales. These values are generated for angular scales \\{0.4-1, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4, 5\\} respectively. This is done for natural weighting at declinations -10, -30 and -50 degrees. %s."%CLR
+CPT["hours"] = "The hours required to reach a mean SNR of 10 (average over 650,800 and 1000MHz), relative to a \
+10$\\mu$Jy source at 1000MHz with a spectral index of -0.7 for the different layouts at different angular scales. These \
+values are generated for angular scales \\{0.4-1, 0.4-2, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labelled {\\it \
+resbin} \\{1, 2, 3, 4, 5, 6\\} respectively. This is done for natural weighting at declinations -10, -30 and -50 \
+degrees. %s."%CLR
 
-CPT["speed"] = "Relative (w.r.t SKASUR at 800MHz) survey speeds for the different layouts, calculated using the FOV (using PAF FOV for SKASUR) values given in the SRD \\cite{srd} and the values in table \\ref{tab:snr10-%s}. These values are generated at 650, 800 and 1000MHz for angular scales \\{0.4-1, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4, 5\\} respectively at declenations -10, -30 and -50 degrees. %s."%(sys.argv[-1],CLR)
+CPT["speed"] = "Relative (w.r.t RB-A40B75 at 800MHz) survey speeds for the different layouts, calculated using the FOV \
+(using PAF FOV for SKASUR) values given in the SRD \\cite{srd} and the values in table \\ref{tab:snr10-%s}. These values \
+are generated at 650, 800 and 1000MHz for angular scales \\{0.4-1, 0.4-2, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are \
+labelled {\\it resbin} \\{1, 2, 3, 4, 5, 6\\} respectively at declinations -10, -30 and -50 degrees. \
+%s."%(sys.argv[-1],CLR)
 
-CPT["speed_avg"] = "Relative (w.r.t SKASUR) average survey speeds for the different layouts, calculated using the FOV (PAF FOV for SKASUR) values given in the SRD \\cite{srd} and the values in table \\ref{tab:snr10-%s}. These values are generated for angular scales \\{0.4-1, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4, 5\\} respectively. This is done for natural weighting at declenations -10, -30 and -50 degrees. %s."%(sys.argv[-1],CLR)
+CPT["speed_avg"] = "Relative (w.r.t RB-A40B75) average survey speeds for the different layouts, calculated using the FOV \
+(PAF FOV for SKASUR) values given in the SRD \\cite{srd} and the values in table \\ref{tab:snr10-%s}. These values are \
+generated for angular scales \\{0.4-1, 0.4-2, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labelled {\\it resbin} \\{1, 2, \
+3, 4, 5, 6\\} respectively. This is done for natural weighting at declinations -10, -30 and -50 degrees. \
+%s."%(sys.argv[-1],CLR)
 
-CPT["psf_sym"] = "PSF symmetry (see \\autoref{sec:exp})  for the different layouts at different angular scales. These values are generated at 650, 800 and 1000MHz for angular scales \\{0.4-1, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4, 5\\} respectively. This is done for natural weighting at declinations -10, -30 and -50 degrees. %s."%CLR
+CPT["psf_sym"] = "PSF symmetry (see \\autoref{sec:exp})  for the different layouts at different angular scales. \
+These values are generated at 650, 800 and 1000MHz for angular scales \\{0.4-1, 0.4-2, 1-2, 2-3, 3-4, 600-3600\\} arcsec \
+and are labelled {\\it resbin} \\{1, 2, 3, 4, 5, 6\\} respectively. This is done for natural weighting at declinations \
+-10, -30 and -50 degrees. %s."%CLR
 
-CPT["psf_mean"] = "FWHM PSF sizes (in arcseconds) for the different layouts at different angular scales. These values are generated at 650, 800 and 1000MHz for angular scales \\{0.4-1, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4, 5\\} respectively. This is done for natural weighting at declinations -10, -30 and -50 degrees. %s."%CLR
+CPT["psf_mean"] = "FWHM PSF sizes (in arcsec) for the different layouts at different angular scales. These values are \
+generated at 650, 800 and 1000MHz for angular scales \\{0.4-1, 0.4-2, 1-2, 2-3, 3-4, 600-3600\\} arcsec and are labelled \
+{\\it resbin} \\{1, 2, 3, 4, 5, 6\\} respectively. This is done for natural weighting at declinations -10, -30 and -50 \
+degrees. %s."%CLR 
 
 def select_color(c,v,color):
    fct = .6
    val = c *70 + 30
-   return "%.2f \\cellcolor{%s!%.2f}"%(v,color,val*fct) if v<1e2 else "%.4g \\cellcolor{%s!%.2f}"%(v,color,val*fct)
+   if v<0.1 : tmp = "%.2f \\cellcolor{%s!%.2f}"%(v,color,val*fct)
+   elif v<100 : tmp = "%.1f \\cellcolor{%s!%.2f}"%(v,color,val*fct)
+   else : tmp = "%.4g \\cellcolor{%s!%.2f}"%(v,color,val*fct)
+   return tmp
 
 def color(data):
     new = np.ndarray([data.shape[0],data.shape[1]],dtype="S100")
@@ -42,7 +71,6 @@ def caption(metric,cpt=CPT):
   return "\\caption{%s}"%(cpt[metric])
 
 if __name__=="__main__":
-
   std = open(sys.argv[1])
   hdr = std.readline()
   std.close()
@@ -58,10 +86,10 @@ if __name__=="__main__":
   for d in decs:
     for j,w in enumerate(weights):
        decsWeights["%s:%d"%(d,j)] = "DEC=%s, %s"%(d,w)
-  lays,nlays = ["SKA1REF2","SKA1W9-12A72B120","SKA1W9-0A72B120","SKASUR"],4
+  lays,nlays = ["SKA1REF2","SKA1W9-12A72B120","SKA1W9-0A72B120","SKASUR1","SKASUR"],5
   Stats = np.genfromtxt(sys.argv[1],names=names,dtype=dtype)
   stats = Stats[np.argsort(Stats,order=["dec","widx","lo0","freq","ridx"])]
-  resbins = 5
+  resbins = 6
   STATS = {}
   metrics = names[9:]
   for n in range(nlays*ndecs*nwi):
@@ -76,7 +104,8 @@ if __name__=="__main__":
        s[metric] = vals
       STATS[tmp] = s
   METRIC = {}
-  for wi in "0 1 2".split():
+  for wi in range(nwi):
+   wi = str(wi)
    for dec in "-50 -30 -10".split():
     LAY = {}
     for item in STATS.keys():
@@ -112,6 +141,7 @@ if __name__=="__main__":
     texfile.write("% Auto generated table\n \\begin{table}[!htp]\n \\tiny{\n")
     ncols = resbins*nfreqs + 1
     nrows = nlays
+    lays_print = 'REF2 W9-12A72B120 W9-0A72B120 SKASUR RB-A40B75'.split()
     fmt =  repr(["$(c%d)s"%d for d in range(ncols)]).strip("[]").replace("'","").replace(","," &").replace("$","%")
     cols = ["c%d"%d for d in range(ncols)]
     keys = final.keys()
@@ -130,18 +160,18 @@ if __name__=="__main__":
       typ = ["S30"]*ncols
       dtype = [item for item in zip(cols,typ)]
       s = np.ndarray([x.shape[0],x.shape[1]+1],dtype="S100")
-      s[:,0] = lays
+      s[:,0] = lays_print
       s[:,1:(resbins+1)] = color(x[:,:resbins])
       s[:,(resbins+1):(2*resbins+1)] = color(x[:,resbins:(2*resbins)])
       s[:,(2*resbins+1):(3*resbins+1)] = color(x[:,(2*resbins):(3*resbins)])
-      top = "\\subfloat[%s]{\\begin{tabular}{|lccccc||ccccc||ccccc|} \n \\tabularnewline \\cline{2-16} \\multicolumn{1}{c}{ } & \\multicolumn{5}{|c}{650MHz}  & \\multicolumn{5}{c}{800MHz}  & \\multicolumn{5}{c|}{1000MHz} \\tabularnewline \\cline{1-16} \n resbin  &1 & 2 & 3 & 4 & 5 & 1 & 2 & 3 & 4 & 5 & 1 & 2 & 3 & 4 & 5 \\tabularnewline \\hline\n"%(decsWeights[key]) 
+      top = "\\subfloat[%s]{\\begin{tabular}{|lcccccc||cccccc||cccccc|} \n \\tabularnewline \\cline{2-19} \\multicolumn{1}{c}{ } & \\multicolumn{6}{|c}{650MHz}  & \\multicolumn{6}{c}{800MHz}  & \\multicolumn{6}{c|}{1000MHz} \\tabularnewline \\cline{1-19} \n resbin  &1 & 2 & 3 & 4 & 5 & 6 & 1 & 2 & 3 & 4 & 5 & 6 & 1 & 2 & 3 & 4 & 5 & 6 \\tabularnewline \\hline\n"%(decsWeights[key]) 
       texfile.write(top)
       for row in range(nrows):
        for i,col in enumerate(cols): 
          locals()[col] = s[row,i]
        texfile.write(fmt%locals()+"%s \\hline \n"%('\\tabularnewline' if (nrows-row) == 1 else '\\\\'))
        #print "-------------------------------------------\n",fmt%locals()
-      texfile.write("\\end{tabular}}\\hfil \n")
+      texfile.write("\\end{tabular}}\\hfill \n")
     else :
       print metric
       ncols = resbins + 1
@@ -150,10 +180,10 @@ if __name__=="__main__":
       dtype = [item for item in zip(cols,typ)]
       s = np.ndarray([nlays,ncols],dtype="S100")
       fmt1 =  repr(["$(c%d)s"%d for d in range(ncols)]).strip("[]").replace("'","").replace(","," &").replace("$","%")
-      s[:,0] = lays
+      s[:,0] = lays_print
       for i,key in enumerate(keys,start=0):
         s = np.ndarray([nlays,resbins+1],dtype="S100")
-        s[:,0] = lays
+        s[:,0] = lays_print
         counter = range(0,ndecs*len(weights),ndecs)
         if i%nwi == 0:
           x = final[key][1]
@@ -161,7 +191,7 @@ if __name__=="__main__":
            for j in range(resbins):
              x[:,j] = x[:,j]/x[-1,j]
           s[:,1:(resbins+1)] = color(x[:,:resbins])
-          top = "\\subfloat[%s]{\\begin{tabular}{|lccccc|} \\hline \n resbin & 1 & 2 & 3 & 4 & 5 \\tabularnewline \\hline\n"%(decsWeights[key])
+          top = "\\subfloat[%s]{\\begin{tabular}{|lcccccc|} \\hline \n resbin & 1 & 2 & 3 & 4 & 5 & 6\\tabularnewline \\hline\n"%(decsWeights[key])
           texfile.write(top)
           for row in range(nrows):
             for i,col in enumerate(cols): 
@@ -169,7 +199,7 @@ if __name__=="__main__":
               locals()[col] = s[row,i]
             texfile.write(fmt1%locals()+"%s \\hline \n"%('\\tabularnewline' if (nrows-row) == 1 else '\\\\'))
             #print "-------------------------------------------\n",fmt1%locals()
-          texfile.write("\\end{tabular}}\\hfil \n")
+          texfile.write("\\end{tabular}}\\hfill \\\\\n")
     texfile.write("\n"+caption(metric)+"\\label{tab:%s-%s}"%(metric,sys.argv[2]))
     texfile.write("}\n \\end{table}")
     texfile.close()

@@ -19,6 +19,7 @@
 \usepackage{afterpage}
 \usepackage{floatrow}
 \floatsetup[table]{capposition=top}
+\usepackage{pdflscape}
 
 \voffset .5in
 \title{Optimising SKA1-Mid Scale-Dependent Sensitivity}
@@ -186,7 +187,8 @@ investigate this here as we belive it will only cause a minor perturbation in
 the survey speed and sensitivities that we discuss here.
 
 \subsubsection{Specific layout implementation:}
-The general scientific requirements for SKA1\cite{srd} (SRD) published by the SPO in March 2014 suggest that (at least for
+The general scientific requirements for SKA1\cite{srd} (level zero science requirements document;SRD) published by the
+SKA project office (SPO)in March 2014 suggest that (at least for
 SKA1-Mid), an array with a maximum baseline of around ~100km is required. Therefore, we seek a layout with the shortest possible
 maximum baseline that does at least as well as the ``second generation'' baseline design in the resolution range 0.4-1 arcsec over
 650, 800 and 1000MHz while not significantly compromising the performance at the larger angular scales. Moreover, as stated
@@ -207,6 +209,8 @@ REF2.
 outer core to the spiral arms and $j$ extra dishes added to the spiral arms. The spacing in the arms is then optimised  to get
 more sensitivity on the longer ($>50$km) baselines (See baseline distribution histograms in Figure \ref{fig:hist} ). Each spiral
 arm stretches out to ~$k$ kilometres and the maximum baseline length is about $l$ kilometres.
+\item {\bf SKASURA50B70} The SKA survey layout (96 dishes) released by the SPO (March 2013). In this report, we also refer to
+this layout as SKASUR.
 \end{description}
 The details of the layouts are tabulated in Table \ref{fig:lay}, and Figure \ref{fig:lay} shows the layouts and Figure
 \ref{fig:hist} shows the baseline distribution histogram for the different layouts. Figure \ref{fig:uvcov} shows the uv-coverage
@@ -229,10 +233,10 @@ done on the antenna distributions and we emphasise that further improvements can
   Core & 70 & 30 & 100 & 37.6 \\
  Outer-core & 51 & 34 & 85 & 32.0 \\
  Spiral-arms & 81 & 0 & 81 & 30.4 \\\hline\hline
-   {\bf SKASURA30B70} [96 dishes] &  & &  & \\\hline\hline
-  Core & 0 & 15 & 15 & 15.6 \\
- Outer-core & 18 & 21 & 39 & 40.6 \\
- Spiral-arms & 0 & 0 & 42 & 43.8 \\\hline\hline
+   {\bf SKASURA50B70} [96 dishes] &  & &  & \\\hline\hline
+  Core & 0 & 12 & 12 & 12.5 \\
+ Outer-core & 18 & 24 & 42 & 43.75 \\
+ Spiral-arms & 42 & 0 & 42 & 43.75 \\\hline\hline
  \end{tabular}}
  \caption{Breakdown of the layouts under consideration.}\label{tab:lay}
 \end{table}
@@ -251,19 +255,19 @@ kilometres respectively, and the pink strip represents baselines from 30-80km.}\
 \begin{figure}[H]
  \centering
  \input{core_hist.tex}
- \caption{Dish density histograms of the core for the layouts under consideration. The dashed line marks 400m. The core of
-the W-9-12 layouts is the same, therefore we only need to plot one of these.}
+ \caption{Dish density histograms of the core of the SKA1-Mid layouts under consideration. The dashed line marks 400m. The core
+of the W-9-j layouts is the same, therefore we only need to plot one of these.}
 \end{figure}
 \begin{figure}[H]
  \centering
  \input{core_cumhist.tex}
- \caption{Cumulative dish density histograms of the core for the layouts under consideration. The dashed line marks 400m.
-The core of the W-9-12 layouts is the same, therefore we only need to plot one of these.}
+ \caption{Cumulative dish density histograms of the core of the SKA1-Mid layouts under consideration. The dashed line marks 400m.
+The core of the W-9-j layouts is the same, therefore we only need to plot one of these.}
 \end{figure}
 % uv-coverage plots 
 \begin{figure}[H]
  \tiny{\input{uvcov-band1}}
- \caption{UV-Coverage for 8-hr tracks at 1.1 GHz (50MHz bandwidth) at declinations -50,-30,-10 for the different layouts. Blue
+ \caption{UV-Coverage for 8-hr tracks at 650MHz (50MHz bandwidth) at declinations -50,-30,-10 for the different layouts. Blue
 indicates uv-points, red indicates conjugate uv-points.}\label{fig:uvcov}
 \end{figure}
 
@@ -316,6 +320,7 @@ In appendix \ref{sec:band5} the above mentioned metrics are presented for a 2.5G
 declination of -30 degrees.
 % \section{Results}\label{sec:results}
 %===========================================================Performance Stats===============================================
+% \begin{adjustbox}{angle=90}
 \input{psf_mean-band1}
 \input{psf_sym-band1}
 \input{noise50k-band1}
@@ -325,22 +330,24 @@ declination of -30 degrees.
 \input{snravg-band1}
 \input{hours-band1}
 \input{speed-band1}
-\input{speed_avg-band1}
+\input{speed_avg-band1} 
+% \end{adjustbox}
 %===============================================================================================================
 \newpage
 \section{Conclusions}\label{sec:conclusion}
 The metrics we have used suggest that the science goals (at least those listed in the SRD in addition to cosmology with weak
 lensing and H{\sc i} surveys) can be met by a layout which covers significantly less space compared to the baseline layout. The
 SKA1-W9-0A72B120 layout performs significantly better at smaller angular scales, up to a 42\% improvement in terms of the noise
-properties and a 55\% improvement in survey speed, without compromising the larger scales. Moreover, the performance the
-SKA1-Mid performance can be further enhanced by adding a handfull of dishes in the spairal arms as can be seen
+properties and a 55\% improvement in survey speed, without compromising the larger scales. Moreover, the SKA1-Mid performance can
+be further enhanced by adding a handful of dishes in the spiral arms as can be seen
 with the SKA1W9-12A72B120 layout.
 
 Bringing in the dishes from the longer baselines translates to a greater sensitivity on the relevant (to the
 science goals of SKA1-Mid) smaller scales, as can be seen in Tables \ref{tab:noise50k-band1}-\ref{tab:hours-band1}. Even
 more encouraging is
 the fact that this doesn't compromise the size or the symmetry of the PSF as seen in Tables \ref{tab:psf_mean-band1} and
-\ref{tab:psf_sym}. {\bf We proffer the SKA1W9-0A72B120 configuration as a solution which allows allows for weak lensing, H{\sc i}
+\ref{tab:psf_sym-band1}, as well as in Appendix \ref{app:psf}. {\bf We proffer the SKA1W9-0A72B120 configuration as a solution
+which allows for weak lensing, H{\sc i}
 and continuum source morphology characterisation for galaxy evolution studies, as well as the other science cases detailed in the
 SRD. Although we note that such a configuration also needs to be analysed by other SWGs, in particular the H{\sc i} SWG.}
 
@@ -376,13 +383,14 @@ respectively, and the horizontal line marks the FWHM. FWHM parameters are includ
 \section{Band 5 Scale-Dependent Sensitivity}\label{sec:band5}
 The Tables below were generated using the BD's SEFD value of 528Jy for band 5. We make simulated measurement sets of 8hr tracks
 at a declination of -30 degrees at frequencies 8, 12 and 13.8GHz with a single 2.5GHz band and 60s integration time. MeerKAT do
-not have recievers at these frequencies, therefore the MeerKAT dishes were not considered for these simulations.
+not have receivers at these frequencies, therefore the MeerKAT dishes were not considered for these simulations.
 \input{psf_mean-astrobio}
 \input{psf_sym-astrobio}
 \input{noise2500-astrobio}
 \input{snr10-astrobio}
 \input{snravg-astrobio}
 \input{hours-astrobio}
-
+\input{speed-astrobio}
+\input{speed_avg-astrobio}
 \end{document}
 

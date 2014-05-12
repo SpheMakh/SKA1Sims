@@ -19,6 +19,7 @@
 \usepackage{afterpage}
 \usepackage{floatrow}
 \floatsetup[table]{capposition=top}
+\usepackage{pdflscape}
 
 \voffset .5in
 \title{Optimising SKA1-Mid Scale-Dependent Sensitivity}
@@ -186,7 +187,8 @@ investigate this here as we belive it will only cause a minor perturbation in
 the survey speed and sensitivities that we discuss here.
 
 \subsubsection{Specific layout implementation:}
-The general scientific requirements for SKA1\cite{srd} (SRD) published by the SPO in March 2014 suggest that (at least for
+The general scientific requirements for SKA1\cite{srd} (level zero science requirements document; SRD) published by the
+SKA project office (SPO) in March 2014 suggest that (at least for
 SKA1-Mid), an array with a maximum baseline of around ~100km is required. Therefore, we seek a layout with the shortest possible
 maximum baseline that does at least as well as the ``second generation'' baseline design in the resolution range 0.4-1 arcsec over
 650, 800 and 1000MHz while not significantly compromising the performance at the larger angular scales. Moreover, as stated
@@ -318,6 +320,7 @@ In appendix \ref{sec:band5} the above mentioned metrics are presented for a 2.5G
 declination of -30 degrees.
 % \section{Results}\label{sec:results}
 %===========================================================Performance Stats===============================================
+% \begin{adjustbox}{angle=90}
 \input{psf_mean-band1}
 \input{psf_sym-band1}
 \input{noise50k-band1}
@@ -327,7 +330,8 @@ declination of -30 degrees.
 \input{snravg-band1}
 \input{hours-band1}
 \input{speed-band1}
-\input{speed_avg-band1}
+\input{speed_avg-band1} 
+% \end{adjustbox}
 %===============================================================================================================
 \newpage
 \section{Conclusions}\label{sec:conclusion}
@@ -335,7 +339,7 @@ The metrics we have used suggest that the science goals (at least those listed i
 lensing and H{\sc i} surveys) can be met by a layout which covers significantly less space compared to the baseline layout. The
 SKA1-W9-0A72B120 layout performs significantly better at smaller angular scales, up to a 42\% improvement in terms of the noise
 properties and a 55\% improvement in survey speed, without compromising the larger scales. Moreover, the SKA1-Mid performance can
-be further enhanced by adding a handfull of dishes in the spiral arms as can be seen
+be further enhanced by adding a handful of dishes in the spiral arms as can be seen
 with the SKA1W9-12A72B120 layout.
 
 Bringing in the dishes from the longer baselines translates to a greater sensitivity on the relevant (to the
@@ -379,7 +383,7 @@ respectively, and the horizontal line marks the FWHM. FWHM parameters are includ
 \section{Band 5 Scale-Dependent Sensitivity}\label{sec:band5}
 The Tables below were generated using the BD's SEFD value of 528Jy for band 5. We make simulated measurement sets of 8hr tracks
 at a declination of -30 degrees at frequencies 8, 12 and 13.8GHz with a single 2.5GHz band and 60s integration time. MeerKAT do
-not have recievers at these frequencies, therefore the MeerKAT dishes were not considered for these simulations.
+not have receivers at these frequencies, therefore the MeerKAT dishes were not considered for these simulations.
 \input{psf_mean-astrobio}
 \input{psf_sym-astrobio}
 \input{noise2500-astrobio}

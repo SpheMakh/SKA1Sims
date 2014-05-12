@@ -3,22 +3,43 @@ import numpy as np
 import sys,os
 
 CLR = "For each column, the intensity of the color increases with the value"
-SUF = "These values are generated at 8, 12 and 13.8 GHz, at angular scales \\{0.04-0.05, 0.05-0.1, 0.1-1, 1-12\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4\\} respectively. This is done for natural weighting at a declination of -30 degrees. %s."%CLR
+SUF = "These values are generated at 8, 12 and 13.8 GHz, at angular scales \\{0.04-0.05, 0.05-0.1, 0.1-1, 1-12\\} \
+arcsec and are labelled {\\it resbin} \\{1, 2, 3, 4\\} respectively. This is done for natural weighting at a declination of -30 degrees. %s."%CLR
 CPT = {}
-CPT["noise2500"] = "Noise (in $\\mu$Jy) for a 2.5GHz band after an 8hr synthesis with a 60s integration for the differenr layouts at different angular scales. %s"%SUF
-CPT["snr10"] = "SNR after 8 hours relative to a 10$\\mu$Jy source at 13.8GHz (2.5GHz band) with a spectral index of -0.7 for the different layouts. %s"%SUF
+CPT["noise2500"] = "Noise (in $\\mu$Jy) for a 2.5GHz band after an 8hr synthesis with a 60s integration \
+for the different layouts at different angular scales. %s"%SUF
+CPT["snr10"] = "SNR after 8 hours relative to a 10$\\mu$Jy source at 13.8GHz (2.5GHz band) with a spectral \
+index of -0.7 for the different layouts. %s"%SUF
 
-CPT["snravg"] = "SNR after 8 hours relative to a 10$\\mu$Jy source at 13.8GHz (2.5GHz band) with a spectral index of -0.7 averaged over 8, 12 and 13.8GHz, for the different layouts at different angular scales. These values are generated for angular scales \\{0.04-0.05, 0.05-0.1, 0.1-1, 1-12\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4\\} respectively. This is done for natural weighting at a declination of -30 degrees. %s."%CLR
+CPT["snravg"] = "SNR after 8 hours relative to a 10$\\mu$Jy source at 13.8GHz (2.5GHz band) with a spectral index of \
+-0.7 averaged over 8, 12 and 13.8GHz, for the different layouts at different angular scales. These values are generated \
+for angular scales \\{0.04-0.05, 0.05-0.1, 0.1-1, 1-12\\} arcsec and are labelled {\\it resbin} \\{1, 2, 3, 4\\} \
+respectively. This is done for natural weighting at a declination of -30 degrees. %s."%CLR
 
-CPT["hours"] = "The hours required to reach a mean SNR of 10 (average over 8, 12 and 13.8GHz), relative to a 10$\\mu$Jy source at 13.8GHz with a spectral index of -0.7 for the different layouts at different angular scales. These values are generated for angular scales \\{0.04-0.05, 0.05-0.1, 0.1-1, 1-12\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4\\} respectively. This is done for natural weighting at a declination of -30 and degrees. %s."%CLR
+CPT["hours"] = "The hours required to reach a mean SNR of 10 (average over 8, 12 and 13.8GHz), relative to a 10$\\mu$Jy \
+source at 13.8GHz with a spectral index of -0.7 for the different layouts at different angular scales. These values are \
+generated for angular scales \\{0.04-0.05, 0.05-0.1, 0.1-1, 1-12\\} arcsec and are labelled {\\it resbin} \\{1, 2, 3, \
+4\\} respectively. This is done for natural weighting at a declination of -30 and degrees. %s."%CLR
 
-CPT["speed"] = "Relative (w.r.t REF2) survey speeds for the different layouts, calculated using the FOV (using PAF FOV for SKASUR) values given in the SRD \\cite{srd} and the values in table \\ref{tab:snr10-%s}. These values are generated at 8, 12 and 13.8GHz for angular scales \\{0.04-0.05, 0.05-0.1, 0.1-1, 1-12\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4\\} respectively at declenations -10, -30 and -50 degrees. %s."%(sys.argv[-1],CLR)
+CPT["speed"] = "Relative (w.r.t REF2) survey speeds for the different layouts, calculated using the FOV (using PAF FOV \
+for SKASUR) values given in the SRD \\cite{srd} and the values in table \\ref{tab:snr10-%s}. These values are generated \
+at 8, 12 and 13.8GHz for angular scales \\{0.04-0.05, 0.05-0.1, 0.1-1, 1-12\\} arcsec and are labelled {\\it resbin} \
+\\{1, 2, 3, 4\\} respectively at declinations -10, -30 and -50 degrees. %s."%(sys.argv[-1],CLR)
 
-CPT["speed_avg"] = "Relative (w.r.t REF2) average survey speeds for the different layouts, calculated using the FOV (PAF FOV for SKASUR) values given in the SRD \\cite{srd} and the values in table \\ref{tab:snr10-%s}. These values are generated for angular scales \\{0.04-0.05, 0.05-0.1, 0.1-1, 1-12\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4\\} respectively. This is done for natural weighting at a declenation of -30 degrees. %s."%(sys.argv[-1],CLR)
+CPT["speed_avg"] = "Relative (w.r.t REF2) average survey speeds for the different layouts, calculated using the FOV (PAF \
+FOV for SKASUR) values given in the SRD \\cite{srd} and the values in table \\ref{tab:snr10-%s}. These values are \
+generated for angular scales \\{0.04-0.05, 0.05-0.1, 0.1-1, 1-12\\} arcsec and are labelled {\\it resbin} \\{1, 2, 3, \
+4\\} respectively. This is done for natural weighting at a declination of -30 degrees. %s."%(sys.argv[-1],CLR)
 
-CPT["psf_sym"] = "PSF symmetry (see \\autoref{sec:exp})  for the different layouts at different angular scales. These values are generated at 8, 12 and 13.8GHz, for angular scales \\{0.04-0.05, 0.05-0.1, 0.1-1, 1-12\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4\\} respectively. This is done for natural weigthing at a declination of -30 degrees. %s."%CLR
+CPT["psf_sym"] = "PSF symmetry (see \\autoref{sec:exp}) for the different layouts at different angular scales. These \
+values are generated at 8, 12 and 13.8GHz, for angular scales \\{0.04-0.05, 0.05-0.1, 0.1-1, 1-12\\} arcsec and are \
+labelled {\\it resbin} \\{1, 2, 3, 4\\} respectively. This is done for natural weighting at a declination of -30 \
+degrees. %s."%CLR
 
-CPT["psf_mean"] = "FWHM PSF sizes (in arcseconds) for the different layouts at different angular scales. These values are generated at 8, 12 and 13.8GHz, for angular scales \\{0.04-0.05, 0.05-0.1, 0.1-1, 1-12\\} arcsec and are labeled {\\it resbin} \\{1, 2, 3, 4\\} respectively. This is done for natural weighting at a declination of -30 degrees. %s."%CLR
+CPT["psf_mean"] = "FWHM PSF sizes (in arcsec) for the different layouts at different angular scales. These values \
+are generated at 8, 12 and 13.8GHz, for angular scales \\{0.04-0.05, 0.05-0.1, 0.1-1, 1-12\\} arcsec and are labelled \
+{\\it resbin} \\{1, 2, 3, 4\\} respectively. This is done for natural weighting at a declination of -30 degrees. \
+%s."%CLR
 
 def select_color(c,v,color):
    fct = .6
@@ -115,6 +136,7 @@ if __name__=="__main__":
     cols = ["c%d"%d for d in range(ncols)]
     keys = final.keys()
     keys.sort()
+    print_lays = 'REF2 W9-12A72B120 W9-0A72B120'.split()
     if metric not in ["hours","snravg","speed_avg"]:
      for key in keys:
       if key.endswith('0'):
@@ -125,7 +147,7 @@ if __name__=="__main__":
        typ = ["S30"]*ncols
        dtype = [item for item in zip(cols,typ)]
        s = np.ndarray([x.shape[0],x.shape[1]+1],dtype="S100")
-       s[:,0] = lays
+       s[:,0] = print_lays
        s[:,1:(resbins+1)] = color(x[:,:resbins])
        s[:,(resbins+1):(2*resbins+1)] = color(x[:,resbins:(2*resbins)])
        s[:,(2*resbins+1):(3*resbins+1)] = color(x[:,(2*resbins):(3*resbins)])
@@ -145,7 +167,7 @@ if __name__=="__main__":
       dtype = [item for item in zip(cols,typ)]
       s = np.ndarray([nlays,ncols],dtype="S100")
       fmt1 =  repr(["$(c%d)s"%d for d in range(ncols)]).strip("[]").replace("'","").replace(","," &").replace("$","%")
-      s[:,0] = lays
+      s[:,0] = print_lays
       for i,key in enumerate(keys,start=0):
        if key.endswith('0'):
         s = np.ndarray([nlays,resbins+1],dtype="S100")

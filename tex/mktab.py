@@ -69,7 +69,7 @@ for kk,(noise,origkey) in PIXNOISE.items():
     fwhm = PSF_FWHM[tuple(list(kk)[:-1]+["natural"])][0];
     if (fwhm[0] > 1 and fwhm[1] > 1) or not fwhm[0] or not fwhm[1]:
       print "blanking",kk,": scaled out (%f %f %f)"%(fwhm[0],fwhm[1],PIXNOISE[kk][0]);
-      PIXNOISE[kk][0] = 0;
+      PIXNOISE[kk][0] = 1;
 
 # now process again and derive some values
 for kk,(noise50,origkey) in PIXNOISE.items():

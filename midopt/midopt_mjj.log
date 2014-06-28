@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.16)  28 JUN 2014 23:58
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.16)  29 JUN 2014 00:20
 entering extended mode
  %&-line parsing enabled.
 **midopt_mjj.tex
@@ -837,492 +837,492 @@ Missing character: There is no “ in font cmr10!
 [13
 
 ] (./dec-30_650.tex
-<images/SKA1V8_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png, id=320, 722.7pt x 
+<images/SKA1V8_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png, id=321, 722.7pt x 
 722.7pt>
 File: images/SKA1V8_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png Graphic file (
 type png)
  <use images/SKA1V8_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png>
-<images/SKA1W8-0C0B120_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png, id=321, 72
+<images/SKA1W8-0C0B120_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png, id=322, 72
 2.7pt x 722.7pt>
 File: images/SKA1W8-0C0B120_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png Graphi
 c file (type png)
 
 <use images/SKA1W8-0C0B120_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png>
-<images/SKA1W8-0C9B120_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png, id=322, 72
+<images/SKA1W8-0C9B120_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png, id=323, 72
 2.7pt x 722.7pt>
 File: images/SKA1W8-0C9B120_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png Graphi
 c file (type png)
 
 <use images/SKA1W8-0C9B120_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png>
-<images/SKA1W8-12C0B120_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png, id=323, 7
+<images/SKA1W8-12C0B120_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png, id=324, 7
 22.7pt x 722.7pt>
 File: images/SKA1W8-12C0B120_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png Graph
 ic file (type png)
 
 <use images/SKA1W8-12C0B120_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png>
-<images/SKASUR_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png, id=324, 722.7pt x 
+<images/SKASUR_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png, id=325, 722.7pt x 
 722.7pt>
 File: images/SKASUR_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png Graphic file (
 type png)
  <use images/SKASUR_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png>
-<images/SKASUR75_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png, id=325, 722.7pt 
+<images/SKASUR75_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png, id=326, 722.7pt 
 x 722.7pt>
 File: images/SKASUR75_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png Graphic file
  (type png)
  <use images/SKASUR75_8h60s_dec-30_650MHz_50MHz1ch-natural-psf.png>
 <images/SKA1V8_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.png, id
-=326, 722.7pt x 722.7pt>
+=327, 722.7pt x 722.7pt>
 File: images/SKA1V8_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.pn
 g Graphic file (type png)
 
 <use images/SKA1V8_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.png
 >
 <images/SKA1W8-0C0B120_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10-psf
-.png, id=327, 722.7pt x 722.7pt>
+.png, id=328, 722.7pt x 722.7pt>
 File: images/SKA1W8-0C0B120_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=1
 0-psf.png Graphic file (type png)
 
 <use images/SKA1W8-0C0B120_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10
 -psf.png>
 <images/SKA1W8-0C9B120_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10-psf
-.png, id=328, 722.7pt x 722.7pt>
+.png, id=329, 722.7pt x 722.7pt>
 File: images/SKA1W8-0C9B120_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=1
 0-psf.png Graphic file (type png)
 
 <use images/SKA1W8-0C9B120_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10
 -psf.png>
 <images/SKA1W8-12C0B120_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10-ps
-f.png, id=329, 722.7pt x 722.7pt>
+f.png, id=330, 722.7pt x 722.7pt>
 File: images/SKA1W8-12C0B120_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=
 10-psf.png Graphic file (type png)
 
 <use images/SKA1W8-12C0B120_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=1
 0-psf.png>
 <images/SKASUR_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.png, id
-=330, 722.7pt x 722.7pt>
+=331, 722.7pt x 722.7pt>
 File: images/SKASUR_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.pn
 g Graphic file (type png)
 
 <use images/SKASUR_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.png
 >
 <images/SKASUR75_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.png, 
-id=331, 722.7pt x 722.7pt>
+id=332, 722.7pt x 722.7pt>
 File: images/SKASUR75_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.
 png Graphic file (type png)
 
 <use images/SKASUR75_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.p
 ng>
 <images/SKA1V8_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=1-psf
-.png, id=332, 722.7pt x 722.7pt>
+.png, id=333, 722.7pt x 722.7pt>
 File: images/SKA1V8_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=
 1-psf.png Graphic file (type png)
 
 <use images/SKA1V8_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=1
 -psf.png>
 <images/SKA1W8-0C0B120_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10,tap
-er=1-psf.png, id=333, 722.7pt x 722.7pt>
+er=1-psf.png, id=334, 722.7pt x 722.7pt>
 File: images/SKA1W8-0C0B120_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=1
 0,taper=1-psf.png Graphic file (type png)
 
 <use images/SKA1W8-0C0B120_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10
 ,taper=1-psf.png>
 <images/SKA1W8-0C9B120_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10,tap
-er=1-psf.png, id=334, 722.7pt x 722.7pt>
+er=1-psf.png, id=335, 722.7pt x 722.7pt>
 File: images/SKA1W8-0C9B120_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=1
 0,taper=1-psf.png Graphic file (type png)
 
 <use images/SKA1W8-0C9B120_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10
 ,taper=1-psf.png>
 <images/SKA1W8-12C0B120_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10,ta
-per=1-psf.png, id=335, 722.7pt x 722.7pt>
+per=1-psf.png, id=336, 722.7pt x 722.7pt>
 File: images/SKA1W8-12C0B120_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=
 10,taper=1-psf.png Graphic file (type png)
 
 <use images/SKA1W8-12C0B120_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=1
 0,taper=1-psf.png>
 <images/SKASUR_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=1-psf
-.png, id=336, 722.7pt x 722.7pt>
+.png, id=337, 722.7pt x 722.7pt>
 File: images/SKASUR_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=
 1-psf.png Graphic file (type png)
 
 <use images/SKASUR_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=1
 -psf.png>
 <images/SKASUR75_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=1-p
-sf.png, id=337, 722.7pt x 722.7pt>
+sf.png, id=338, 722.7pt x 722.7pt>
 File: images/SKASUR75_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10,tape
 r=1-psf.png Graphic file (type png)
 
 <use images/SKASUR75_8h60s_dec-30_650MHz_50MHz1ch-briggs,robust=-2,fov=10,taper
 =1-psf.png>)
-Overfull \hbox (23.07178pt too wide) in paragraph at lines 2--574
+Overfull \hbox (25.87177pt too wide) in paragraph at lines 2--574
  [][] 
  []
 
 (./dec-30_800.tex
-<images/SKA1V8_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png, id=338, 722.7pt x 
+<images/SKA1V8_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png, id=339, 722.7pt x 
 722.7pt>
 File: images/SKA1V8_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png Graphic file (
 type png)
  <use images/SKA1V8_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png>
-<images/SKA1W8-0C0B120_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png, id=339, 72
+<images/SKA1W8-0C0B120_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png, id=340, 72
 2.7pt x 722.7pt>
 File: images/SKA1W8-0C0B120_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png Graphi
 c file (type png)
 
 <use images/SKA1W8-0C0B120_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png>
-<images/SKA1W8-0C9B120_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png, id=340, 72
+<images/SKA1W8-0C9B120_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png, id=341, 72
 2.7pt x 722.7pt>
 File: images/SKA1W8-0C9B120_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png Graphi
 c file (type png)
 
 <use images/SKA1W8-0C9B120_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png>
-<images/SKA1W8-12C0B120_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png, id=341, 7
+<images/SKA1W8-12C0B120_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png, id=342, 7
 22.7pt x 722.7pt>
 File: images/SKA1W8-12C0B120_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png Graph
 ic file (type png)
 
 <use images/SKA1W8-12C0B120_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png>
-<images/SKASUR_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png, id=342, 722.7pt x 
+<images/SKASUR_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png, id=343, 722.7pt x 
 722.7pt>
 File: images/SKASUR_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png Graphic file (
 type png)
  <use images/SKASUR_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png>
-<images/SKASUR75_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png, id=343, 722.7pt 
+<images/SKASUR75_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png, id=344, 722.7pt 
 x 722.7pt>
 File: images/SKASUR75_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png Graphic file
  (type png)
  <use images/SKASUR75_8h60s_dec-30_800MHz_50MHz1ch-natural-psf.png>
 <images/SKA1V8_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.png, id
-=344, 722.7pt x 722.7pt>
+=345, 722.7pt x 722.7pt>
 File: images/SKA1V8_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.pn
 g Graphic file (type png)
 
 <use images/SKA1V8_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.png
 >
 <images/SKA1W8-0C0B120_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10-psf
-.png, id=345, 722.7pt x 722.7pt>
+.png, id=346, 722.7pt x 722.7pt>
 File: images/SKA1W8-0C0B120_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=1
 0-psf.png Graphic file (type png)
 
 <use images/SKA1W8-0C0B120_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10
 -psf.png>
 <images/SKA1W8-0C9B120_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10-psf
-.png, id=346, 722.7pt x 722.7pt>
+.png, id=347, 722.7pt x 722.7pt>
 File: images/SKA1W8-0C9B120_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=1
 0-psf.png Graphic file (type png)
 
 <use images/SKA1W8-0C9B120_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10
 -psf.png>
 <images/SKA1W8-12C0B120_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10-ps
-f.png, id=347, 722.7pt x 722.7pt>
+f.png, id=348, 722.7pt x 722.7pt>
 File: images/SKA1W8-12C0B120_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=
 10-psf.png Graphic file (type png)
 
 <use images/SKA1W8-12C0B120_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=1
 0-psf.png>
 <images/SKASUR_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.png, id
-=348, 722.7pt x 722.7pt>
+=349, 722.7pt x 722.7pt>
 File: images/SKASUR_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.pn
 g Graphic file (type png)
 
 <use images/SKASUR_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.png
 >
 <images/SKASUR75_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.png, 
-id=349, 722.7pt x 722.7pt>
+id=350, 722.7pt x 722.7pt>
 File: images/SKASUR75_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.
 png Graphic file (type png)
 
 <use images/SKASUR75_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.p
 ng>
 <images/SKA1V8_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=1-psf
-.png, id=350, 722.7pt x 722.7pt>
+.png, id=351, 722.7pt x 722.7pt>
 File: images/SKA1V8_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=
 1-psf.png Graphic file (type png)
 
 <use images/SKA1V8_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=1
 -psf.png>
 <images/SKA1W8-0C0B120_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10,tap
-er=1-psf.png, id=351, 722.7pt x 722.7pt>
+er=1-psf.png, id=352, 722.7pt x 722.7pt>
 File: images/SKA1W8-0C0B120_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=1
 0,taper=1-psf.png Graphic file (type png)
 
 <use images/SKA1W8-0C0B120_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10
 ,taper=1-psf.png>
 <images/SKA1W8-0C9B120_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10,tap
-er=1-psf.png, id=352, 722.7pt x 722.7pt>
+er=1-psf.png, id=353, 722.7pt x 722.7pt>
 File: images/SKA1W8-0C9B120_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=1
 0,taper=1-psf.png Graphic file (type png)
 
 <use images/SKA1W8-0C9B120_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10
 ,taper=1-psf.png>
 <images/SKA1W8-12C0B120_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10,ta
-per=1-psf.png, id=353, 722.7pt x 722.7pt>
+per=1-psf.png, id=354, 722.7pt x 722.7pt>
 File: images/SKA1W8-12C0B120_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=
 10,taper=1-psf.png Graphic file (type png)
 
 <use images/SKA1W8-12C0B120_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=1
 0,taper=1-psf.png>
 <images/SKASUR_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=1-psf
-.png, id=354, 722.7pt x 722.7pt>
+.png, id=355, 722.7pt x 722.7pt>
 File: images/SKASUR_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=
 1-psf.png Graphic file (type png)
 
 <use images/SKASUR_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=1
 -psf.png>
 <images/SKASUR75_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=1-p
-sf.png, id=355, 722.7pt x 722.7pt>
+sf.png, id=356, 722.7pt x 722.7pt>
 File: images/SKASUR75_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10,tape
 r=1-psf.png Graphic file (type png)
 
 <use images/SKASUR75_8h60s_dec-30_800MHz_50MHz1ch-briggs,robust=-2,fov=10,taper
 =1-psf.png>)
-Overfull \hbox (23.07178pt too wide) in paragraph at lines 2--582
+Overfull \hbox (25.87177pt too wide) in paragraph at lines 2--582
  [][] 
  []
 
 (./dec-30_1000.tex
-<images/SKA1V8_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png, id=356, 722.7pt x
+<images/SKA1V8_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png, id=357, 722.7pt x
  722.7pt>
 File: images/SKA1V8_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png Graphic file 
 (type png)
  <use images/SKA1V8_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png>
-<images/SKA1W8-0C0B120_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png, id=357, 7
+<images/SKA1W8-0C0B120_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png, id=358, 7
 22.7pt x 722.7pt>
 File: images/SKA1W8-0C0B120_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png Graph
 ic file (type png)
 
 <use images/SKA1W8-0C0B120_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png>
-<images/SKA1W8-0C9B120_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png, id=358, 7
+<images/SKA1W8-0C9B120_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png, id=359, 7
 22.7pt x 722.7pt>
 File: images/SKA1W8-0C9B120_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png Graph
 ic file (type png)
 
 <use images/SKA1W8-0C9B120_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png>
-<images/SKA1W8-12C0B120_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png, id=359, 
+<images/SKA1W8-12C0B120_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png, id=360, 
 722.7pt x 722.7pt>
 File: images/SKA1W8-12C0B120_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png Grap
 hic file (type png)
 
 <use images/SKA1W8-12C0B120_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png>
-<images/SKASUR_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png, id=360, 722.7pt x
+<images/SKASUR_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png, id=361, 722.7pt x
  722.7pt>
 File: images/SKASUR_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png Graphic file 
 (type png)
  <use images/SKASUR_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png>
-<images/SKASUR75_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png, id=361, 722.7pt
+<images/SKASUR75_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png, id=362, 722.7pt
  x 722.7pt>
 File: images/SKASUR75_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png Graphic fil
 e (type png)
 
 <use images/SKASUR75_8h60s_dec-30_1000MHz_50MHz1ch-natural-psf.png>
 <images/SKA1V8_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.png, i
-d=362, 722.7pt x 722.7pt>
+d=363, 722.7pt x 722.7pt>
 File: images/SKA1V8_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.p
 ng Graphic file (type png)
 
 <use images/SKA1V8_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.pn
 g>
 <images/SKA1W8-0C0B120_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10-ps
-f.png, id=363, 722.7pt x 722.7pt>
+f.png, id=364, 722.7pt x 722.7pt>
 File: images/SKA1W8-0C0B120_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=
 10-psf.png Graphic file (type png)
 
 <use images/SKA1W8-0C0B120_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=1
 0-psf.png>
 <images/SKA1W8-0C9B120_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10-ps
-f.png, id=364, 722.7pt x 722.7pt>
+f.png, id=365, 722.7pt x 722.7pt>
 File: images/SKA1W8-0C9B120_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=
 10-psf.png Graphic file (type png)
 
 <use images/SKA1W8-0C9B120_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=1
 0-psf.png>
 <images/SKA1W8-12C0B120_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10-p
-sf.png, id=365, 722.7pt x 722.7pt>
+sf.png, id=366, 722.7pt x 722.7pt>
 File: images/SKA1W8-12C0B120_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov
 =10-psf.png Graphic file (type png)
 
 <use images/SKA1W8-12C0B120_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=
 10-psf.png>
 <images/SKASUR_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.png, i
-d=366, 722.7pt x 722.7pt>
+d=367, 722.7pt x 722.7pt>
 File: images/SKASUR_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.p
 ng Graphic file (type png)
 
 <use images/SKASUR_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.pn
 g>
 <images/SKASUR75_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.png,
- id=367, 722.7pt x 722.7pt>
+ id=368, 722.7pt x 722.7pt>
 File: images/SKASUR75_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10-psf
 .png Graphic file (type png)
 
 <use images/SKASUR75_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.
 png>
 <images/SKA1V8_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=1-ps
-f.png, id=368, 722.7pt x 722.7pt>
+f.png, id=369, 722.7pt x 722.7pt>
 File: images/SKA1V8_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10,taper
 =1-psf.png Graphic file (type png)
 
 <use images/SKA1V8_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=
 1-psf.png>
 <images/SKA1W8-0C0B120_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10,ta
-per=1-psf.png, id=369, 722.7pt x 722.7pt>
+per=1-psf.png, id=370, 722.7pt x 722.7pt>
 File: images/SKA1W8-0C0B120_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=
 10,taper=1-psf.png Graphic file (type png)
 
 <use images/SKA1W8-0C0B120_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=1
 0,taper=1-psf.png>
 <images/SKA1W8-0C9B120_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10,ta
-per=1-psf.png, id=370, 722.7pt x 722.7pt>
+per=1-psf.png, id=371, 722.7pt x 722.7pt>
 File: images/SKA1W8-0C9B120_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=
 10,taper=1-psf.png Graphic file (type png)
 
 <use images/SKA1W8-0C9B120_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=1
 0,taper=1-psf.png>
 <images/SKA1W8-12C0B120_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10,t
-aper=1-psf.png, id=371, 722.7pt x 722.7pt>
+aper=1-psf.png, id=372, 722.7pt x 722.7pt>
 File: images/SKA1W8-12C0B120_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov
 =10,taper=1-psf.png Graphic file (type png)
 
 <use images/SKA1W8-12C0B120_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=
 10,taper=1-psf.png>
 <images/SKASUR_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=1-ps
-f.png, id=372, 722.7pt x 722.7pt>
+f.png, id=373, 722.7pt x 722.7pt>
 File: images/SKASUR_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10,taper
 =1-psf.png Graphic file (type png)
 
 <use images/SKASUR_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=
 1-psf.png>
 <images/SKASUR75_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=1-
-psf.png, id=373, 722.7pt x 722.7pt>
+psf.png, id=374, 722.7pt x 722.7pt>
 File: images/SKASUR75_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10,tap
 er=1-psf.png Graphic file (type png)
 
 <use images/SKASUR75_8h60s_dec-30_1000MHz_50MHz1ch-briggs,robust=-2,fov=10,tape
 r=1-psf.png>)
-Overfull \hbox (23.07178pt too wide) in paragraph at lines 2--590
+Overfull \hbox (25.87177pt too wide) in paragraph at lines 2--590
  [][] 
  []
 
 (./dec-30_1400.tex
-<images/SKA1V8_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png, id=374, 722.7pt x
+<images/SKA1V8_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png, id=375, 722.7pt x
  722.7pt>
 File: images/SKA1V8_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png Graphic file 
 (type png)
  <use images/SKA1V8_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png>
-<images/SKA1W8-0C0B120_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png, id=375, 7
+<images/SKA1W8-0C0B120_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png, id=376, 7
 22.7pt x 722.7pt>
 File: images/SKA1W8-0C0B120_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png Graph
 ic file (type png)
 
 <use images/SKA1W8-0C0B120_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png>
-<images/SKA1W8-0C9B120_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png, id=376, 7
+<images/SKA1W8-0C9B120_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png, id=377, 7
 22.7pt x 722.7pt>
 File: images/SKA1W8-0C9B120_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png Graph
 ic file (type png)
 
 <use images/SKA1W8-0C9B120_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png>
-<images/SKA1W8-12C0B120_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png, id=377, 
+<images/SKA1W8-12C0B120_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png, id=378, 
 722.7pt x 722.7pt>
 File: images/SKA1W8-12C0B120_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png Grap
 hic file (type png)
 
 <use images/SKA1W8-12C0B120_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png>
-<images/SKASUR_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png, id=378, 722.7pt x
+<images/SKASUR_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png, id=379, 722.7pt x
  722.7pt>
 File: images/SKASUR_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png Graphic file 
 (type png)
  <use images/SKASUR_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png>
-<images/SKASUR75_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png, id=379, 722.7pt
+<images/SKASUR75_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png, id=380, 722.7pt
  x 722.7pt>
 File: images/SKASUR75_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png Graphic fil
 e (type png)
 
 <use images/SKASUR75_8h60s_dec-30_1400MHz_50MHz1ch-natural-psf.png>
 <images/SKA1V8_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.png, i
-d=380, 722.7pt x 722.7pt>
+d=381, 722.7pt x 722.7pt>
 File: images/SKA1V8_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.p
 ng Graphic file (type png)
 
 <use images/SKA1V8_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.pn
 g>
 <images/SKA1W8-0C0B120_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10-ps
-f.png, id=381, 722.7pt x 722.7pt>
+f.png, id=382, 722.7pt x 722.7pt>
 File: images/SKA1W8-0C0B120_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=
 10-psf.png Graphic file (type png)
 
 <use images/SKA1W8-0C0B120_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=1
 0-psf.png>
 <images/SKA1W8-0C9B120_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10-ps
-f.png, id=382, 722.7pt x 722.7pt>
+f.png, id=383, 722.7pt x 722.7pt>
 File: images/SKA1W8-0C9B120_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=
 10-psf.png Graphic file (type png)
 
 <use images/SKA1W8-0C9B120_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=1
 0-psf.png>
 <images/SKA1W8-12C0B120_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10-p
-sf.png, id=383, 722.7pt x 722.7pt>
+sf.png, id=384, 722.7pt x 722.7pt>
 File: images/SKA1W8-12C0B120_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov
 =10-psf.png Graphic file (type png)
 
 <use images/SKA1W8-12C0B120_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=
 10-psf.png>
 <images/SKASUR_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.png, i
-d=384, 722.7pt x 722.7pt>
+d=385, 722.7pt x 722.7pt>
 File: images/SKASUR_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.p
 ng Graphic file (type png)
 
 <use images/SKASUR_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.pn
 g>
 <images/SKASUR75_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.png,
- id=385, 722.7pt x 722.7pt>
+ id=386, 722.7pt x 722.7pt>
 File: images/SKASUR75_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10-psf
 .png Graphic file (type png)
 
 <use images/SKASUR75_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10-psf.
 png>
 <images/SKA1V8_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=1-ps
-f.png, id=386, 722.7pt x 722.7pt>
+f.png, id=387, 722.7pt x 722.7pt>
 File: images/SKA1V8_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10,taper
 =1-psf.png Graphic file (type png)
 
 <use images/SKA1V8_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=
 1-psf.png>
 <images/SKA1W8-0C0B120_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10,ta
-per=1-psf.png, id=387, 722.7pt x 722.7pt>
+per=1-psf.png, id=388, 722.7pt x 722.7pt>
 File: images/SKA1W8-0C0B120_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=
 10,taper=1-psf.png Graphic file (type png)
 
 <use images/SKA1W8-0C0B120_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=1
 0,taper=1-psf.png>
 <images/SKA1W8-0C9B120_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10,ta
-per=1-psf.png, id=388, 722.7pt x 722.7pt>
+per=1-psf.png, id=389, 722.7pt x 722.7pt>
 File: images/SKA1W8-0C9B120_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=
 10,taper=1-psf.png Graphic file (type png)
 
 <use images/SKA1W8-0C9B120_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=1
 0,taper=1-psf.png>
 <images/SKA1W8-12C0B120_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10,t
-aper=1-psf.png, id=389, 722.7pt x 722.7pt>
+aper=1-psf.png, id=390, 722.7pt x 722.7pt>
 File: images/SKA1W8-12C0B120_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov
 =10,taper=1-psf.png Graphic file (type png)
 
 <use images/SKA1W8-12C0B120_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=
 10,taper=1-psf.png>
 <images/SKASUR_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=1-ps
-f.png, id=390, 722.7pt x 722.7pt>
+f.png, id=391, 722.7pt x 722.7pt>
 File: images/SKASUR_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10,taper
 =1-psf.png Graphic file (type png)
 
 <use images/SKASUR_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=
 1-psf.png>
 <images/SKASUR75_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10,taper=1-
-psf.png, id=391, 722.7pt x 722.7pt>
+psf.png, id=392, 722.7pt x 722.7pt>
 File: images/SKASUR75_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10,tap
 er=1-psf.png Graphic file (type png)
 
 <use images/SKASUR75_8h60s_dec-30_1400MHz_50MHz1ch-briggs,robust=-2,fov=10,tape
 r=1-psf.png>)
-Overfull \hbox (23.07178pt too wide) in paragraph at lines 2--597
+Overfull \hbox (25.87177pt too wide) in paragraph at lines 2--597
  [][] 
  []
 
@@ -1490,9 +1490,9 @@ m/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 ive/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/
 amsfonts/cm/cmtt8.pfb>
-Output written on midopt_mjj.pdf (24 pages, 7184747 bytes).
+Output written on midopt_mjj.pdf (24 pages, 7185885 bytes).
 PDF statistics:
- 718 PDF objects out of 1000 (max. 8388607)
+ 719 PDF objects out of 1000 (max. 8388607)
  140 named destinations out of 1000 (max. 500000)
  748 words of extra memory for PDF output out of 10000 (max. 10000000)
 

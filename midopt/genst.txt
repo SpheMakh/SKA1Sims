@@ -1,0 +1,1 @@
+# lo0 lores lofreq freq dec resbin ridx weight widx noise166 flux10 snr10 hours snravg noise50 psf_area psf_sym psf_mean noise50k speed speed_avg

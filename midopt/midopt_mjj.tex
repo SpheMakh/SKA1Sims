@@ -22,29 +22,32 @@
 \usepackage{pdflscape}
 
 \voffset .5in
-\title{Optimising SKA1-Mid Scale-Dependent Sensitivity}
-\author{S. Makhathini$^{1,2}$,O. M. Smirnov$^{1,2}$, M. Jarvis$^{3,4}$ and F. B. Abdalla$^5$ \\{\footnotesize \it $^1$Rhodes
-University, Artillery Road P O Box 94, Grahamstown 6140, South Africa} \\{ \footnotesize \it $^2$SKA South Africa, 3rd Floor,
-Park Road, Pinelands, 7405, South Africa} \\{\footnotesize \it $^3$ University of the Western Cape, ZA-7535 Cape Town, South
-Africa}\\ {\footnotesize \it $^4$Astrophysics, Department of Physics, University of Oxford, Oxford OX1 3RH, UK} \\ {\footnotesize \it $^5$Department of Physics
-and Astronomy, University College London,Gower Place, London WC1E 6BT, UK}}
+\title{Optimising SKA1-MID Scale-Dependent Sensitivity}
+\author{S. Makhathini$^{1,2}$,O. M. Smirnov$^{1,2}$, M. Jarvis$^{3,4}$ and F. B. Abdalla$^{5,1}$ \\
+{\footnotesize \it $^1$Rhodes University, Artillery Road P O Box 94, Grahamstown 6140, South Africa} \\
+{\footnotesize \it $^2$SKA South Africa, 3rd Floor, The Park, Park Road, Pinelands, 7405, South Africa} \\
+{\footnotesize \it $^3$Astrophysics, Department of Physics, University of Oxford, Oxford OX1 3RH, UK} \\ 
+{\footnotesize \it $^4$University of the Western Cape, ZA-7535 Cape Town, South Africa}\\ 
+{\footnotesize \it $^5$Department of Physics and Astronomy, University College London,Gower Place, London WC1E 6BT, UK}}
 % \date{}
 \begin{document}
 \maketitle
 \begin{abstract}
-In this report we study the scale dependent sensitivity of the SKA1-Mid and SKA1-SUR baseline designs. We propose
-changes to the baseline design that enhance the sensitivity of SKA1-Mid at smaller angular scales (e.g. 0.4-1 arcsec at
-650MHz) without compromising the performance at larger scales. The changes we propose are guided by the SKA1-Mid
-level-zero science requirements \cite{srd}, which suggest that very long baselines ($>100$km) are not necessary to
-achieve the SKA1-Mid science objectives. In particular, we show that a 254 dish layout with a maximum baseline of 120km,
+In this report we study the scale dependent sensitivity of the SKA1-MID and SKA1-SUR baseline designs. We propose
+changes to the baseline design that enhance the sensitivity of SKA1-MID at smaller angular scales (e.g. 0.4-1 arcsec at
+650MHz) without compromising the performance at larger scales. The changes we propose are guided by the SKA1-MID
+level-zero science requirements \cite{srd}, which suggest that very long baselines ($>120$km) are not necessary to
+achieve the SKA1-MID science objectives. In particular, we show that a 254 dish layout with a maximum baseline of 120km,
 for the specific case of an imaging survey at angular resolution 0.4-1 arcsec and in the frequency range 650-1000 MHz,
-improves the SKA1-Mid survey speed by up to than 40\% and is 4 times faster than SKA-SUR as defined in the baseline
-design (see Table 12) and about 40\% faster than the 2nd generation SKA-SUR (R.~Braun September 2013)\footnote{We note
+improves the SKA1-MID survey speed by up to than 40\% and is 4 times faster than SKA-SUR over a similar frequency range,
+as defined in the baseline design (see Table 12) and about 40\% faster than even the ``2nd generation'' SKA-SUR (R.~Braun September 2013)\footnote{We note
 that the 2nd generation configurations of R.~Braun increase the maximum baseline of SKA1-SUR from $\sim 50$~km
-to $>70$~km}. The higher sensitivity on these small scales could be vital for experiments that require high sensitivity
-on angular small scales, such as weak lensing and some astrobiology experiments. Furthermore, this layout spans
-significantly less space which could reduce trenching and data transport costs. We also show that with a conservative
-addition of 12 dishes the SKA1-Mid survey speed can be improved by up 80\% on the
+to $~$75 km.}. The higher sensitivity on these small scales could be vital for experiments that require high sensitivity
+on angular small scales, such as weak lensing, continuum, and some astrobiology experiments. Conducting experiments at 
+below 1 GHz also means that the spectral slope of extragalactic radio sources
+esnures the maximum source density, which benefits all extragalactic continuum science cases.
+Furthermore, this layout spans significantly less space which could reduce trenching and data transport costs. 
+We also show that with a conservative addition of 12 dishes the SKA1-MID survey speed can be improved by up 80\% on the
 smaller angular scales.
 
 % Given the discrepancy with the figures in the L0 document we would
@@ -53,76 +56,69 @@ smaller angular scales.
 \end{abstract}
 
 \section{Introduction}
-The SKA at mid frequencies (SKA-Mid) will be built in two phases, SKA-Mid phase one (SKA1-Mid) and phase two (SKA-Mid)
+The SKA at mid frequencies (SKA-MID) will be built in two phases, SKA-MID phase one (SKA1-MID) and phase two (SKA-MID)
 in South Africa, and SKA survey (SKA-SUR) in phase one in Australia. The key science goals for SKA phase one include the
 study of the history and role of neutral hydrogen in the Universe from the dark ages to the present-day, the use of
 pulsars as probes of fundamental physics \cite{bd} and continuum and H{\sc i} surveys to pin down the cosmological
-model. The large emphasis on key science projects is outlined in several SKA memos, as the baseline design has emerged.
+model and to understand the evolution of galaxies over cosmic time. The large emphasis on key science projects is outlined in several SKA memos, as the baseline design has emerged.
 It should however be noted that changes which do not compromise the key science cases are possible and such changes
-could increase the science output of SKA1-Mid.
+could increase the science output of SKA1-MID.
 
 Radio interferometers have become so complex that it has become fundamentally challenging to relate
-scientific performance to design and engineering specifications, although some progress has been made (Braun
-2012 \cite{rb}, Winjholds \& van der Veen 2008 \cite{wnj}). On the other hand, simulation packages such as the
-\texttt{MeqTress} system (Noordam and Smirnov 2010 \cite{meqtrees}) have become sufficiently sophisticated that `brute
+scientific performance to design and engineering specifications, although some progress has been made 
+\cite{rb,wnj}. On the other hand, simulation packages such as the
+\texttt{MeqTrees} system \cite{meqtrees} have become sufficiently sophisticated that `brute
 force' simulations of complex instruments are technically feasible. This makes it possible to approach telescope design
 in an almost experimental way, using simulations to measure the impact of specific design decisions on scientific
 performance (Smirnov {\it et al.} 2012, in prep.)
 
 In this document we use a MeqTress based simulations framework to study the scale dependent sensitivity of the latest
-SKA1-Mid antenna layout from the SKA project office (SPO), the so-called V8 layout. The performance of this
+SKA1-MID antenna layout from the SKA project office (SPO), the so-called V8 layout. The performance of this
 antenna layout is then compared to alternative layouts and the SKA-SUR 1st and 2nd generation antenna
 layouts.
 
-The rest of this document is laid out as follows: in \autoref{sec:sci-req} we discuss the science requirements for SKA1-Mid, then
+The rest of this document is laid out as follows: in \autoref{sec:sci-req} we discuss the science requirements for SKA1-MID, then
 in \autoref{sec:layouts} we describe the layouts that we consider. In \autoref{sec:exp} we describe our simulation
 techniques and the metrics we generated from the experiment. Finally, the results and concluding remarks are in
 \autoref{sec:results} and \autoref{sec:conclusion}.
 
 \subsection{SKA1 Mid-frequency Baseline Design}\label{sec:BL}
-The latest SKA1-Mid layout from the SPO differs significantly from the
+The latest SKA1-MID layout from the SPO differs significantly from the
 baseline design, the biggest modifications being the moving of almost all
 SKA1 dishes beyond a radius of $\sim500$m to the spiral arms, and the
-shortening of the maximum baseline
-from 173km to 155km. These modifications lead to better uv-coverage on
-the longer baselines, and consequently a
-slightly better naturally weighted point spread function (PSF).
-However, due to the
-core-heavy overall design of SKA1-Mid, the
-PSF still retains very broad wings, which is a major issue for current
-deconvolution algorithms based on {\tt CLEAN}, (Hogbom 1974),
+shortening of the maximum baseline from 173km to 155km. These modifications lead to better uv-coverage on
+the longer baselines, and consequently a slightly better naturally weighted point spread function (PSF).
+However, due to the core-heavy overall design of SKA1-MID, the PSF still retains very broad wings, which is a major issue for current
+deconvolution algorithms based on {\tt CLEAN} (Hogbom 1974),
 particularly at low SNR. The PSF shape can be improved by a
 combination of visibility weighting and tapering techniques, however
 this comes at a cost in sensitivity. This loss in sensitivity, coupled
-with the
-inability to deconvolve the PSF at low SNR, will limit the dynamic
-range capabilities of SKA1-Mid. Therefore, major breakthroughs in
+with the inability to deconvolve the PSF at low SNR, could limit the dynamic
+range capabilities of SKA1-MID. Therefore, major breakthroughs in
 deconvolution algorithms are required to reach the dynamic ranges
 promised by SKA1's nominal sensitivity. A family of algorithms based
 on compressive sensing (CS) has recently emerged to tackle
 deconvolution issues in the context of the SKA and its pathfinder
-missions \cite{cs-ska}, in particular {\tt MORESANE} (Dabbech et al., \cite{mrs1,mrs2}) and {\tt PURIFY} (Carrillo et.
-al. 2013).
+missions \cite{cs-ska}, in particular {\tt MORESANE} \cite{mrs1,mrs2} and {\tt PURIFY} \cite{purify}.
 Although obviously not yet as well tested as {\tt CLEAN}, these algorithms
 have been shown to be superior to {\tt CLEAN} in detecting diffuse and
-compact emission, especially at low SNR (Ferrari 2014, in prep \cite{ferrari}). Furthermore,
+compact emission, especially at low SNR \cite{ferrari}. Furthermore,
 unlike {\tt CLEAN}, these algorithms do not
 require a `nice' PSF. In addition to the CS-based algorithms, a
 Bayesian approach to radio interferometry imaging has lead to the {\tt
-RESOLVE} algorithm (Junklewitz {\it et al} 2014
-\cite{resolve}), which has also been shown to produce better
+RESOLVE} algorithm \cite{resolve}, which has also been shown to produce better
 results than {\tt CLEAN}. The emergence of these techniques is
 particularly relevant to
-SKA1-Mid since the core-heavy design is crucial for the pulsar science
+SKA1-MID since the core-heavy design is crucial for the pulsar science
 goals, and attaining a Gaussian PSF needed by CLEAN with these
 core-heavy layouts is a major challenge.
 
 In light of all of this, we have decided to relax the `nice' naturally
-weighted PSF requirement \footnote{Attaining a Gaussian PSF with
-SKA1-Mid will require radical changes to the baseline design which may
+weighted PSF requirement\footnote{Attaining a Gaussian PSF with
+SKA1-MID will require radical changes to the baseline design which may
 have unforeseen financial and science output implications. The major
 motivation for a Gaussian PSF is the inability of {\tt CLEAN} to
-deconvolve the PSF at low SNR} and propose changes to the V8 layout
+deconvolve the PSF at low SNR.} and propose changes to the V8 layout
 that optimise the performance at smaller angular scales, while not
 significantly compromising the larger scales. We adopt naturally
 weighted sensitivity per scale as our performance metric, under the
@@ -142,7 +138,7 @@ recover that naturally weighted sensitivity.
 % shorter baselines, and hence gives better resolution, while a uv-taper down-weights the edges of the uv-coverage (longer
 % baselines) to decrease sidelobe levels}. It is therefore important to quantify the scale-dependent sensitivity of this
 % configuration, i.e., what is the sensitivity at different angular scales.
-\subsection{SKA1-Mid science requirements}\label{sec:sci-req}
+\subsection{SKA1-MID science requirements}\label{sec:sci-req}
 
 In this subsection we outline the scientific rationale for a change in
 the baseline design, which we believe is as cost neutral as possible given the information we received from the
@@ -157,9 +153,9 @@ members and the HI/continuum members.
 
 {\bf Pulsar science}: The pulsar search science is mainly dependent on
 the core of SKA-MID. One of the key factors being the instantaneous sensitivity which depends on the number of antennas
-in the core. During the discussions in the SWG, it was our understanding that a 10\%decrease in collecting are would be
+in the core. During the discussions in the SWG, it was our understanding that a 10\% decrease in core collecting area would be
 an acceptable perturbation in the overall pulsar search. It is advantageous to remove the dishes from the edges of the
-core as this would result in a wider synthesised beam. We also note that the Pulsar SWG requires the full sensitivity of
+core as this would result in a wider tied array beam. We also note that the Pulsar SWG requires the full sensitivity of
 SKA-MID for accurate timing of the pulsars discovered in the survey.
 
 \smallskip
@@ -177,7 +173,7 @@ the flux not to be resolved out, the baselines of most interest are baselines be
 However losing a small amount of sensitivity compared to the baseline design in this region
 of uv space is not critical and was discussed at the Cosmology science
 assessment workshop, and in fact we find that we do not lose any
-sensitivity in this regime for out preferred configuration. 
+sensitivity in this regime for our preferred configuration. 
 
 \item {\bf Cosmology with weak lensing}: Here the main aspect is a high sensitivity at scales which can
 measure the structure and shape of the galaxies in continuum. Given the size of galaxies,
@@ -192,7 +188,14 @@ enough antennas on the longer baselines (and does not have a long
 enough maximum baseline) to produce reliable maps for weak
 lensing. Furthermore,  the number of UV tracks is much lower than
 SKA-MID providing a poorer sampling of the spatial frequencies of
-interest. %This is intrinsically due to the fact that the survey speed for SKA-SUR is coming from
+interest. 
+
+The goal of the weak lensing survey is to reach a continuum sensitivity that provides $~5$ sources per arcmin$^2$ 
+For extragalactic sources, the synchrotron slope of $\nu^{-0.7}$ means that low frequencies are preferable, but 
+balanced by both the resolution requirements and the possible increase in $T_\mathrm{sys}$. For example, to ensure 5 
+sources/arcmin$^2$ is equivalent to 500 nJy rms at 1.3-1.7GHz or 750 nJy at 650-1100 MHz.
+
+%This is intrinsically due to the fact that the survey speed for SKA-SUR is coming from
 %PAFs and not from extra collecting area.
 
 \item {\bf HI and continuum morphologies}: In the current baseline design there is a lack of sensitivity
@@ -219,11 +222,11 @@ for high resolution is the 40mas at $\nu\sim 14$GHz for the Cradle of Life).
 % This cost saving should allow for
 % extra antennas to be placed in the spiral arms. A cost saving along
 % these lines may allow for extra antennas, and we provide information
-% for an SKA1-Mid configuration with an additional 12 antennas as an
+% for an SKA1-MID configuration with an additional 12 antennas as an
 % example of the increase in sensitivity/survey speed. 
 
 We also note here that we have assumed an approximate cost neutrality
-for the SKA-Mid in isolation. If we were to consider a solution where the whole of the
+for the SKA-MID in isolation. If we were to consider a solution where the whole of the
 mid-frequency SKA1 as cost neutral (i.e. not interfering with
 SKA-Low baseline costing) then a significant number of additional dishes could be distributed
 within our proposed configurations which would substantially increase the imaging
@@ -237,7 +240,7 @@ the SKA, but do not consider them here.
 has significant UV coverage all the way up to ~70-80 km baselines to cover the above
 science cases. This arrangement is very beneficial for HI and continuum morphological studies,
 furthermore it produces a survey speed which allows weak lensing experiments to be
-possible with SKA-1. We believe that it does not strongly affect HI and pulsar science as a whole and allows for
+possible with SKA1. We believe that it does not strongly affect HI and pulsar science as a whole and allows for
 better imaging capabilities with SKA-MID. This would be greatly beneficial for the project
 compared to the baseline design. Furthermore we suggest that several clusters of around 6
 antennas, depending on the exact masking of roads/environments, be placed in the core/outer
@@ -245,24 +248,34 @@ core as to increase the sensitivity for intensity mapping. We do not
 investigate this here as we believe it will only cause a minor perturbation in
 the survey speed and sensitivities that we discuss.
 
-\subsubsection{Specific layout implementation:}
+\subsubsection{Specific layout implementation}
 The level-zero scientific requirements for SKA1\cite{srd} published by the SKA project office in March 2014
-suggest that (at least for SKA1-Mid), an array with a maximum baseline of around ~100km is required. Therefore, we seek
+suggest that (at least for SKA1-MID), an array with a maximum baseline of around ~100km is required. Therefore, we seek
 a layout with the shortest possible maximum baseline that does at least as well as the V8 baseline design in the
 resolution range 0.4-1 arcsec over 650, 800 and 1000MHz while not significantly compromising the performance at the
-larger angular scales. Moreover, as stated previously, having a layout which performs just as well as (or better) than
-the baseline layout but which covers significantly less space translates to a reduction in trenching and data transport
-costs, which presents an opportunity to re-invest the funds somewhere else, therefore we consider the conservative
-addition of 12 dishes. However, we note that improvements on the scales of interest are still possible without these 12
-additional dishes. Furthermore, having more a better uv-coverage further out decreases loss in sensitivity for
+larger angular scales. 
+
+We show that improvements on the scales of interest can already be attained simply by rearranging the dishes along 
+the spiral arms. For illustration of further possible improvements, we also consider two other options: 
+
+\begin{itemize}
+\item Adding 12 dishes to the spiral arms, the rationale for this 
+being that having a layout which performs just as well as (or better) than the baseline layout, but which 
+covers significantly less space translates to a reduction in trenching and data transport
+costs, which presents an opportunity to re-invest the funds somewhere else
+
+\item Moving 9 dishes from the (edges of the) pulsar core into the spiral arms. 
+\end{itemize}
+
+Having a better uv-coverage further out decreases loss in sensitivity for
 non-natural weighting schemes. We note that shifting the dishes along the arms to get more sensitivity at small angular
-scales will affect the sensitivity at larger scales (see Tables \ref{tab:noise50-new}-\ref{tab:speed_avg-new} for scale
+scales will affect the sensitivity at larger scales (see Tables \ref{tab:noise50-new}--\ref{tab:speed_avg-new} for scale
 dependent noise statics), we therefore encourage input from the SWG in search for an optimal solution. In the next
-section we present two alternative layouts, these layouts have maximum baselines of 120km. The scale dependent
-sensitivity of these layouts is compared to the SKA1-Mid and SKA-SUR baseline layouts in section \ref{sec:exp}.
+section we present three alternative layouts with maximum baselines of 120km. The scale dependent
+sensitivity of these layouts is compared to the SKA1-MID and SKA-SUR baseline layouts in section \ref{sec:exp}.
 
 \subsection{Background on Layouts}\label{sec:layouts}
-The following SKA1-Mid layouts are under consideration here:
+The following SKA1-MID layouts are under consideration here:
 \begin{description}
 \item[{\bf V8B155}] This is the V8 layout (254 dishes) released by the SPO (May 2014). This layout
 has a maximum baseline of 155km.
@@ -302,7 +315,7 @@ made.
  Outer-core & 24 & 34 & 58 & 21.8 \\
  Spiral-arms & 102 & 0 & 102 & 38.2 \\\hline\hline
   \end{tabular}}
- \caption{Breakdown of the SKA1-Mid layouts under consideration.}\label{tab:lay}
+ \caption{Breakdown of the SKA1-MID layouts under consideration.}\label{tab:lay}
 \end{table}
 
 \begin{table}[H]
@@ -322,40 +335,40 @@ made.
 % layouts
 \begin{figure}[H]
  \tiny{\input{lay-new}}
- \caption{Antenna layouts, V8 plotted as a reference (red crosses) for SKA1-Mid layouts, and SKASUR
-plotted as reference for the SKASUR75 layout. The vertical lines separate SKA1-Mid and SKA
+ \caption{Antenna layouts, V8 plotted as a reference (red crosses) for SKA1-MID layouts, and SUR
+plotted as reference for the SUR75 layout. The vertical lines separate SKA1-MID and SKA
 survey layouts.}\label{fig:lay}
 \end{figure}
 % baseline distribution histograms
 \begin{figure}[H]
  \tiny{\input{hist-new}}
- \caption{Baseline distribution with the uv-distance in $log_{10}$ km . Yellow and green dashed lines mark 10 and 120
+ \caption{Baseline distribution with the uv-distance in $log_{10}$ km . Yellow and green dashed lines mark 10 and 100
 kilometres respectively, and the pink strip represents baselines from 30-80km.}\label{fig:hist}
 \end{figure}
 % \begin{figure}[H]
 %  \centering
 %  \input{core_hist.tex}
-%  \caption{Dish density histograms of the core of the SKA1-Mid layouts under consideration. The dashed line marks 400m. The core
+%  \caption{Dish density histograms of the core of the SKA1-MID layouts under consideration. The dashed line marks 400m. The core
 % of the W-9-j layouts is the same, therefore we only need to plot one of these.}
 % \end{figure}
 % \begin{figure}[H]
 %  \centering
 %  \input{core_cumhist.tex}
-%  \caption{Cumulative dish density histograms of the core of the SKA1-Mid layouts under consideration. The dashed line marks 400m.
+%  \caption{Cumulative dish density histograms of the core of the SKA1-MID layouts under consideration. The dashed line marks 400m.
 % The core of the W-9-j layouts is the same, therefore we only need to plot one of these.}
 % \end{figure}
 % uv-coverage plots 
 \begin{figure}[H]
  \tiny{\input{uvcov-new}}
  \caption{UV-Coverage for 8-hr tracks at 650MHz (50MHz bandwidth) at declinations -50,-30,-10 for the different layouts. Blue
-indicates uv-points, red indicates conjugate uv-points. The vertical lines separate SKA1-Mid and SKA
+indicates uv-points, red indicates conjugate uv-points. The vertical lines separate SKA1-MID and SKA
 survey layouts.}\label{fig:uvcov}
 \end{figure}
 
 \section{The Experiment}\label{sec:exp}
 Our aim is to investigate the scale-dependent sensitivity of the layouts described in the previous section.
 We use the \texttt{makems} tool to make simulated measurement sets (MS) of 8hr tracks with a 60s integration time for
-declinations -50, -30 and -10 degrees, at frequencies of 650, 800 and 1000MHz, with a single 50MHz channel. The expected rms noise
+declinations -50, -30 and -10 degrees, at frequencies of 650, 800, 1000 and 1400MHz, with a single 50MHz channel. The expected rms noise
 per real and imaginary part for each visibility is calculated as 
 \begin{equation}
 \sigma_{\text{vis}} = \frac{\text{SEFD}}{\sqrt{2\Delta t\Delta \nu}}.
@@ -367,7 +380,7 @@ given integration and bandwidth. We then use the (CASA-derived) \texttt{lwimager
 the PSF as well as dirty maps of the noise using various weighting and tapering schemes. Note that for uniform and
 robust weighting, a crucial parameter is the size of the uv-bin over which weights are “uniformized”. By default this is
 determined from the full image size, but \texttt{lwimager} allows one to uniformize the weights over bins corresponding
-to a user-defined FoV instead. For these simulations uv-bins corresponding to a FoV of 10 arcmin were used.. The
+to a user-defined FoV instead. For these simulations uv-bins corresponding to a FoV of 10 arcmin were used. The
 following metrics were generated:
 \begin{itemize}
  \item PSF full width at half maximum (FWHM) size (mean of the FWHM dimensions). This was measured by making high-resolution
@@ -397,12 +410,12 @@ spectral index of -0.7. {$\overline{\text{SNR10}}=\sqrt{\frac{1}{3}(\text{SNR10}
 
  \item Hours required to reach a mean SNR of 10 (Table \ref{tab:hours-dec30}).
  
- \item Survey Speed. These values are calculated using the FOV values in the SRD (band 1 for SKA1-Mid and band 2 PAF FOV
+ \item Survey Speed. These values are calculated using the FOV values in the SRD (band 1 for SKA1-MID and band 2 PAF FOV
 for
-SKASUR) and the values in Table \ref{tab:snr10-dec30}. Note that unlike the SKASUR FOV, the SKA1-Mid FOV changes across
+SKASUR) and the values in Table \ref{tab:snr10-dec30}. Note that unlike the SKASUR FOV, the SKA1-MID FOV changes across
 the band
 (FOV$_{\text{Mid}}\sim \nu^{-2}$). $\text{SS}_\text{Freq} = \text{FOV}_\text{Freq}\times \text{SNR}^2$. 
-% We consider band 1 for SKA-Mid and band 2 for SKASUR. 
+% We consider band 1 for SKA-MID and band 2 for SKASUR. 
  \item Average survey speed. {$\overline{\text{SS}} =\sqrt{\frac{1}{3}(\text{SS}_{650}^2 + \text{SS}_{800}^2
 +\text{SS}_{1000}^2})$} (Table \ref{tab:speed_avg-dec30}).
 \end{itemize}
@@ -414,10 +427,16 @@ the band
 Figure \ref{fig:full-psf_meam} shows the PSF sizes (FWHM) for the layouts under consideration as a function of frequency
 for natural and robust-2 weighting as well as robust-2 weighting  with a 1$''$ Gaussian taper at a declination of -30
 degrees. Note that for natural weighting the PSF is highly non-Gaussian (see appendix \ref{app:psf}) therefore the FWHM
-size is not representative of the PSF size. The PSF sizes for the SKA1-Mid layouts are similar for the other two
-weighting schemes, while unsurprisingly, the SUR75 has a significantly smaller PSF compared to SUR. In the case for
-SKA1-Mid, this shows that a 120km maximum baseline layout has very similar resolving performance compared to a 150km
-maximum baseline layout. 
+size is not representative of the PSF size. The PSF sizes for the SKA1-MID layouts are similar for the other two
+weighting schemes, while unsurprisingly, the SUR75 has a significantly smaller PSF compared to SUR. In the case of
+SKA1-MID, this shows that a 120km maximum baseline layout has very similar resolving performance compared to a 150km
+maximum baseline layout, given our optimizations for increased sensitivity at the longer baselines.
+
+Figure~\ref{fig:full-psf_sym} shows a measure of the PSF symmetry for the different layouts. We note that our alternate 
+layouts result in a less symmetric naturally-weighted PSF, but do not significantly change the uniformly-weighted PSF. 
+Figures~\ref{fig:full-noise50} and \ref{fig:full-noise50k} show the expected rms noise, in $\mu$Jy/beam, as a function 
+of frequency. Finally, Fig.~\ref{fig:full-sdl} shows the PSF far sidelobe level. We note that especially in the 
+uniformly-weighted case, this is noticeably lower for our alternate layouts.
 
 \begin{figure}[H]
 %  \input{psf_meam-10}
@@ -441,8 +460,8 @@ Gaussian taper (column 3) at a declination of -30 degrees.}\label{fig:full-psf_s
 %  \input{noise50-10}
  \input{noise50-30}
 %  \input{noise50-50}
- \caption{Noise for a 50MHz wide band as a function of frequency for the SKA survey layouts (top) and MID layouts
-(bottom).
+ \caption{Noise for a 50MHz wide band and an 8 hour synthesis, as a function of frequency,
+for the SKA survey layouts (top) and MID layouts (bottom).
 This is done for natural (column 1) and robust-2 weighting (column 2) as well as robust-2 weighting  with a 1$''$
 Gaussian taper (column 3) at a declination of -30 degrees.}\label{fig:full-noise50}
 \end{figure}
@@ -472,10 +491,10 @@ In this section we only present the scale dependent PSF and noise statics at dec
 declinations -10 and -50 can be found in Appendix \ref{app:all_decs}. These metrics are generated at different angular
 scales, this is done by applying an inner-taper\footnote{The weights for the taper are generated using a Butterworth
 function.} to taper out baselines that do not fall within a given resolution range, i.e., we only consider uv-points
-that correspond to a given resolution. A table showing which resolution ranges belong to the different resolution bins
+that correspond to a given resolution. A table showing which resolution ranges are associated with the different resolution bins
 is included on each page to facilitate the reading of the tables in this section.
  \begin{table}[H]
-  \begin{tabular}{|lccccccccc|}\hline
+  \begin{tabular}{|l|ccccccccc|}\hline
   resbin & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\\hline
   Resolution [arcsec] & 0.4-1 & 0.4-2 & 1-2 & 2-3 & 3-4 & 3-10 & 10-60 & 10-100 & 600-3600 \\\hline
   \end{tabular}
@@ -519,27 +538,38 @@ is included on each page to facilitate the reading of the tables in this section
 \section{Conclusions}\label{sec:conclusion}
 The metrics we have used suggest that the science goals (at least those listed in the SRD in addition to cosmology with weak
 lensing and H{\sc i} surveys) can be met by a layout which covers significantly less space compared to the baseline layout. The
-W8-0C0B120 layout performs better at smaller angular scales, $>$ 20\% improvement in terms of the noise properties and a
-40\% improvement in survey speed, without compromising the larger scales. Moreover, the SKA1-Mid performance can be
-further enhanced (by about 80\%) by adding a handful of dishes in the spiral arms as can be seen with the W8-12C0B120
+W8-0C0B120 layout performs better at smaller angular scales, with an over 20\% improvement in terms of the noise properties and a
+40\% improvement in survey speed, without compromising the larger scales. Moreover, the SKA1-MID performance can be
+further enhanced (by about 80\%) by adding a handful of dishes to the spiral arms, as can be seen with the W8-12C0B120
 layout.
 
 Bringing in the dishes from the longer baselines translates to a greater sensitivity on the relevant (to the
-science goals of SKA1-Mid) smaller scales, as can be seen in Tables \ref{tab:noise50k-dec30}-\ref{tab:hours-dec30}. Even
+science goals of SKA1-MID) smaller scales, as can be seen in Tables \ref{tab:noise50k-dec30}--\ref{tab:hours-dec30}. Even
 more encouraging is the fact that this doesn't compromise the size or the symmetry of the PSF as seen in Tables
-\ref{tab:psf_mean-dec30} and \ref{tab:psf_sym-dec30}, as well as in Appendix \ref{app:psf}.  In comparison to the
-SUR baseline design configurations we find that all SKA-Mid configurations significantly out perform SKA-SUR in
-terms of sensitivity and survey speed. Even with the 2nd generation SKA-SUR configuration with longer baselines, our
-proposed SKA1-Mid configuration still outperforms SKA-SUR in terms of survey speed by a factor of
-$\sim 1.4$. {\bf We proffer the W8-0C0B120 configuration as a solution which allows for weak lensing, H{\sc i}
+\ref{tab:psf_mean-dec30} and \ref{tab:psf_sym-dec30}, as well as in Appendix \ref{app:psf}.  
+
+In comparison to the SUR baseline design configurations, we find that all SKA1-MID configurations significantly out 
+perform SKA-SUR in terms of sensitivity and survey speed at $<$1GHz for high-resolution imaging.  We note, however that 
+SKA-SUR outperforms SKA1-MID in terms of survey speed at $>$1GHz, and for low-$z$ HI this may be important. For continuum 
+science and high-$z$ HI, such gains are offset by the much more favourable survey speed offered by the proposed SKA1-MID 
+configuration at $<$1GHz. Furthermore, we note that the deep-field cases considered by both continuum and HI SWGs naturally 
+benefit more from the high-sensitivity SKA1-MID, and therefore maximising sensitivity on the scale of interest is key.
+
+% In comparison to the
+% SUR baseline design configurations we find that all SKA-MID configurations significantly out perform SKA-SUR in
+% terms of sensitivity and survey speed. Our proposed SKA1-MID configuration even outperforms 
+% the ``unofficial'' SKA-SUR configuration with longer (75km) baselines in terms of survey speed by a factor of
+% $\sim 1.4$. 
+
+{\bf We proffer the W8-0C0B120 configuration as a solution which allows for weak lensing, H{\sc i}
 and continuum source morphology characterisation for galaxy evolution studies, as well as the other science cases detailed in the
-SRD. Although we note that such a configuration also needs to be analysed by other SWGs, in particular the H{\sc i}
+SRD. We do note that such a configuration also needs to be analysed by other SWGs, in particular the H{\sc i}
 SWG.}
 
 % In light of this, we request that the project office analyses the
 % numbers used for the various figures in the various documentation
 % purporting to the relative sensitivities and survey speeds for
-% SKA1-Mid and SKA-SUR.
+% SKA1-MID and SKA-SUR.
 
 \begin{thebibliography}{99}
  \bibitem{bd} \url{http://www.skatelescope.org/wp-content/uploads/2013/05/SKA-TEL-SKO-DD-001-1_BaselineDesign1.pdf}
@@ -552,12 +582,12 @@ SWG.}
 Pathfinders, PASA 30 (2013) 20, [arXiv:1210.7521]
  \bibitem{mrs1} A. Dabbech, D. Mary, and C. Ferrari, Astronomical image deconvolution using sparse priors: an
 analysis-by-synthesis approach, Proc. IEEE Int. Conf. Acoustics, Speech and Signal Process (2012)
-pp. 3665?3668, Kyoto, Japan, March 25-30
+pp. 3665--3668, Kyoto, Japan, March 25-30
  \bibitem{mrs2} A. Dabbech, C. Ferrari, D. Mary, E. Slezak, and O. Smirnov, MORESANE: MOdel REconstruction by
-Sythesis-ANalysis Estimators – Deconvolution algorithm for radio interferometric imaging, in prep. (2014)
+Sythesis-ANalysis Estimators -- Deconvolution algorithm for radio interferometric imaging, in prep. (2014)
  \bibitem{ferrari} C. Ferrari {\it et al.},2014, \url{http://skacontinuum.pbworks.com/w/file/81462575/Ferrari.pdf}
- \bibitem{purify} R.E. Carrillo, J.D. McEwen, Y. Wiaux, 2013, arXiv 1307.4370
- \bibitem{resolve} H. Junklewitz, M.A. Bell, T. EnBlin, 2014 ,arXiv:1401.4711
+ \bibitem{purify} R.E. Carrillo, J.D. McEwen, Y. Wiaux, 2013, arXiv:1307.4370
+ \bibitem{resolve} H. Junklewitz, M.A. Bell, T. En\ss lin, 2014, arXiv:1401.4711
 
 
 
